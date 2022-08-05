@@ -1273,7 +1273,7 @@ input[type="checkbox"] {
   }
 
   .sl-image {
-    height: 300px;
+    height: 320px;
   }
 
   .banner-1 {
@@ -1308,35 +1308,28 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .banner-text {
-    margin-right: 10px;
-  }
-
-  .sl-image {
-    height: 400px;
-  }
 
   .banner-text {
     margin-right: 10px;
   }
 
   .sl-image {
-    height: 300px;
+    height: 320px;
   }
 
   .insp {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 36px;
+    line-height: 38px;
   }
 
   .colb {
-    margin-top: 15px;
-    font-size: 14px;
-    line-height: 18px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .hash {
-    margin-top: 15px;
-    font-size: 12px;
+    margin-top: 10px;
+    font-size: 16px;
   }
 
   .overview {
@@ -1350,7 +1343,7 @@ input[type="checkbox"] {
   }
 
   .sl-image {
-    height: 350px;
+    height: 320px;
   }
 
   .insp {
@@ -1402,7 +1395,37 @@ input[type="checkbox"] {
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px)  {
+  .banner-text {
+    margin-right: 10px;
+  }
+
+  .sl-image {
+    height: 650px;
+  }
+
+  .insp {
+    font-size: 66px;
+    line-height: 74px;
+  }
+
+  .colb {
+    margin-top: 24px;
+    font-size: 32px;
+    line-height: 34px;
+  }
+  .hash {
+    margin-top: 24px;
+    font-size: 32px;
+  }
+
+  .overview {
+    padding: 8% 10px !important;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
   .banner-text {
     margin-right: 10px;
   }
