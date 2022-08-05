@@ -18,6 +18,7 @@
   src: url("./assets/fonts/Rubik-Regular.ttf");
 }
 
+/* Navigation */
 .navbar-toggler {
   border: none !important;
   font-family: Gotham !important;
@@ -36,6 +37,12 @@
 .navbar-expand-lg .navbar-nav {
     margin-top: 16px;
 }
+
+.nav-link.active{
+  font-weight: bold;
+}
+
+/* Banner */
 
 .banner-1 {
   content: url("./assets/images/banner/banner-1.png");
@@ -93,7 +100,6 @@ img {
   color: rgb(91 91 91);
 }
 
-/* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
@@ -106,13 +112,6 @@ img {
   cursor: pointer;
 }
 
-/* .text {
-  position: absolute;
-  bottom: 10%;
-  margin-left: 100px;
-  color: rgb(255, 255, 255);
-} */
-
 .sl-active {
   box-shadow: 0 2px 6px 0 rgba(48, 48, 48, 0.5);
   border: solid 1px #979797;
@@ -122,7 +121,6 @@ img {
   border-radius: 50px;
 }
 
-/* Fading animation */
 .sl-fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -137,6 +135,8 @@ img {
   }
 }
 
+/* Overview */
+
 .overview {
   padding: 8% 10px !important;
   display: flex;
@@ -150,10 +150,6 @@ img {
   box-shadow: 0 2px 14px 0 rgba(196, 196, 196, 0.5);
   background-color: #fff;
   max-width: 1180px;
-}
-
-.nav-link.active{
-  font-weight: bold;
 }
 
 .overview-text-wrapper {
@@ -291,6 +287,18 @@ img {
 
 }
 
+.right-arrow {
+  display: inline-block;
+  background-image: url("./assets/images/quotes/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 46px;
+  width: 46px;
+  float: right;
+  margin-left: 10px;
+
+}
+
 .q-l {
   display: inline-block;
   background-image: url("./assets/images/quotes/q-l.png");
@@ -315,18 +323,6 @@ img {
   height: 100px;
   opacity: 1;
   position: absolute;
-}
-
-.right-arrow {
-  display: inline-block;
-  background-image: url("./assets/images/quotes/right-arrow.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  height: 46px;
-  width: 46px;
-  float: right;
-  margin-left: 10px;
-
 }
 
 .quote-wrapper {
@@ -402,8 +398,6 @@ img {
   height: 270px;
   overflow: hidden;
 }
-
-
 
 #customers-testimonials .owl-item.active.center .item .rp {
   height: 100%;
@@ -1587,18 +1581,6 @@ input[type="checkbox"] {
 
 }
 
-/* @media screen and (min-width: 2000px){
-
-#customers-testimonials .name {
-  margin: 24px 0 4px;
-}
-
-#customers-testimonials .designation {
-  margin: 24px 34px 10px 33px;
-}
-
-} */
-
 
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
   .quote-wrapper {
@@ -1680,8 +1662,3 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-/* @media (min-width: 992px){
-.container, .container-lg, .container-md, .container-sm {
-    max-width: 95vw !important;
-}
-} */
