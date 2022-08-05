@@ -622,6 +622,11 @@ input[type="checkbox"] {
   height: 340px;
   text-align: center;
 }
+.feature-modal-vedio-wrapper{
+  display: flex;
+    flex: 1;
+    width: 100%;gap: 20px;height: 340px;
+}
 
 .overlay {
   position: absolute;
@@ -763,10 +768,15 @@ input[type="checkbox"] {
   color: #242833;
   padding: 100px 0px;
 }
+.episode-right-section{
+  overflow: scroll; height:535px; overflow-x: hidden;padding-left: 30px;
+}
 .mobileShow {
   display: none;
 }
-
+.single-episode-wrapper{
+  padding-right: 10px;
+}
 .other-episodes {
   font-family: "Gotham-Bold";
   font-size: 20px;
@@ -798,6 +808,7 @@ input[type="checkbox"] {
   opacity: 0.3;
   border: 0px !important;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 #episodes .multi-card.active {
   opacity: 1;
@@ -1180,6 +1191,30 @@ input[type="checkbox"] {
   height: 15px;
   border-radius: 50px;
 }
+.single-video-overlay-wrapper{
+  position: absolute;
+              top: 0;
+              max-height: 395px;
+              width: 100%;
+              margin-right: 10px;
+}
+.single-video-button-wrapper{
+  position: absolute;
+               top: 0;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               z-index: 5;
+               width: 100%;
+               height: 395px;cursor: pointer;
+}
+
+.single-video-button-wrapper{
+  position: absolute;
+               z-index: 3;
+               width: 100%;
+
+}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -1476,16 +1511,50 @@ input[type="checkbox"] {
 }
 /*Feature and Episode Responsive*/
 
-@media screen and (max-width: 480px){
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 1024px){
+  .onlyForWeb {
+    display: none !important;
+  }
+  .onlyForMobile{
+    display: block;
+  }
+
   #feature .image-holder-feature{
     height: auto !important;
   }
-  #feature .owl-carousel .owl-item img{
+  #episodes .owl-carousel .owl-item img ,#feature .owl-carousel .owl-item img{
     height: auto;
     width: 100%;
     margin: 0px;
     border-radius: 0px;
     max-width: unset;
+  }
+  #feature .owl-carousel .owl-item .overlay .overlay-icons img{
+    height: auto;
+    width: auto;
+    margin: unset !important;
+    border-radius: 0px;
+    max-width: unset;
+    text-align: center;
+    display: inherit;
+  }
+  #feature .card:hover {
+    transform: none;
+  }
+  .overlay{
+    height: inherit;
+  }
+
+  #owl-feature.owl-carousel .owl-dots{
+    margin-top: 10px;
+  }
+  #feature{
+    padding: 45px 0px;
+  }
+  #feature .title{
+    font-size: 35px;
   }
 
   #episodes{
@@ -1499,8 +1568,9 @@ input[type="checkbox"] {
     padding: 0px;
   }
   #episodes .title {
-    padding-bottom: 5px;
+    padding-bottom: 25px;
     padding-left: 15px;
+    font-size: 35px;
   }
   #episodes > .card .card-body {
     padding: 10px 15px 15px 15px;
@@ -1519,10 +1589,51 @@ input[type="checkbox"] {
   }
   .single-episode-pdf {
     text-align: center;
-    padding-top: 15px;
   }
   .mobileShow {
     display: block;
+  }
+  .modal{
+    padding-top: 0px !important;
+  }
+  #myModal .modal-content{
+    width: 90vw !important;
+    padding: 0px;
+    height: 100%;
+    top: 0vh;
+    background: black !important;
+  }
+  #episodes .card .card-body{
+    padding: 15px 15px 35px 15px !important;
+  }
+  #episodes #owl-episodes .card .card-body{
+    padding: 15px !important;
+  }
+  .episode-right-section{
+    overflow: scroll; height:auto; overflow-x: hidden;padding-left: 30px;
+  }
+  .multi-card {
+    margin-bottom: 0px;
+  }
+.single-audiopdf-wrapper{
+  flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.single-episode-audio{
+  flex: 12;
+}
+.single-episode-wrapper{
+  padding-right: 0px;
+}
+}
+
+@media screen and (min-width: 1024px){
+  .onlyForWeb{
+    display: block;
+  }
+  .onlyForMobile{
+    display: none;
   }
 }
 
@@ -1603,8 +1714,4 @@ input[type="checkbox"] {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-
-.onlyForWeb {
-  display: none;
 }
