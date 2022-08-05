@@ -61,8 +61,8 @@
   height: 15px;
   width: 15px;
   margin: 0 8px 0px 9px;
-  border: solid 2px #979797;
-  background-color: transparent;
+  border: solid 1px #000;
+  background-color: #d8d8d8;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
