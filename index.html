@@ -35,7 +35,7 @@
         box-shadow: 0 2px 15px 0 rgba(148, 141, 141, 0.5);
       "
     >
-      <div class="container-fluid">
+      <div class="container-fluid g-0">
         <a href="#" class="navbar-brand">
           <img
             src="./assets/images/logo.png"
@@ -76,8 +76,62 @@
       </div>
     </nav>
 
+    <div id="home" class="owl-carousel owl-theme">
+      <div class="item">
+        <img style="width: 100%" alt="" src="#" class="sl-image banner-1" />
+
+        <div class="banner-text">
+          <p class="insp">
+            <span class="inspire">Inspired</span> to overcome <br />
+            and achieve the<br />
+            impossible
+          </p>
+          <p class="colb">
+            A look into how collaboration <br />
+            leads to a better tomorrow
+          </p>
+
+          <p class="hash">#InspireTomorrow</p>
+        </div>
+      </div>
+      <div class="item">
+        <img style="width: 100%" alt="" src="#" class="sl-image banner-2" />
+
+        <div class="banner-text">
+          <p class="insp">
+            <span class="inspire">Inspired</span> to overcome <br />
+            and achieve the<br />
+            impossible
+          </p>
+          <p class="colb">
+            A look into how collaboration <br />
+            leads to a better tomorrow
+          </p>
+
+          <p class="hash">#InspireTomorrow</p>
+        </div>
+      </div>
+      <div class="item">
+        <img style="width: 100%" alt="" src="#" class="sl-image banner-3" />
+
+        <div class="banner-text">
+          <p class="insp">
+            <span class="inspire">Inspired</span> to overcome <br />
+            and achieve the<br />
+            impossible
+          </p>
+          <p class="colb">
+            A look into how collaboration <br />
+            leads to a better tomorrow
+          </p>
+
+          <p class="hash">#InspireTomorrow</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Banner -->
-    <div id="home" class="corosoul">
+    <!-- <div id="home" class="corosoul">
       <div class="sl-container">
         <div class="sl sl-fade" data-ref="ban-1">
           <img style="width: 100%" alt="" src="#" class="sl-image banner-1" />
@@ -107,10 +161,8 @@
             <span class="dot" id="ban-3"></span>
           </div>
         </div>
-
-        <!-- <div class="text"><p class="fs-3">#InspiringTomorrow</p></div> -->
       </div>
-    </div>
+    </div> -->
 
     <!-- Overview -->
     <div id="overview" class="overview">
@@ -1314,7 +1366,7 @@
         window.setInterval(nextSlide, 7000);
       });
       let slideIndex = 0;
-      showSlides();
+      // showSlides();
 
       function showSlides() {
         let i;
@@ -1375,6 +1427,16 @@
         // With optional speed parameter
         // Parameters has to be in square bracket '[]'
         owl.trigger("prev.owl.carousel", [300]);
+      });
+
+      $("#home").owlCarousel({
+        loop: true,
+        items: 1,
+        margin: 0,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 7000,
+        autoplayHoverPause: false,
       });
     </script>
   </body>
