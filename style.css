@@ -132,7 +132,7 @@
 /* Overview */
 
 .overview {
-  padding: 8% 10px !important;
+  padding: 150px 10px !important;
   display: flex;
   justify-content: center;
 }
@@ -143,7 +143,7 @@
   border-radius: 12px;
   box-shadow: 0 2px 14px 0 rgba(196, 196, 196, 0.5);
   background-color: #fff;
-  max-width: 1180px;
+  max-width: 1320px;
 }
 
 .overview-text-wrapper {
@@ -1262,7 +1262,7 @@ input[type="checkbox"] {
   .overview > .overview-wrapper {
     padding: 0px 0px 10px 0px;
     border-radius: 20px;
-    max-width: 768px;
+    max-width: 720px;
   }
   .overview-text-wrapper {
     padding: 10px 16px;
@@ -1409,10 +1409,6 @@ input[type="checkbox"] {
     font-size: 22px;
   }
 
-  .overview {
-    padding: 8% 10px !important;
-  }
-
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px)  {
@@ -1439,9 +1435,6 @@ input[type="checkbox"] {
     font-size: 32px;
   }
 
-  .overview {
-    padding: 8% 10px !important;
-  }
 
 }
 
@@ -1468,11 +1461,6 @@ input[type="checkbox"] {
     margin-top: 30px;
     font-size: 38px;
   }
-
-  .overview {
-    padding: 8% 10px !important;
-  }
-
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
@@ -1603,4 +1591,11 @@ input[type="checkbox"] {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+@media (max-width: 576px){
+.overview > .overview-wrapper {
+  max-width: 540px;
+}
 }
