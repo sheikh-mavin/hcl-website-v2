@@ -18,6 +18,7 @@
   src: url("./assets/fonts/Rubik-Regular.ttf");
 }
 
+/* Navigation */
 .navbar-toggler {
   border: none !important;
   font-family: Gotham !important;
@@ -34,8 +35,14 @@
 }
 
 .navbar-expand-lg .navbar-nav {
-    margin-top: 16px;
+  margin-top: 16px;
 }
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+/* Banner */
 
 .banner-1 {
   content: url("./assets/images/banner/banner-1.png");
@@ -93,7 +100,6 @@ img {
   color: rgb(91 91 91);
 }
 
-/* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
@@ -106,13 +112,6 @@ img {
   cursor: pointer;
 }
 
-/* .text {
-  position: absolute;
-  bottom: 10%;
-  margin-left: 100px;
-  color: rgb(255, 255, 255);
-} */
-
 .sl-active {
   box-shadow: 0 2px 6px 0 rgba(48, 48, 48, 0.5);
   border: solid 1px #979797;
@@ -122,7 +121,6 @@ img {
   border-radius: 50px;
 }
 
-/* Fading animation */
 .sl-fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -137,6 +135,8 @@ img {
   }
 }
 
+/* Overview */
+
 .overview {
   padding: 8% 10px !important;
   display: flex;
@@ -150,10 +150,6 @@ img {
   box-shadow: 0 2px 14px 0 rgba(196, 196, 196, 0.5);
   background-color: #fff;
   max-width: 1180px;
-}
-
-.nav-link.active{
-  font-weight: bold;
 }
 
 .overview-text-wrapper {
@@ -186,8 +182,6 @@ img {
 .overview-text {
   font-family: Gotham;
   font-size: 16px;
-
-
 
   line-height: 1.5;
 
@@ -261,7 +255,6 @@ img {
   font-size: 40px;
   font-weight: bold;
 
-
   line-height: 1.07;
 
   color: #242833;
@@ -288,7 +281,17 @@ img {
   height: 46px;
   width: 46px;
   margin-right: 10px;
+}
 
+.right-arrow {
+  display: inline-block;
+  background-image: url("./assets/images/quotes/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 46px;
+  width: 46px;
+  float: right;
+  margin-left: 10px;
 }
 
 .q-l {
@@ -315,18 +318,6 @@ img {
   height: 100px;
   opacity: 1;
   position: absolute;
-}
-
-.right-arrow {
-  display: inline-block;
-  background-image: url("./assets/images/quotes/right-arrow.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  height: 46px;
-  width: 46px;
-  float: right;
-  margin-left: 10px;
-
 }
 
 .quote-wrapper {
@@ -403,8 +394,6 @@ img {
   overflow: hidden;
 }
 
-
-
 #customers-testimonials .owl-item.active.center .item .rp {
   height: 100%;
 }
@@ -449,7 +438,6 @@ img {
   font-family: Gotham-Bold;
   font-size: 40px;
   font-weight: bold;
-
 
   line-height: 1.07;
 
@@ -609,7 +597,6 @@ input[type="checkbox"] {
   font-size: 36px;
   font-weight: bold;
 
-
   line-height: 45px;
 
   color: #242833;
@@ -619,8 +606,8 @@ input[type="checkbox"] {
 #feature .card-body {
   padding: 15px !important;
 }
-#feature .card{
-  transition: transform .8s;
+#feature .card {
+  transition: transform 0.8s;
 }
 
 #feature .card:hover {
@@ -653,7 +640,6 @@ input[type="checkbox"] {
   font-family: "Gotham-Medium";
   font-size: 16px;
   font-weight: 500;
-
 
   line-height: 1.25;
 
@@ -688,7 +674,6 @@ input[type="checkbox"] {
   font-size: 14px;
   font-weight: 500;
 
-
   line-height: 16px;
   letter-spacing: 0.5px;
   color: #fff;
@@ -698,7 +683,6 @@ input[type="checkbox"] {
   font-family: "Gotham-Bold";
   font-size: 24px;
   font-weight: bold;
-
 
   line-height: 26px;
 
@@ -710,8 +694,6 @@ input[type="checkbox"] {
   font-family: "Gotham";
   font-size: 14px;
 
-
-
   line-height: 15px;
 
   color: #fff;
@@ -720,8 +702,6 @@ input[type="checkbox"] {
   font-family: "Gotham";
   font-size: 20px;
   font-weight: bold;
-
-
 
   color: #242833;
   border-radius: 20px;
@@ -760,7 +740,6 @@ input[type="checkbox"] {
   font-size: 40px;
   font-weight: bold;
 
-
   line-height: 36px;
 
   color: #242833;
@@ -773,120 +752,105 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
   background-position: left 10px bottom 30px;
 
+  /* height: 105vh; */
+  /* width: 100%; */
+  font-family: "Gotham";
+  font-size: 36px;
+  font-weight: bold;
 
-    /* height: 105vh; */
-    /* width: 100%; */
-    font-family: "Gotham";
-    font-size: 36px;
-    font-weight: bold;
+  line-height: 1.25;
 
+  color: #242833;
+  padding: 100px 0px;
+}
+.mobileShow {
+  display: none;
+}
 
-    line-height: 1.25;
+.other-episodes {
+  font-family: "Gotham-Bold";
+  font-size: 20px;
+  font-weight: 600;
 
-    color: #242833;
-    padding:100px 0px;
-  }
-  .mobileShow{
-    display: none;
-  }
+  line-height: 45px;
 
-  .other-episodes{
-    font-family: "Gotham-Bold";
-    font-size: 20px;
-    font-weight: 600;
+  color: #242833;
+  margin-top: -10px;
+}
 
+.single-audiopdf-wrapper {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+#episodes .title {
+  font-family: "Gotham-Bold";
+  font-size: 40px;
+  font-weight: bold;
 
-    line-height: 45px;
+  line-height: 36px;
 
-    color: #242833;
-    margin-top: -10px;
+  color: #242833;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+.multi-card {
+  opacity: 0.3;
+  border: 0px !important;
+  cursor: pointer;
+}
+#episodes .multi-card.active {
+  opacity: 1;
+}
 
-  }
+.single-episode-details {
+  font-family: "Gotham-Medium";
+  font-size: 14px;
+  font-weight: 500;
 
-  .single-audiopdf-wrapper{
-    display: flex;
-    padding-top: 20px;
-    align-items: center;
-  }
-  #episodes .title{
+  line-height: 15px;
 
-    font-family: "Gotham-Bold";
-    font-size: 40px;
-    font-weight: bold;
+  color: #687d20;
+}
+.single-episode-title {
+  font-family: "Gotham-Bold";
+  font-size: 24px;
+  font-weight: bold;
 
+  line-height: 25px;
 
-    line-height: 36px;
+  color: #242833;
+  padding-top: 10px;
+}
+.single-episode-audio {
+  font-family: "Gotham-Bold";
+  font-size: 14px;
+  font-weight: bold;
 
-    color: #242833;
-    margin-bottom: 0px;
-    padding-bottom: 20px;
+  color: #000;
+  display: flex;
+  flex: 6;
+  align-items: center;
+  gap: 5px;
+}
+.single-episode-pdf {
+  font-family: "Gotham-Bold";
+  font-size: 14px;
+  font-weight: bold;
 
-  }
-  .multi-card{
-    opacity: 0.3;
-    border: 0px !important;
-    cursor: pointer;
-  }
-  #episodes .multi-card.active{
-    opacity: 1;
-  }
+  color: #000;
+  flex: 2;
+  text-align: right;
+}
+.single-episode-audio a,
+.single-episode-pdf a {
+  font-family: "Gotham-Bold";
+  font-size: 14px;
+  font-weight: bold;
 
-  .single-episode-details{
-    font-family: "Gotham-Medium";
-    font-size: 14px;
-    font-weight: 500;
-
-
-    line-height: 15px;
-
-    color: #687d20;
-  }
-  .single-episode-title{
-    font-family: "Gotham-Bold";
-    font-size: 24px;
-    font-weight: bold;
-
-
-    line-height: 25px;
-
-    color: #242833;
-    padding-top: 10px;
-  }
-  .single-episode-audio{
-    font-family: "Gotham-Bold";
-    font-size: 14px;
-    font-weight: bold;
-
-
-
-
-    color: #000;
-    display: flex;
-                  flex: 6;align-items: center;
-                  gap:5px;
-  }
-  .single-episode-pdf{
-    font-family: "Gotham-Bold";
-    font-size: 14px;
-    font-weight: bold;
-
-
-
-
-    color: #000;
-    flex: 2;text-align:right;
-  }
-  .single-episode-audio a,.single-episode-pdf a{
-    font-family: "Gotham-Bold";
-    font-size: 14px;
-    font-weight: bold;
-
-
-
-
-    color: #000;
-    text-decoration: none;
-  }
+  color: #000;
+  text-decoration: none;
+}
 
 .audio-player {
   height: 50px;
@@ -924,17 +888,12 @@ input[type="checkbox"] {
   font-family: Gotham;
   font-size: 12px;
 
-
-
-
-
   color: #242833;
 }
 
- .episode-vedio-wrapper{
+.episode-vedio-wrapper {
   height: 395px;
- }
-
+}
 
 .Line-1 {
   width: 1px;
@@ -953,155 +912,10 @@ input[type="checkbox"] {
   background: #bfbfbf;
 }
 
-  .multi-episode-details{
-    font-family: "Gotham-Medium";
-    font-size: 14px;
-    font-weight: 500;
-
-
-    line-height: 1.21;
-    letter-spacing: -0.2px;
-    color: #687d20;
-  }
-  .multi-episode-title{
-    font-family: "Gotham-Bold";
-    font-size: 20px;
-    font-weight: bold;
-
-
-    line-height: 1.25;
-
-    color: #242833;
-    margin-top: 5px;
-
-  }
-  .multi-episode-date{
-    font-family: "Gotham";
-    font-size: 14px;
-    font-weight: 500;
-
-
-    line-height: 1.21;
-    letter-spacing: -0.2px;
-    color: #7e7e7e;
-  }
-
-  .Line-1 {
-    width: 1px;
-    height: 14px;
-    margin: 4px 14px 2px 15px;
-    border: solid 1px #b9b9b9;
-  }
-
-  ::-webkit-scrollbar {
-    width: 7px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #e4e1e1;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #bfbfbf;
-  }
-
-
-  .feature-modal {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    padding-top: 20vh;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0,0,0);
-    background-color: rgb(6 5 5 / 44%);
-    overflow: hidden;
-}
-
-  /* Modal Content */
-  .feature-modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px 20px 12px 20px;
-    border: 1px solid #888;
-    width: 85vw !important;
-    top: 10vh !important;
-}
-
-
-
-
-.episodes .title {
-  padding-top: 10vh;
-  font-family: "Gotham-Bold";
-  font-size: 40px;
-  font-weight: bold;
-
-
-  line-height: 1.25;
-
-  color: #242833;
-  margin-bottom: 0px;
-  padding-bottom: 30px;
-}
-.multi-card {
-  opacity: 0.3;
-  border: 0px !important;
-  cursor: pointer;
-}
-.episodes .multi-card.active {
-  opacity: 1;
-}
-
-.single-episode-details {
-  font-family: "Gotham-Medium";
-  font-size: 14px;
-  font-weight: 500;
-
-
-
-
-  color: #687d20;
-}
-.single-episode-title {
-  font-family: "Gotham-Bold";
-  font-size: 24px;
-  font-weight: bold;
-
-
-  line-height: 1.04;
-
-  color: #242833;
-  padding-top: 10px;
-}
-.single-episode-audio,
-.single-episode-pdf {
-  font-family: "Gotham-Bold";
-  font-size: 14px;
-  font-weight: bold;
-
-
-
-
-  color: #000;
-}
-.single-episode-audio a,
-.single-episode-pdf a {
-  font-family: "Gotham-Bold";
-  font-size: 14px;
-  font-weight: bold;
-
-
-
-
-  color: #000;
-  text-decoration: none;
-}
 .multi-episode-details {
   font-family: "Gotham-Medium";
   font-size: 14px;
   font-weight: 500;
-
 
   line-height: 1.21;
   letter-spacing: -0.2px;
@@ -1112,16 +926,15 @@ input[type="checkbox"] {
   font-size: 20px;
   font-weight: bold;
 
-
   line-height: 1.25;
 
   color: #242833;
+  margin-top: 5px;
 }
 .multi-episode-date {
   font-family: "Gotham";
   font-size: 14px;
   font-weight: 500;
-
 
   line-height: 1.21;
   letter-spacing: -0.2px;
@@ -1145,9 +958,131 @@ input[type="checkbox"] {
   background: #bfbfbf;
 }
 
+.feature-modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 20vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(6 5 5 / 44%);
+  overflow: hidden;
+}
 
 /* Modal Content */
+.feature-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px 20px 12px 20px;
+  border: 1px solid #888;
+  width: 85vw !important;
+  top: 10vh !important;
+}
 
+.episodes .title {
+  padding-top: 10vh;
+  font-family: "Gotham-Bold";
+  font-size: 40px;
+  font-weight: bold;
+
+  line-height: 1.25;
+
+  color: #242833;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+}
+.multi-card {
+  opacity: 0.3;
+  border: 0px !important;
+  cursor: pointer;
+}
+.episodes .multi-card.active {
+  opacity: 1;
+}
+
+.single-episode-details {
+  font-family: "Gotham-Medium";
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #687d20;
+}
+.single-episode-title {
+  font-family: "Gotham-Bold";
+  font-size: 24px;
+  font-weight: bold;
+
+  line-height: 1.04;
+
+  color: #242833;
+  padding-top: 10px;
+}
+.single-episode-audio,
+.single-episode-pdf {
+  font-family: "Gotham-Bold";
+  font-size: 14px;
+  font-weight: bold;
+
+  color: #000;
+}
+.single-episode-audio a,
+.single-episode-pdf a {
+  font-family: "Gotham-Bold";
+  font-size: 14px;
+  font-weight: bold;
+
+  color: #000;
+  text-decoration: none;
+}
+.multi-episode-details {
+  font-family: "Gotham-Medium";
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 1.21;
+  letter-spacing: -0.2px;
+  color: #687d20;
+}
+.multi-episode-title {
+  font-family: "Gotham-Bold";
+  font-size: 20px;
+  font-weight: bold;
+
+  line-height: 1.25;
+
+  color: #242833;
+}
+.multi-episode-date {
+  font-family: "Gotham";
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 1.21;
+  letter-spacing: -0.2px;
+  color: #7e7e7e;
+}
+
+.Line-1 {
+  width: 1px;
+  height: 14px;
+  margin: 4px 14px 2px 15px;
+  border: solid 1px #b9b9b9;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #e4e1e1;
+}
+::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+}
+
+/* Modal Content */
 
 .closemodalFeature {
   position: absolute;
@@ -1161,8 +1096,6 @@ input[type="checkbox"] {
   text-decoration: none;
   cursor: pointer;
 }
-
-
 
 #show {
   position: fixed;
@@ -1217,7 +1150,7 @@ input[type="checkbox"] {
   height: 4px;
   width: 50%;
 }
-.showvolumeslider{
+.showvolumeslider {
   display: block;
 }
 
@@ -1247,8 +1180,6 @@ input[type="checkbox"] {
   height: 15px;
   border-radius: 50px;
 }
-
-
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -1528,7 +1459,6 @@ input[type="checkbox"] {
     padding: 8% 10px !important;
   }
 
-
   .scroller {
     padding-top: 30px;
   }
@@ -1562,54 +1492,39 @@ input[type="checkbox"] {
     padding: 45px 0;
     background-image: none;
   }
-  .episode-vedio-wrapper{
+  .episode-vedio-wrapper {
     height: 195px;
-   }
-   #episodes > .container{
+  }
+  #episodes > .container {
     padding: 0px;
-   }
-   #episodes .title{
-    padding-bottom:5px ;
+  }
+  #episodes .title {
+    padding-bottom: 5px;
     padding-left: 15px;
-   }
-   #episodes > .card .card-body{
-    padding:10px 15px 15px 15px;
-   }
-   .single-episode-title{
+  }
+  #episodes > .card .card-body {
+    padding: 10px 15px 15px 15px;
+  }
+  .single-episode-title {
     padding-top: 3px;
-   }
-   .single-audiopdf-wrapper{
+  }
+  .single-audiopdf-wrapper {
     padding-top: 8px;
-   }
-   .single-audiopdf-wrapper{
+  }
+  .single-audiopdf-wrapper {
     flex-direction: column;
     align-items: unset;
-   }
-   .single-episode-audio{
-
-   }
-   .single-episode-pdf{
+  }
+  .single-episode-audio {
+  }
+  .single-episode-pdf {
     text-align: center;
     padding-top: 15px;
-   }
-   .mobileShow{
+  }
+  .mobileShow {
     display: block;
   }
-
 }
-
-/* @media screen and (min-width: 2000px){
-
-#customers-testimonials .name {
-  margin: 24px 0 4px;
-}
-
-#customers-testimonials .designation {
-  margin: 24px 34px 10px 33px;
-}
-
-} */
-
 
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
   .quote-wrapper {
@@ -1619,37 +1534,36 @@ input[type="checkbox"] {
   }
 }
 
-@media only screen and (min-width: 2100) and  (max-width: 3500px) {
- #audio-time-passed{
-  margin-top: 5px;
- }
- #feature .season-dropdown{
-  line-height: 35px;
- }
- .single-episode-title{
-  padding-top: 15px;
- }
+@media only screen and (min-width: 2100) and (max-width: 3500px) {
+  #audio-time-passed {
+    margin-top: 5px;
+  }
+  #feature .season-dropdown {
+    line-height: 35px;
+  }
+  .single-episode-title {
+    padding-top: 15px;
+  }
 }
 
-@media only screen and (min-width: 1000px) and  (max-width: 1250px) {
-  .card-img-top-featured-speaker{
+@media only screen and (min-width: 1000px) and (max-width: 1250px) {
+  .card-img-top-featured-speaker {
     height: auto !important;
   }
-  .image-holder-feature{
+  .image-holder-feature {
     height: auto !important;
   }
   #feature .card-body {
     min-height: 142px;
+  }
+  .overlay {
+    height: 242px !important;
+  }
+  .overlay .overlay-description {
+    font-family: "Gotham-Medium";
+    font-size: 10px;
+  }
 }
-.overlay{
-  height: 242px !important;
-}
-.overlay .overlay-description {
-  font-family: "Gotham-Medium";
-  font-size: 10px;
-}
-}
-
 
 .modal {
   display: none; /* Hidden by default */
@@ -1661,8 +1575,8 @@ input[type="checkbox"] {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -1671,9 +1585,9 @@ input[type="checkbox"] {
   margin: auto;
   border: 1px solid #888;
   width: 80vw !important;
-    padding: 20px;
-    height: 380px;
-    top: 10vh;
+  padding: 20px;
+  height: 380px;
+  top: 10vh;
 }
 
 /* The Close Button */
