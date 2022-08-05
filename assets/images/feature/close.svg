@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Close</title>
+    <defs>
+        <circle id="path-1" cx="22.5" cy="22.5" r="22.5"></circle>
+        <filter x="-23.3%" y="-18.9%" width="146.7%" height="146.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.256122296 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lightbox" transform="translate(-1290.000000, -1500.000000)">
+            <g id="Close" transform="translate(1297.000000, 1505.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#ECE8E8" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="noun_Close_636011" transform="translate(14.000000, 14.000000)" fill="#006BB6" fill-rule="nonzero">
+                    <path d="M10.3695652,9 L17.673913,1.66304348 C18.0652174,1.27173913 18.0652174,0.652173913 17.673913,0.293478261 C17.2826087,-0.097826087 16.6630435,-0.097826087 16.3043478,0.293478261 L9,7.63043478 L1.66304348,0.293478261 C1.27173913,-0.097826087 0.652173913,-0.097826087 0.293478261,0.293478261 C-0.097826087,0.684782609 -0.097826087,1.30434783 0.293478261,1.66304348 L7.59782609,9 L0.293478261,16.3369565 C-0.097826087,16.7282609 -0.097826087,17.3478261 0.293478261,17.7065217 C0.489130435,17.9021739 0.75,18 0.97826087,18 C1.20652174,18 1.4673913,17.9021739 1.66304348,17.7065217 L9,10.3695652 L16.3369565,17.7065217 C16.5326087,17.9021739 16.7934783,18 17.0217391,18 C17.25,18 17.5108696,17.9021739 17.7065217,17.7065217 C18.0978261,17.3152174 18.0978261,16.6956522 17.7065217,16.3369565 L10.3695652,9 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
