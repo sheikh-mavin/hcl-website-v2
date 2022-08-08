@@ -140,7 +140,7 @@
   border-radius: 12px;
   box-shadow: 0 2px 14px 0 rgba(196, 196, 196, 0.5);
   background-color: #fff;
-  max-width: 1320px;
+  max-width: 1200px;
 }
 
 .overview-text-wrapper {
@@ -432,9 +432,7 @@
   font-family: Gotham-Bold;
   font-size: 40px;
   font-weight: bold;
-
   line-height: 1.07;
-
   color: #242833;
 }
 
