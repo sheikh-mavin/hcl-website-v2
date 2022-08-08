@@ -1241,7 +1241,7 @@ input[type="checkbox"] {
 }
 
 #episodes #episode-overlay-wrapper {
-  background-size: cover;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1812,7 +1812,6 @@ flex: 8;
 }
 
 @media screen and (min-width: 481px) and (max-width: 992px) {
-
   .episode-right-section {
     height: auto;
     overflow-y: hidden;
@@ -1823,8 +1822,6 @@ flex: 8;
     margin: 0;
     max-width: unset !important;
   }
-
-
 }
 @media screen and (min-width: 992px) and (max-width: 1023px) {
   #owl-episodes .owl-carousel .owl-item img {
