@@ -704,10 +704,9 @@ input[type="checkbox"] {
   border-radius: 50px;
   background-color: #dee5c7;
   border: 0px;
-
-  padding: 8px 15px;
+  padding: 5px 15px;
   line-height: 22px;
-  height: 40px;
+  height: 35px;
   display: inline-block;
 }
 
@@ -1154,6 +1153,17 @@ input[type="checkbox"] {
   width: 85px;
   bottom: 45px;
   display: none;
+  margin-left: -10px;
+  flex: 3;
+}
+.volume-point{
+  width: 12px;
+  height: 12px;
+  background-color: #829d28;
+  position: absolute;
+  border-radius: 20px;
+  margin-top: -8px;
+  margin-left: 0%;
 }
 
 .volume-slider .volume-percentage {
@@ -1224,7 +1234,7 @@ input[type="checkbox"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 #episodes .multi-card img {
   height: 125px;
@@ -1248,6 +1258,9 @@ input[type="checkbox"] {
 }
 .ShowonTabNAboveFalse{
   display: none;
+}
+.card{
+  background-color: transparent !important;
 }
 
 @media screen and (min-width: 992px) {
@@ -1586,7 +1599,7 @@ input[type="checkbox"] {
   #feature .title {
     font-size: 24px;
     line-height: 21px;
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   #episodes {
@@ -1787,6 +1800,9 @@ input[type="checkbox"] {
 @media screen and (min-width: 481px) and (max-width: 991px){
   #feature .guest-speaker,#feature .host-speaker{
     min-height: 98px;
+  }
+  .single-episode-audio{
+flex: 8;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1000px){
@@ -1992,4 +2008,17 @@ input[type="checkbox"] {
     #episodes .single-episode-title{
       padding-top: 15px;
     }
+}
+
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */
+  #episodes .title{
+    font-size: 50px;
+  }
+}
+@supports not (-webkit-touch-callout: none) {
+  /* CSS for other than iOS devices */
+  #episodes .title{
+    font-size: 60px;
+  }
 }
