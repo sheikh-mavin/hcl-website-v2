@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Meta Talks</title>
     <link href="./style.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -390,9 +386,7 @@
         >
           <div>
             <!-- <button class="btn btn-secondary season-dropdown" type="button"> -->
-              <div class="season-dropdown">
-                Season 1
-              </div>
+            <div class="season-dropdown">Season 1</div>
           </div>
           <div>
             <button
@@ -1982,6 +1976,18 @@
 
       $(document).ready(function () {
         window.setInterval(nextSlide, 7000);
+        $(".nav-item").on("click", function (e) {
+          e.preventDefault();
+          var scroll_id = $(this).attr("href");
+          console.log(scroll_id);
+          if (scroll_id) {
+            var target_element_offset = $(scroll_id).offset();
+            window.scrollTo({
+              top: target_element_offset.top - 100,
+              behavior: "smooth",
+            });
+          }
+        });
       });
       let slideIndex = 0;
       // showSlides();

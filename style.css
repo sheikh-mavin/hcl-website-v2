@@ -140,7 +140,7 @@
   border-radius: 12px;
   box-shadow: 0 2px 14px 0 rgba(196, 196, 196, 0.5);
   background-color: #fff;
-  max-width: 1320px;
+  max-width: 1200px;
 }
 
 .overview-text-wrapper {
@@ -242,16 +242,16 @@
   background-image: url(./assets/images/quotes/quotes-bg.png);
   background-size: 100% 100%;
   height: auto;
-  padding: 67px 0px 67px 0px;
+  padding: 50px 0px 67px 0px;
   position: relative;
 }
 
 .quotes-section-heading {
-  height: 45px;
   font-family: Gotham-Bold;
   font-size: 40px;
   font-weight: bold;
   color: #242833;
+  margin-bottom: 20px !important;
 }
 .flex-container-l {
   display: flex;
@@ -432,9 +432,7 @@
   font-family: Gotham-Bold;
   font-size: 40px;
   font-weight: bold;
-
   line-height: 1.07;
-
   color: #242833;
 }
 
@@ -1295,10 +1293,11 @@ input[type="checkbox"] {
   }
 
   .quotes {
-    padding: 24px 16px 0px 16px;
+    padding: 50px 16px 0px 16px;
   }
   .quotes-section-heading {
     font-size: 24px;
+    margin-bottom: 20px !important;
   }
   .contact {
     padding: 27px 16px 47px 16px;
@@ -1312,7 +1311,7 @@ input[type="checkbox"] {
   }
   .q-l {
     background-size: 70px 50px;
-    left: -16px;
+    left: -10px;
     top: 32px;
     width: 70px;
     height: 50px;
@@ -1320,7 +1319,7 @@ input[type="checkbox"] {
 
   .q-r {
     background-size: 70px 50px;
-    right: -16px;
+    right: -10px;
     bottom: 16px;
     width: 70px;
     height: 50px;
@@ -1498,7 +1497,7 @@ input[type="checkbox"] {
 
   .insp {
     font-size: 66px;
-    line-height: 74px;
+    line-height: 80px;
   }
 
   .colb {
@@ -1523,7 +1522,7 @@ input[type="checkbox"] {
 
   .insp {
     font-size: 77px;
-    line-height: 74px;
+    line-height: 90px;
   }
 
   .colb {
