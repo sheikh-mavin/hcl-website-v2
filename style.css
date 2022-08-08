@@ -2018,10 +2018,10 @@ flex: 8;
   /* CSS specific to iOS devices */
 
   .otherepisodes{
-    padding-top: 5px;
+    padding-top: 5px !important;
   }
   #episodes .multi-episode-title{
-    padding-top: 7px;
+    padding-top: 7px !important;
   }
   #episodes .single-episode-title {
     padding-top: 10px !important;
@@ -2029,26 +2029,26 @@ flex: 8;
 }
 
 #feature .title{
-  padding-top: 30px;
+  padding-top: 30px !important;
 }
 
 
 .single-episode-title{
 
-  padding-top: 15px;
-  margin-bottom: -15px;
+  padding-top: 15px !important;
+  margin-bottom: -15px !important;
 
 }
 #episodes .multi-episode-title{
-  padding-top: 5px;
+  padding-top: 5px !important;
 }
 #feature .single-episode-title{
-  font-size: 14px;
-  padding-top: 6px;
+  font-size: 14px !important;
+  padding-top: 6px !important;
 }
 #feature .season-dropdown{
-  padding: 15px;
-  height: 40px;
+  padding: 15px !important;
+  height: 40px !important;
 }
 .feature-head-wrapper{
   margin-bottom: 0px !important;
@@ -2059,7 +2059,7 @@ flex: 8;
   #feature .episode-vedio-wrapper,
   #episodes .episode-vedio-wrapper,
   #episode-overlay-wrapper {
-    height: 172px;
+    height: 172px !important;
   }
   #episodes #episode-overlay-wrapper,
   #episodes .episode-vedio-wrapper {
@@ -2069,7 +2069,13 @@ flex: 8;
     margin-bottom: 20px !important;
   }
   #feature .season-dropdown{
-    padding-top: 10px !important;
+    padding-top: 15px !important;
+  }
+  #feature .title{
+    padding-top: 45px !important;
+  }
+  #episodes .title{
+    padding-bottom: 10px !important;
   }
 
  }
