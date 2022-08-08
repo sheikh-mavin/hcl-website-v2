@@ -1241,7 +1241,7 @@ input[type="checkbox"] {
 }
 
 #episodes #episode-overlay-wrapper {
-  background-size: contain;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2009,13 +2009,58 @@ flex: 8;
 
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */
-  #episodes .title{
-    font-size: 50px;
+
+  .otherepisodes{
+    padding-top: 5px;
   }
+  #episodes .multi-episode-title{
+    padding-top: 7px;
+  }
+  #episodes .single-episode-title {
+    padding-top: 10px;
+    margin-bottom: -5px;
 }
-@supports not (-webkit-touch-callout: none) {
-  /* CSS for other than iOS devices */
-  #episodes .title{
-    font-size: 60px;
+#feature .season-dropdown{
+  padding-top: 10px;
+}
+#feature .title{
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  #feature-overlay-image1,
+  #feature-overlay-image2,
+  #feature .episode-vedio-wrapper,
+  #episodes .episode-vedio-wrapper,
+  #episode-overlay-wrapper {
+    height: 172px;
   }
+  #episodes #episode-overlay-wrapper,
+  #episodes .episode-vedio-wrapper {
+    height: 172px !important;
+  }
+
+
+}
+
+#feature .season-dropdown{
+  padding: 14px;
+}
+.feature-head-wrapper{
+  margin-bottom: 0px;
+}
+.single-episode-title{
+
+  padding-top: 15px;
+  margin-bottom: -15px;
+
+}
+#episodes .multi-episode-title{
+  padding-top: 5px;
+}
+#feature .single-episode-title{
+  font-size: 14px;
+  padding-top: 6px;
+}
+
 }
