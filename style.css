@@ -1989,52 +1989,21 @@ flex: 8;
   }
 }
 
-@media screen
-  and (min-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) {
-    .otherepisodes{
-      padding-top: 5px !important;
-    }
-    #episodes .multi-episode-title{
-      padding-top: 7px !important;
-    }
-    #episodes .single-episode-title {
-      padding-top: 10px !important;
-      margin-bottom: -5px !important;
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* this will target only Mac Safari and Chrome browsers */
+  .episodes .title{
+    font-size: 100px;
   }
-
-  #feature .title{
-    padding-top: 30px !important;
   }
-
-
-  .single-episode-title{
-
-    padding-top: 15px !important;
-    margin-bottom: -15px !important;
-
-  }
-  #episodes .multi-episode-title{
-    padding-top: 5px !important;
-  }
-  #feature .single-episode-title{
-    font-size: 14px !important;
-    padding-top: 6px !important;
-  }
-  #feature .season-dropdown{
-    padding: 15px !important;
-    height: 40px !important;
-  }
-  .feature-head-wrapper{
-    margin-bottom: 0px !important;
-  }
-}
 
 @media screen
   and (min-device-width: 480px)
+  and (max-device-width: 3000px)
   and (-webkit-min-device-pixel-ratio: 0)
   and (min-resolution: 192dpi) {
+    .episodes .title{
+      font-size: 80px;
+    }
     .otherepisodes{
       padding-top: 5px !important;
     }
