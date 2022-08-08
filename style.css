@@ -2024,8 +2024,8 @@ flex: 8;
     padding-top: 7px;
   }
   #episodes .single-episode-title {
-    padding-top: 10px;
-    margin-bottom: -5px;
+    padding-top: 10px !important;
+    margin-bottom: -5px !important;
 }
 
 #feature .title{
@@ -2046,6 +2046,13 @@ flex: 8;
   font-size: 14px;
   padding-top: 6px;
 }
+#feature .season-dropdown{
+  padding: 15px;
+  height: 40px;
+}
+.feature-head-wrapper{
+  margin-bottom: 0px !important;
+}
 @media screen and (max-width: 480px) {
   #feature-overlay-image1,
   #feature-overlay-image2,
@@ -2062,32 +2069,8 @@ flex: 8;
     margin-bottom: 20px !important;
   }
   #feature .season-dropdown{
-    padding-top: 7px;
+    padding-top: 7px !important;
   }
 
-
-}
-@media screen and (min-width: 481px) {
-  #feature-overlay-image1,
-  #feature-overlay-image2,
-  #feature .episode-vedio-wrapper,
-  #episodes .episode-vedio-wrapper,
-  #episode-overlay-wrapper {
-    height: 172px;
-  }
-  #episodes #episode-overlay-wrapper,
-  #episodes .episode-vedio-wrapper {
-    height: 172px !important;
-  }
-  .feature-head-wrapper{
-    margin-bottom: 0px !important;
-  }
-  #feature .season-dropdown{
-    padding: 14px;
-  }
-
-
-}
-
-
+ }
 }
