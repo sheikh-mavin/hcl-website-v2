@@ -1253,6 +1253,9 @@ input[type="checkbox"] {
     width: 70px;
     height: 50px;
   }
+  .meta-talks {
+      height: 50px;
+  }
 
 }
 
