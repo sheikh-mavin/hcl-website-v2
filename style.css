@@ -248,13 +248,9 @@
 
 .quotes-section-heading {
   height: 45px;
-  margin-left: 80px;
   font-family: Gotham-Bold;
   font-size: 40px;
   font-weight: bold;
-
-  line-height: 1.07;
-
   color: #242833;
 }
 .flex-container-l {
@@ -297,8 +293,8 @@
   background-image: url("./assets/images/quotes/q-l.png");
   background-repeat: no-repeat;
   background-size: 150px 100px;
-  left: 8%;
-  top: 150px;
+  left: 0;
+  top: 22px;
   width: 150px;
   height: 100px;
   opacity: 1;
@@ -310,8 +306,8 @@
   background-image: url("./assets/images/quotes/q-r.png");
   background-repeat: no-repeat;
   background-size: 150px 100px;
-  right: 8%;
-  bottom: 80px;
+  right: 0;
+  bottom: 22px;
   width: 150px;
   height: 100px;
   opacity: 1;
@@ -321,6 +317,7 @@
 .quote-wrapper {
   /* border: 1px solid black; */
   padding: 0px 150px 0px 150px;
+  position: relative;
 }
 .quotation-card-wrap {
   border: 1px solid black;
@@ -368,7 +365,6 @@
 
 .owl-item.active.center {
   z-index: 1;
-
 }
 #customers-testimonials .owl-item.active.center .item {
   opacity: 1;
@@ -620,10 +616,12 @@ input[type="checkbox"] {
   height: 340px;
   text-align: center;
 }
-.feature-modal-vedio-wrapper{
+.feature-modal-vedio-wrapper {
   display: flex;
-    flex: 1;
-    width: 100%;gap: 20px;height: 340px;
+  flex: 1;
+  width: 100%;
+  gap: 20px;
+  height: 340px;
 }
 
 .overlay {
@@ -767,13 +765,16 @@ input[type="checkbox"] {
   color: #242833;
   padding: 100px 0px;
 }
-.episode-right-section{
-  overflow: scroll; height:535px; overflow-x: hidden;padding-left: 30px;
+.episode-right-section {
+  overflow: scroll;
+  height: 535px;
+  overflow-x: hidden;
+  padding-left: 30px;
 }
 .mobileShow {
   display: none;
 }
-.single-episode-wrapper{
+.single-episode-wrapper {
   padding-right: 10px;
 }
 .other-episodes {
@@ -1193,52 +1194,54 @@ input[type="checkbox"] {
   height: 15px;
   border-radius: 50px;
 }
-.single-video-overlay-wrapper{
+.single-video-overlay-wrapper {
   position: absolute;
-              top: 0;
-              /* max-height: 395px; */
-              width: 100%;
-              margin-right: 10px;
+  top: 0;
+  /* max-height: 395px; */
+  width: 100%;
+  margin-right: 10px;
 }
-.single-video-button-wrapper{
+.single-video-button-wrapper {
   position: absolute;
-               top: 0;
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               z-index: 5;
-               width: 100%;
-               height: 395px;cursor: pointer;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  width: 100%;
+  height: 395px;
+  cursor: pointer;
 }
 
-.single-video-button-wrapper{
+.single-video-button-wrapper {
   position: absolute;
-               z-index: 3;
-               width: 100%;
-
+  z-index: 3;
+  width: 100%;
 }
-.single-video-image-wrapper{
+.single-video-image-wrapper {
   padding-right: 10px;
 }
-.feature-head-wrapper{
-  display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;
+.feature-head-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
-#episodes .multi-card img{
+#episodes .multi-card img {
   height: 125px;
 }
 
-#episodes #episode-overlay-wrapper{
+#episodes #episode-overlay-wrapper {
   background-size: contain;
   display: flex;
-    justify-content: center;
-    align-items: center;
-height: 395px;
-    background-repeat: no-repeat;
-
+  justify-content: center;
+  align-items: center;
+  height: 395px;
+  background-repeat: no-repeat;
 }
 
-#episodes .episode-vedio-wrapper{
-  height :395px;
+#episodes .episode-vedio-wrapper {
+  height: 395px;
 }
 
 @media screen and (min-width: 992px) {
@@ -1287,7 +1290,6 @@ height: 395px;
     padding: 24px 16px 0px 16px;
   }
   .quotes-section-heading {
-    margin-left: 0px;
     font-size: 24px;
   }
   .contact {
@@ -1302,20 +1304,22 @@ height: 395px;
   }
   .q-l {
     background-size: 70px 50px;
-    left: 2px;
-    top: 55px;
+    left: -16px;
+    top: 32px;
     width: 70px;
     height: 50px;
   }
 
   .q-r {
     background-size: 70px 50px;
-    right: 2px;
-    bottom: 55px;
+    right: -16px;
+    bottom: 16px;
     width: 70px;
     height: 50px;
   }
-
+  .meta-talks {
+    height: 50px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1345,7 +1349,7 @@ height: 395px;
   }
 
   .sl-image {
-    height: 320px;
+    height: 280px;
   }
 
   .banner-1 {
@@ -1384,7 +1388,7 @@ height: 395px;
   }
 
   .sl-image {
-    height: 320px;
+    height: 300px;
   }
 
   .insp {
@@ -1415,6 +1419,9 @@ height: 395px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .quotes-section-heading {
+    margin-left: 58px;
+  }
   .banner-text {
     margin-right: 10px;
   }
@@ -1446,7 +1453,6 @@ height: 395px;
   .overview-image-2 {
     content: url("./assets/images/overview/overview-2-md.png");
   }
-
 }
 
 @media screen and (min-width: 991px) and (max-width: 1024px) {
@@ -1523,36 +1529,26 @@ height: 395px;
   }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1400px) {
-  .quote-wrapper {
-    /* border: 1px solid black; */
-    padding: 0px 0px 0px 0px;
-    width: 100%;
-  }
-  .quotes-section-heading {
-    margin-left: 90px;
-  }
-}
-
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
   .onlyForWeb {
     display: none !important;
   }
-  .onlyForMobile{
+  .onlyForMobile {
     display: block !important;
   }
 
-  #feature .image-holder-feature{
+  #feature .image-holder-feature {
     height: auto !important;
   }
-  #episodes .owl-carousel .owl-item img ,#feature .owl-carousel .owl-item img{
+  #episodes .owl-carousel .owl-item img,
+  #feature .owl-carousel .owl-item img {
     height: auto;
     width: 100%;
     margin: 0px;
     border-radius: 0px;
     max-width: unset;
   }
-  #feature .owl-carousel .owl-item .overlay .overlay-icons img{
+  #feature .owl-carousel .owl-item .overlay .overlay-icons img {
     height: 22px;
     width: 22px;
 
@@ -1565,28 +1561,28 @@ height: 395px;
   #feature .card:hover {
     transform: none;
   }
-  .overlay{
+  .overlay {
     height: inherit;
   }
-  #owl-feature.owl-carousel{
+  #owl-feature.owl-carousel {
     padding: 0px 20px;
   }
-  #owl-feature.owl-carousel .owl-dots{
+  #owl-feature.owl-carousel .owl-dots {
     margin-top: 0px;
   }
   /* #owl-feature.owl-carousel .active{
     padding: 0px 10px 0px 15px;
   } */
-  #feature{
+  #feature {
     padding: 30px 0px;
   }
-  #feature .title{
+  #feature .title {
     font-size: 24px;
     line-height: 25px;
-    padding-top:10px;
+    padding-top: 10px;
   }
 
-  #episodes{
+  #episodes {
     padding: 30px 0;
     background-image: none;
   }
@@ -1623,148 +1619,152 @@ height: 395px;
   .mobileShow {
     display: block;
   }
-  .modal{
+  .modal {
     padding-top: 0px !important;
     background-color: rgba(0, 0, 0, 0.9);
   }
-  #myModal .modal-content{
+  #myModal .modal-content {
     width: 90vw !important;
     padding: 0px;
     margin: 20px;
     background: transparent;
     top: 0;
   }
-  #episodes .card .card-body{
+  #episodes .card .card-body {
     padding: 15px 15px 25px 15px !important;
   }
-  #episodes #owl-episodes .card .card-body{
+  #episodes #owl-episodes .card .card-body {
     padding: 15px !important;
   }
-  .episode-right-section{
-    overflow: scroll; height:auto; overflow-x: hidden;padding-left: 30px;
+  .episode-right-section {
+    overflow: scroll;
+    height: auto;
+    overflow-x: hidden;
+    padding-left: 30px;
   }
   .multi-card {
     margin-bottom: 0px;
   }
-.single-audiopdf-wrapper{
-  flex-direction: row;
+  .single-audiopdf-wrapper {
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-.single-episode-audio{
-  flex: 12;
-}
-.single-episode-wrapper{
-  padding-right: 0px;
-}
-.single-video-image-wrapper{
-  padding-right: 0px !important;
-  margin-bottom: 10px;
-  height: 195px;
-}
-.single-video-image-wrapper img{
-  height: inherit;
-  width:100%;
-}
-.single-video-button-wrapper{
-height: 195px;
-}
-.single-video-button-wrapper img{
-  width: 49px;
-}
-.closemodalFeature {
-  position: relative;
-  top: 10px;
-  right: 0;
-}
-#feature .single-video-overlay-wrapper{
-  position: unset;
-}
-#feature-overlay-image1{
-  background-size: contain;
-  display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-repeat: no-repeat;
-}
-#feature-overlay-image2{
-
-                      background-size: contain;    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-}
-#feature .speaker-type{
-  font-size: "Gotham-Medium";
-  font-size: 10px;
-  line-height: 11px;
-}
-#feature .speaker-name{
-  font-family: "Gotham-Bold";
-  font-size: 14px;
-  line-height: 15px;
-}
-#feature .speaker-role{
-  font-family: "Gotham";
-  font-size: 10px;
-  line-height: 11px;
-}
-.overlay .overlay-description{
-  font-size: 12px;
-}
-#feature .season-dropdown {
-  font-family: "Gotham-Bold";
-  font-size: 14px;
-}
-
-.feature-head-wrapper{
-
-  margin-bottom: 25px;
-  padding: 0px 10px;
-
-}
-
-#episodes .single-episode-details{
-  font-size: 12px;
-  line-height: 13px;
-}
-#episodes .single-episode-title{
-  font-size: 14px;
-  line-height: 15px;
-  padding-top: 5px;
-}
-#episodes .multi-episode-details{
-  font-size: 10px;
-  line-height: 11px;
-}
-#episodes .multi-episode-title{
-  font-size: 12px;
-  line-height: 13px;
-}
-.episode-right-section{
-  overflow-y: hidden;
-}
-#episodes #episode-overlay-wrapper img{
-  width: 42px !important;
-  height: 42px !important;
-}
-
-}
-@media screen and (max-width: 480px){
-  #feature-overlay-image1,#feature-overlay-image2,#feature .episode-vedio-wrapper,
-  #episodes .episode-vedio-wrapper,#episode-overlay-wrapper{
+  }
+  .single-episode-audio {
+    flex: 12;
+  }
+  .single-episode-wrapper {
+    padding-right: 0px;
+  }
+  .single-video-image-wrapper {
+    padding-right: 0px !important;
+    margin-bottom: 10px;
     height: 195px;
   }
-  #episodes #episode-overlay-wrapper,#episodes .episode-vedio-wrapper{
+  .single-video-image-wrapper img {
+    height: inherit;
+    width: 100%;
+  }
+  .single-video-button-wrapper {
+    height: 195px;
+  }
+  .single-video-button-wrapper img {
+    width: 49px;
+  }
+  .closemodalFeature {
+    position: relative;
+    top: 10px;
+    right: 0;
+  }
+  #feature .single-video-overlay-wrapper {
+    position: unset;
+  }
+  #feature-overlay-image1 {
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-repeat: no-repeat;
+  }
+  #feature-overlay-image2 {
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+  }
+  #feature .speaker-type {
+    font-size: "Gotham-Medium";
+    font-size: 10px;
+    line-height: 11px;
+  }
+  #feature .speaker-name {
+    font-family: "Gotham-Bold";
+    font-size: 14px;
+    line-height: 15px;
+  }
+  #feature .speaker-role {
+    font-family: "Gotham";
+    font-size: 10px;
+    line-height: 11px;
+  }
+  .overlay .overlay-description {
+    font-size: 12px;
+  }
+  #feature .season-dropdown {
+    font-family: "Gotham-Bold";
+    font-size: 14px;
+  }
+
+  .feature-head-wrapper {
+    margin-bottom: 25px;
+    padding: 0px 10px;
+  }
+
+  #episodes .single-episode-details {
+    font-size: 12px;
+    line-height: 13px;
+  }
+  #episodes .single-episode-title {
+    font-size: 14px;
+    line-height: 15px;
+    padding-top: 5px;
+  }
+  #episodes .multi-episode-details {
+    font-size: 10px;
+    line-height: 11px;
+  }
+  #episodes .multi-episode-title {
+    font-size: 12px;
+    line-height: 13px;
+  }
+  .episode-right-section {
+    overflow-y: hidden;
+  }
+  #episodes #episode-overlay-wrapper img {
+    width: 42px !important;
+    height: 42px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  #feature-overlay-image1,
+  #feature-overlay-image2,
+  #feature .episode-vedio-wrapper,
+  #episodes .episode-vedio-wrapper,
+  #episode-overlay-wrapper {
+    height: 195px;
+  }
+  #episodes #episode-overlay-wrapper,
+  #episodes .episode-vedio-wrapper {
     height: 195px !important;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 992px){
-.episode-right-section{
-  height: auto;
-  overflow-y: hidden;
+@media screen and (min-width: 481px) and (max-width: 992px) {
+  .episode-right-section {
+    height: auto;
+    overflow-y: hidden;
   }
   #owl-episodes .owl-carousel .owl-item img {
     /* height: 100%; */
@@ -1773,54 +1773,56 @@ height: 195px;
     max-width: unset !important;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1023px){
-  #owl-episodes .owl-carousel .owl-item img{
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+  #owl-episodes .owl-carousel .owl-item img {
     /* height: 100%; */
     border-radius: unset !important;
     margin: 0;
     max-width: unset !important;
   }
-  .episode-right-section{
-  height: 435px;
-    }
+  .episode-right-section {
+    height: 435px;
   }
+}
 
-@media screen and (min-width: 481px) and (max-width: 1023px){
-  .single-video-image-wrapper,.single-video-button-wrapper,#episodes .episode-vedio-wrapper, #feature-overlay-image1,#feature-overlay-image2,#feature .episode-vedio-wrapper
-  ,#episodes .episode-vedio-wrapper{
-
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .single-video-image-wrapper,
+  .single-video-button-wrapper,
+  #episodes .episode-vedio-wrapper,
+  #feature-overlay-image1,
+  #feature-overlay-image2,
+  #feature .episode-vedio-wrapper,
+  #episodes .episode-vedio-wrapper {
     height: 295px;
   }
-  #episodes #episode-overlay-wrapper,#episodes .episode-vedio-wrapper{
+  #episodes #episode-overlay-wrapper,
+  #episodes .episode-vedio-wrapper {
     height: 295px !important;
   }
-  #episodes #episode-overlay-wrapper img{
+  #episodes #episode-overlay-wrapper img {
     width: 42px !important;
     height: 42px !important;
   }
 
-
-  #myModal .modal-content{
+  #myModal .modal-content {
     width: 95vw !important;
     padding: unset;
   }
-
 }
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
-  .multi-episode-title{
+  .multi-episode-title {
     font-size: 14px;
   }
-  .multi-episode-details{
+  .multi-episode-details {
     font-size: 12px;
   }
   #episodes .multi-card img {
     height: 95px;
+  }
+  .multi-card {
+    margin-bottom: 10px;
+  }
 }
-.multi-card{
-  margin-bottom: 10px;
-}
-}
-
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   #episodes .multi-card {
@@ -1828,10 +1830,10 @@ height: 195px;
   }
   #episodes .multi-card img {
     height: 115px;
-}
-.multi-episode-title{
-  font-size: 18px;
-}
+  }
+  .multi-episode-title {
+    font-size: 18px;
+  }
 }
 
 /* @media screen and (min-width: 991px) and (max-width: 992px) {
@@ -1843,16 +1845,14 @@ height: 195px;
   }
 } */
 
-@media screen and (min-width: 992px){
-  .onlyForWeb{
+@media screen and (min-width: 992px) {
+  .onlyForWeb {
     display: block;
   }
-  .onlyForMobile{
+  .onlyForMobile {
     display: none;
   }
 }
-
-
 
 @media only screen and (min-width: 991px) {
   .quote-wrapper {
