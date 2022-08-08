@@ -2007,6 +2007,13 @@ flex: 8;
     }
 }
 
+.otherepisodes{
+  font-family: 'Gotham-Bold';
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */
 
@@ -2020,9 +2027,7 @@ flex: 8;
     padding-top: 10px;
     margin-bottom: -5px;
 }
-#feature .season-dropdown{
-  padding-top: 10px;
-}
+
 #feature .title{
   padding-top: 30px;
 }
@@ -2038,6 +2043,12 @@ flex: 8;
   #episodes #episode-overlay-wrapper,
   #episodes .episode-vedio-wrapper {
     height: 172px !important;
+  }
+  .feature-head-wrapper{
+    margin-bottom: 30px;
+  }
+  #feature .season-dropdown{
+    padding-top: 7px;
   }
 
 
