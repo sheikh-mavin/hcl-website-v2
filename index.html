@@ -482,7 +482,7 @@
                   </a>
                   <a
                     href="#"
-                    onclick="showDialog('https://www.youtube.com/embed/SMM60nxM_zA?version=3&enablejsapi=1','https://www.youtube.com/embed/4K_WGSuuWcw?version=3&enablejsapi=1','MEGA TALKS with Gary Cantrell','#InspireTomorrow I Episode 1 I Part 1','./assets/images/episode/bitmap_test.png','MEGA TALKS with Gary Cantrell','#InspireTomorrow I Episode 1 I Part 2','./assets/images/episode/bitmap_test.png');"
+                    onclick="showDialog('https://www.youtube.com/embed/SMM60nxM_zA?version=3&enablejsapi=1','https://www.youtube.com/embed/4K_WGSuuWcw?version=3&enablejsapi=1','MEGA TALKS with Gary Cantrell','#InspireTomorrow I Episode 1 I Part 1','./assets/images/episode/SMM60nxM_zA-HD.jpg','MEGA TALKS with Gary Cantrell','#InspireTomorrow I Episode 1 I Part 2','./assets/images/episode/1.2.jpg');"
                   >
                     <img src="./assets/images/feature/play-button.png"
                   /></a>
@@ -819,7 +819,7 @@
                   <div
                     id="episode-overlay-wrapper"
                     style="
-                      background-image: url(./assets/images/episode/bitmap_test.png);
+                      background-image: url(./assets/images/episode/screenshot-2022-07-28-at-10-30-36-am.png);
                     "
                   >
                     <img
@@ -909,7 +909,7 @@
                       </div>
                     </div>
                     <div class="single-episode-pdf">
-                      <div class="ShowonTabNAboveTrue">
+                      <div class="onlyForWeb">
                         <img
                           src="./assets/images/episode/logotype.png"
                           alt="pdf-icon"
@@ -921,7 +921,7 @@
                           >Download PDF</a
                         >
                       </div>
-                      <div class="ShowonTabNAboveFalse">
+                      <div class="onlyForMobile">
                         <a
                           href="./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part1.pdf"
                           download
@@ -947,7 +947,7 @@
                     >./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part1.pdf</span
                   >
                   <span class="image-link" style="display: none"
-                    >./assets/images/episode/bitmap_test.png</span
+                    >./assets/images/episode/SMM60nxM_zA-HD.jpg</span
                   >
                   <div class="row g-0">
                     <div class="col-md-5">
@@ -979,7 +979,7 @@
                     >./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part2.pdf</span
                   >
                   <span class="image-link" style="display: none"
-                    >./assets/images/episode/bitmap_test.png</span
+                    >./assets/images/episode/1.2.jpg</span
                   >
                   <div class="row g-0">
                     <div class="col-md-5">
@@ -1006,7 +1006,7 @@
                   <span class="audio-link" style="display: none">#</span>
                   <span class="pdf-link" style="display: none">#</span>
                   <span class="image-link" style="display: none"
-                    >./assets/images/episode/bitmap_test.png</span
+                    >./assets/images/episode/SMM60nxM_zA-HD.jpg</span
                   >
                   <div class="row g-0">
                     <div class="col-md-5">
@@ -1061,7 +1061,7 @@
                   <span class="audio-link" style="display: none">#</span>
                   <span class="pdf-link" style="display: none">#</span>
                   <span class="image-link" style="display: none"
-                    >./assets/images/episode/bitmap_test.png</span
+                    >./assets/images/episode/SMM60nxM_zA-HD.jpg</span
                   >
 
                   <div class="row g-0">
@@ -1089,7 +1089,7 @@
                   <span class="audio-link" style="display: none">#</span>
                   <span class="pdf-link" style="display: none">#</span>
                   <span class="image-link" style="display: none"
-                    >./assets/images/episode/bitmap_test.png</span
+                    >./assets/images/episode/SMM60nxM_zA-HD.jpg</span
                   >
                   <div class="row g-0">
                     <div class="col-md-5">
@@ -1117,7 +1117,7 @@
                 <div
                   style="
                     font-family: 'Gotham-Bold';
-                    padding-bottom: 10px;
+                    padding-bottom: 15px;
                     font-size: 14px;
                     font-weight: bold;
                   "
@@ -1126,7 +1126,7 @@
                 </div>
                 <div id="owl-episodes" class="owl-carousel owl-theme">
                   <div class="item">
-                    <div class="card p-0 multi-card active" >
+                    <div class="card p-0 multi-card active" style="">
                       <span class="episode-link" style="display: none"
                         >https://www.youtube.com/embed/SMM60nxM_zA</span
                       >
@@ -1137,7 +1137,7 @@
                         >./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part1.pdf</span
                       >
                       <span class="image-link" style="display: none"
-                        >./assets/images/episode/bitmap_test.png</span
+                        >./assets/images/episode/SMM60nxM_zA-HD.jpg</span
                       >
 
                       <div class="row g-0">
@@ -1173,7 +1173,7 @@
                         >./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part2.pdf</span
                       >
                       <span class="image-link" style="display: none"
-                        >./assets/images/episode/bitmap_test.png</span
+                        >./assets/images/episode/1.2.jpg</span
                       >
                       <div class="row g-0">
                         <div class="col-md-5">
@@ -1600,11 +1600,11 @@
           "#episodes .episode-vedio-wrapper iframe"
         );
 
-        var newString = srcValue.getAttribute("src") + "?rel=0&enablejsapi=1&autoplay=1";
+        var newString = srcValue.getAttribute("src") + "?autoplay=1";
 
         srcValue.setAttribute(
           "src",
-          srcValue.getAttribute("src") + "?rel=0&enablejsapi=1&autoplay=1"
+          srcValue.getAttribute("src") + "?autoplay=1"
         );
 
         console.log(

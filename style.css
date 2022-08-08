@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Gotham-Bold";
-  src: url("./assets/fonts/Gotham-Bold.otf");
+  src: url("./assets/fonts/GothamBold.ttf");
 }
 
 @font-face {
@@ -1231,7 +1231,7 @@ input[type="checkbox"] {
 }
 
 #episodes #episode-overlay-wrapper {
-  background-size: cover;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1241,13 +1241,6 @@ input[type="checkbox"] {
 
 #episodes .episode-vedio-wrapper {
   height: 395px;
-}
-
-.ShowonTabNAboveTrue{
-  display: block;
-}
-.ShowonTabNAboveFalse{
-  display: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -1585,12 +1578,12 @@ input[type="checkbox"] {
   }
   #feature .title {
     font-size: 24px;
-    line-height: 21px;
+    line-height: 25px;
     padding-top: 10px;
   }
 
   #episodes {
-    padding: 50px 0 30px 0;
+    padding: 30px 0;
     background-image: none;
   }
   .episode-vedio-wrapper {
@@ -1600,10 +1593,10 @@ input[type="checkbox"] {
     padding: 0px;
   }
   #episodes .title {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     padding-left: 15px;
     font-size: 24px;
-    line-height: 21px;
+    line-height: 25px;
   }
   #episodes > .card .card-body {
     padding: 10px 15px 15px 15px;
@@ -1687,7 +1680,7 @@ input[type="checkbox"] {
     position: unset;
   }
   #feature-overlay-image1 {
-    background-size: cover;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1695,7 +1688,7 @@ input[type="checkbox"] {
     background-repeat: no-repeat;
   }
   #feature-overlay-image2 {
-    background-size: cover;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1714,7 +1707,7 @@ input[type="checkbox"] {
   #feature .speaker-role {
     font-family: "Gotham";
     font-size: 10px;
-    line-height: 13px;
+    line-height: 11px;
   }
   .overlay .overlay-description {
     font-size: 12px;
@@ -1725,7 +1718,7 @@ input[type="checkbox"] {
   }
 
   .feature-head-wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding: 0px 10px;
   }
 
@@ -1753,7 +1746,6 @@ input[type="checkbox"] {
     width: 42px !important;
     height: 42px !important;
   }
-
 }
 @media screen and (max-width: 480px) {
   #feature-overlay-image1,
@@ -1761,42 +1753,15 @@ input[type="checkbox"] {
   #feature .episode-vedio-wrapper,
   #episodes .episode-vedio-wrapper,
   #episode-overlay-wrapper {
-    height: 172px;
+    height: 195px;
   }
   #episodes #episode-overlay-wrapper,
   #episodes .episode-vedio-wrapper {
-    height: 172px !important;
-  }
-  #feature .guest-speaker,#feature .host-speaker{
-    min-height: 94px;
-  }
-
-}
-
-@media screen and (max-width: 480px)  {
-  .ShowonTabNAboveTrue{
-    display: none;
-  }
-  .ShowonTabNAboveFalse{
-    display: block;
-  }
-}
-
-
-
-@media screen and (min-width: 481px) and (max-width: 991px){
-  #feature .guest-speaker,#feature .host-speaker{
-    min-height: 98px;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1000px){
-  #feature .guest-speaker,#feature .host-speaker{
-    min-height: 142px;
+    height: 195px !important;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 992px) {
-
   .episode-right-section {
     height: auto;
     overflow-y: hidden;
@@ -1807,8 +1772,6 @@ input[type="checkbox"] {
     margin: 0;
     max-width: unset !important;
   }
-
-
 }
 @media screen and (min-width: 992px) and (max-width: 1023px) {
   #owl-episodes .owl-carousel .owl-item img {
@@ -1974,22 +1937,4 @@ input[type="checkbox"] {
   .overview > .overview-wrapper {
     max-width: 540px;
   }
-}
-
-@media screen
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) {
-    #episodes .single-episode-title{
-      padding-top: 15px;
-    }
-}
-
-@media screen
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) {
-    #episodes .single-episode-title{
-      padding-top: 15px;
-    }
 }
