@@ -380,7 +380,7 @@ img {
   background-color: white;
   box-shadow: 0 2px 24px 0 rgba(204, 204, 204, 0.5);
 }
-.owl-carousel .owl-item img {
+#customers-testimonials.owl-carousel .owl-item img {
   transform-style: preserve-3d;
   max-width: 75px;
   margin: 0 auto 12px;
@@ -809,6 +809,7 @@ input[type="checkbox"] {
   border: 0px !important;
   cursor: pointer;
   margin-bottom: 20px;
+  height: auto;
 }
 #episodes .multi-card.active {
   opacity: 1;
@@ -1175,9 +1176,11 @@ input[type="checkbox"] {
   display: inline-block;
 }
 #owl-feature.owl-carousel .owl-dots .owl-dot span {
-  height: 15px;
-  width: 15px;
-  margin: 0 8px 0px 9px;
+  height: 12px;
+  width: 12px;
+
+  margin: 0 7px 0px 0px;
+
   border: solid 2px #979797;
   background-color: transparent;
   border-radius: 50%;
@@ -1194,7 +1197,7 @@ input[type="checkbox"] {
 .single-video-overlay-wrapper{
   position: absolute;
               top: 0;
-              max-height: 395px;
+              /* max-height: 395px; */
               width: 100%;
               margin-right: 10px;
 }
@@ -1214,6 +1217,29 @@ input[type="checkbox"] {
                z-index: 3;
                width: 100%;
 
+}
+.single-video-image-wrapper{
+  padding-right: 10px;
+}
+.feature-head-wrapper{
+  display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;
+}
+#episodes .multi-card img{
+  height: 125px;
+}
+
+#episodes #episode-overlay-wrapper{
+  background-size: contain;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+height: 395px;
+    background-repeat: no-repeat;
+
+}
+
+#episodes .episode-vedio-wrapper{
+  height :395px;
 }
 
 /* On smaller screens, decrease text size */
@@ -1509,16 +1535,13 @@ input[type="checkbox"] {
     margin-left: 90px;
   }
 }
-/*Feature and Episode Responsive*/
 
-
-/* Media Query for Mobile Devices */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 991px){
   .onlyForWeb {
     display: none !important;
   }
   .onlyForMobile{
-    display: block;
+    display: block !important;
   }
 
   #feature .image-holder-feature{
@@ -1532,8 +1555,9 @@ input[type="checkbox"] {
     max-width: unset;
   }
   #feature .owl-carousel .owl-item .overlay .overlay-icons img{
-    height: auto;
-    width: auto;
+    height: 22px;
+    width: 22px;
+
     margin: unset !important;
     border-radius: 0px;
     max-width: unset;
@@ -1546,19 +1570,26 @@ input[type="checkbox"] {
   .overlay{
     height: inherit;
   }
-
-  #owl-feature.owl-carousel .owl-dots{
-    margin-top: 10px;
+  #owl-feature.owl-carousel{
+    padding: 0px 20px;
   }
+  #owl-feature.owl-carousel .owl-dots{
+    margin-top: 0px;
+  }
+  /* #owl-feature.owl-carousel .active{
+    padding: 0px 10px 0px 15px;
+  } */
   #feature{
-    padding: 45px 0px;
+    padding: 30px 0px;
   }
   #feature .title{
-    font-size: 35px;
+    font-size: 24px;
+    line-height: 25px;
+    padding-top:10px;
   }
 
   #episodes{
-    padding: 45px 0;
+    padding: 30px 0;
     background-image: none;
   }
   .episode-vedio-wrapper {
@@ -1570,7 +1601,8 @@ input[type="checkbox"] {
   #episodes .title {
     padding-bottom: 25px;
     padding-left: 15px;
-    font-size: 35px;
+    font-size: 24px;
+    line-height: 25px;
   }
   #episodes > .card .card-body {
     padding: 10px 15px 15px 15px;
@@ -1595,16 +1627,17 @@ input[type="checkbox"] {
   }
   .modal{
     padding-top: 0px !important;
+    background-color: rgba(0, 0, 0, 0.9);
   }
   #myModal .modal-content{
     width: 90vw !important;
     padding: 0px;
-    height: 100%;
-    top: 0vh;
-    background: black !important;
+    margin: 20px;
+    background: transparent;
+    top: 0;
   }
   #episodes .card .card-body{
-    padding: 15px 15px 35px 15px !important;
+    padding: 15px 15px 25px 15px !important;
   }
   #episodes #owl-episodes .card .card-body{
     padding: 15px !important;
@@ -1626,9 +1659,193 @@ input[type="checkbox"] {
 .single-episode-wrapper{
   padding-right: 0px;
 }
+.single-video-image-wrapper{
+  padding-right: 0px !important;
+  margin-bottom: 10px;
+  height: 195px;
+}
+.single-video-image-wrapper img{
+  height: inherit;
+  width:100%;
+}
+.single-video-button-wrapper{
+height: 195px;
+}
+.single-video-button-wrapper img{
+  width: 49px;
+}
+.closemodalFeature {
+  position: relative;
+  top: 10px;
+  right: 0;
+}
+#feature .single-video-overlay-wrapper{
+  position: unset;
+}
+#feature-overlay-image1{
+  background-size: contain;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-repeat: no-repeat;
+}
+#feature-overlay-image2{
+
+                      background-size: contain;    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+#feature .speaker-type{
+  font-size: "Gotham-Medium";
+  font-size: 10px;
+  line-height: 11px;
+}
+#feature .speaker-name{
+  font-family: "Gotham-Bold";
+  font-size: 14px;
+  line-height: 15px;
+}
+#feature .speaker-role{
+  font-family: "Gotham";
+  font-size: 10px;
+  line-height: 11px;
+}
+.overlay .overlay-description{
+  font-size: 12px;
+}
+#feature .season-dropdown {
+  font-family: "Gotham-Bold";
+  font-size: 14px;
 }
 
-@media screen and (min-width: 1024px){
+.feature-head-wrapper{
+
+  margin-bottom: 25px;
+  padding: 0px 10px;
+
+}
+
+#episodes .single-episode-details{
+  font-size: 12px;
+  line-height: 13px;
+}
+#episodes .single-episode-title{
+  font-size: 14px;
+  line-height: 15px;
+  padding-top: 5px;
+}
+#episodes .multi-episode-details{
+  font-size: 10px;
+  line-height: 11px;
+}
+#episodes .multi-episode-title{
+  font-size: 12px;
+  line-height: 13px;
+}
+.episode-right-section{
+  overflow-y: hidden;
+}
+#episodes #episode-overlay-wrapper img{
+  width: 42px !important;
+  height: 42px !important;
+}
+
+}
+@media screen and (max-width: 480px){
+  #feature-overlay-image1,#feature-overlay-image2,#feature .episode-vedio-wrapper,
+  #episodes .episode-vedio-wrapper,#episode-overlay-wrapper{
+    height: 195px;
+  }
+  #episodes #episode-overlay-wrapper,#episodes .episode-vedio-wrapper{
+    height: 195px !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 992px){
+.episode-right-section{
+  height: auto;
+  overflow-y: hidden;
+  }
+  #owl-episodes .owl-carousel .owl-item img {
+    /* height: 100%; */
+    border-radius: unset !important;
+    margin: 0;
+    max-width: unset !important;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1023px){
+  #owl-episodes .owl-carousel .owl-item img{
+    /* height: 100%; */
+    border-radius: unset !important;
+    margin: 0;
+    max-width: unset !important;
+  }
+  .episode-right-section{
+  height: 435px;
+    }
+  }
+
+@media screen and (min-width: 481px) and (max-width: 1023px){
+  .single-video-image-wrapper,.single-video-button-wrapper,#episodes .episode-vedio-wrapper, #feature-overlay-image1,#feature-overlay-image2,#feature .episode-vedio-wrapper
+  ,#episodes .episode-vedio-wrapper{
+
+    height: 295px;
+  }
+  #episodes #episode-overlay-wrapper,#episodes .episode-vedio-wrapper{
+    height: 295px !important;
+  }
+  #episodes #episode-overlay-wrapper img{
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+
+  #myModal .modal-content{
+    width: 95vw !important;
+    padding: unset;
+  }
+
+}
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+  .multi-episode-title{
+    font-size: 14px;
+  }
+  .multi-episode-details{
+    font-size: 12px;
+  }
+  #episodes .multi-card img {
+    height: 95px;
+}
+.multi-card{
+  margin-bottom: 10px;
+}
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  #episodes .multi-card {
+    margin-bottom: 20px;
+  }
+  #episodes .multi-card img {
+    height: 115px;
+}
+.multi-episode-title{
+  font-size: 18px;
+}
+}
+
+/* @media screen and (min-width: 991px) and (max-width: 992px) {
+  .onlyForWeb{
+    display: block;
+  }
+  .onlyForMobile{
+    display: none;
+  }
+} */
+
+@media screen and (min-width: 992px){
   .onlyForWeb{
     display: block;
   }
@@ -1636,6 +1853,8 @@ input[type="checkbox"] {
     display: none;
   }
 }
+
+
 
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
   .quote-wrapper {
@@ -1687,7 +1906,7 @@ input[type="checkbox"] {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
 }
 
 /* Modal Content */
