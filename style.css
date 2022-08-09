@@ -88,7 +88,7 @@
 
 /* Slideshow container */
 .sl-image {
-  height: 780px;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -1537,12 +1537,12 @@ input[type="checkbox"] {
   }
 
   .sl-image {
-    height: 650px;
+    height: 600px;
   }
 
   .insp {
-    font-size: 77px;
-    line-height: 90px;
+    font-size: 70px;
+    line-height: 80px;
   }
 
   .colb {
