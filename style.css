@@ -1369,12 +1369,12 @@ input[type="checkbox"] {
 
   .colb {
     margin-top: 10px;
-    font-size: 12px;
+    font-size:10.5px;
     line-height: 16px;
   }
   .hash {
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 10.5px;
   }
 
   .overview {
@@ -1476,6 +1476,13 @@ input[type="checkbox"] {
   .hash {
     margin-top: 20px;
     font-size: 22px;
+  }
+  
+}
+
+@media screen and (min-width: 991px) and (max-width: 1150px) {
+  .overview-text{
+    font-size: 13px;
   }
 }
 
