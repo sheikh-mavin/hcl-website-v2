@@ -1937,11 +1937,11 @@
       }
 
       function nextSlide() {
-        var $cur = $(".slide.active");
+        var $cur = $(".ovr-slide.active");
 
         var $next = $cur.next().length
           ? $cur.next()
-          : $(".slide-group .slide:first-child");
+          : $(".slide-group .ovr-slide:first-child");
         $cur.removeClass("active");
         $next.addClass("active");
       }
