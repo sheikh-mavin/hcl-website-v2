@@ -22,6 +22,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
+      integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav
@@ -51,20 +58,34 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar-meta-collapse">
           <div class="navbar-nav ms-auto">
-            <a href="#home" class="nav-item nav-link fs-6"
+            <a
+              href="#section1"
+              data-menuanchor="section1"
+              class="nav-item nav-link fs-6"
               >Home</a
             >
-            <a href="#overview" class="nav-item nav-link"
+            <a
+              href="#section2"
+              data-menuanchor="section2"
+              class="nav-item nav-link"
               >Overview</a
             >
-            <a href="#feature" class="nav-item nav-link"
+            <a
+              href="#section3"
+              data-menuanchor="section3"
+              class="nav-item nav-link"
               >Features</a
             >
-
-            <a href="#episodes" class="nav-item nav-link"
+            <a
+              href="#section4"
+              data-menuanchor="section4"
+              class="nav-item nav-link"
               >Episodes</a
             >
-            <a href="#quotes" class="nav-item nav-link"
+            <a
+              href="#section5"
+              data-menuanchor="section5"
+              class="nav-item nav-link"
               >Quotes</a
             >
           </div>
@@ -72,1056 +93,858 @@
       </div>
     </nav>
 
-    <div id="home" class="owl-carousel owl-theme">
-      <div class="item">
-        <img style="width: 100%" alt="" src="#" class="sl-image banner-1" />
+    <div id="fullpage">
+      <div class="section fp-auto-height">
+        <div id="banner" class="owl-carousel owl-theme">
+          <div class="item">
+            <img style="width: 100%" alt="" src="#" class="sl-image banner-1" />
 
-        <div class="banner-text">
-          <p class="insp">
-            <span class="inspire">Inspired</span> to overcome <br />
-            and achieve the<br />
-            impossible
-          </p>
-          <p class="colb">
-            A look into how collaboration leads<br />to a better tomorrow
-          </p>
+            <div class="banner-text">
+              <p class="insp">
+                <span class="inspire">Inspired</span> to overcome <br />
+                and achieve the<br />
+                impossible
+              </p>
+              <p class="colb">
+                A look into how collaboration leads<br />to a better tomorrow
+              </p>
 
-          <p class="hash">#InspireTomorrow</p>
-        </div>
-      </div>
-      <div class="item">
-        <img style="width: 100%" alt="" src="#" class="sl-image banner-2" />
+              <p class="hash">#InspireTomorrow</p>
+            </div>
+          </div>
+          <div class="item">
+            <img style="width: 100%" alt="" src="#" class="sl-image banner-2" />
 
-        <div class="banner-text">
-          <p class="insp">
-            <span class="inspire">Inspired</span> to overcome <br />
-            and achieve the<br />
-            impossible
-          </p>
-          <p class="colb">
-            A look into how collaboration leads<br />to a better tomorrow
-          </p>
+            <div class="banner-text">
+              <p class="insp">
+                <span class="inspire">Inspired</span> to overcome <br />
+                and achieve the<br />
+                impossible
+              </p>
+              <p class="colb">
+                A look into how collaboration leads<br />to a better tomorrow
+              </p>
 
-          <p class="hash">#InspireTomorrow</p>
-        </div>
-      </div>
-      <div class="item">
-        <img style="width: 100%" alt="" src="#" class="sl-image banner-3" />
+              <p class="hash">#InspireTomorrow</p>
+            </div>
+          </div>
+          <div class="item">
+            <img style="width: 100%" alt="" src="#" class="sl-image banner-3" />
 
-        <div class="banner-text">
-          <p class="insp">
-            <span class="inspire">Inspired</span> to overcome <br />
-            and achieve the<br />
-            impossible
-          </p>
-          <p class="colb">
-            A look into how collaboration leads<br />to a better tomorrow
-          </p>
-          <p class="hash">#InspireTomorrow</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Banner -->
-    <!-- <div id="home" class="corosoul">
-      <div class="sl-container">
-        <div class="sl sl-fade" data-ref="ban-1">
-          <img style="width: 100%" alt="" src="#" class="sl-image banner-1" />
-        </div>
-
-        <div class="sl sl-fade" data-ref="ban-2">
-          <img style="width: 100%" alt="" src="#" class="sl-image banner-2" />
-        </div>
-        <div class="sl sl-fade" data-ref="ban-3">
-          <img style="width: 100%" alt="" src="#" class="sl-image banner-3" />
-        </div>
-        <div class="banner-text">
-          <p class="insp">
-            <span class="inspire">Inspired</span> to overcome <br />
-            and achieve the<br />
-            impossible
-          </p>
-          <p class="colb">
-            A look into how collaboration <br />
-            leads to a better tomorrow
-          </p>
-
-          <p class="hash">#InspireTomorrow</p>
-          <div class="scroller">
-            <span class="dot" id="ban-1"></span>
-            <span class="dot" id="ban-2"></span>
-            <span class="dot" id="ban-3"></span>
+            <div class="banner-text">
+              <p class="insp">
+                <span class="inspire">Inspired</span> to overcome <br />
+                and achieve the<br />
+                impossible
+              </p>
+              <p class="colb">
+                A look into how collaboration leads<br />to a better tomorrow
+              </p>
+              <p class="hash">#InspireTomorrow</p>
+            </div>
           </div>
         </div>
       </div>
-    </div> -->
 
-    <!-- Overview -->
-    <div id="overview" class="overview">
-      <div class="overview-wrapper">
-        <div class="row">
-          <div class="col-md-12 col-lg-5">
-            <div class="slider" style="position: relative" id="mySlider">
-              <div class="slide-group">
-                <div class="slide active">
+      <!-- Overview -->
+      <div class="section fp-auto-height">
+        <div id="overview" class="overview">
+          <div class="overview-wrapper">
+            <div class="row">
+              <div class="col-md-12 col-lg-5">
+                <div
+                  class="ovr-slider"
+                  style="position: relative"
+                  id="mySlider"
+                >
+                  <div class="slide-group">
+                    <div class="ovr-slide active">
+                      <img
+                        class="overview-image overview-image-1"
+                        src="./assets/images/overview/overview-1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ovr-slide" overview-image-1>
+                      <img
+                        class="overview-image overview-image-2"
+                        src="#"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-7">
+                <div class="overview-text-wrapper">
+                  <p class="overview-heading">
+                    <span>
+                      The <span class="mega">MEGA</span>
+                      <span class="talks">Talks</span>
+                    </span>
+                  </p>
+                  <p class="overview-text">
+                    An experience-based insights among several senior technology
+                    executives on essential topics. At HCL, we believe sharing
+                    experiences and knowledge is the key to building a better
+                    world today, which can thrive and sustain tomorrow. The
+                    discussion will focus on topics relevant to the industry and
+                    technology landscape. Insights will be shared to tackle
+                    current challenges, assess the pros & cons of different
+                    strategies, and gain actionable advice – all while raising
+                    your thought leadership profile. MEGA Talks in collaboration
+                    with HCL, looks forward to sharing the experiences to
+                    inspire the world that no matter how hard yesterday hit us
+                    or how rough today is, the zest to build better tomorrow
+                    always prevails. Together, we will have an
+                    <span class="inspireTomhash">#InspireTomorrow</span>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section fp-auto-height">
+        <section id="feature">
+          <div class="container">
+            <div class="feature-head-wrapper">
+              <div><h2 class="title">Features</h2></div>
+              <div class="onlyForMobile">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle season-dropdown"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Season 1
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                    style="display: none"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <div class="onlyForWeb">
                   <img
-                    class="overview-image overview-image-1"
-                    src="./assets/images/overview/overview-1.png"
-                    alt=""
+                    class="closemodalFeature"
+                    onclick="closeDialog();"
+                    src="./assets/images/feature/close.svg"
+                    alt="Close-Feature-Modal"
                   />
-                </div>
-                <div class="slide" overview-image-1>
-                  <img class="overview-image overview-image-2" src="#" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-7">
-            <div class="overview-text-wrapper">
-              <p class="overview-heading">
-                <span>
-                  The <span class="mega">MEGA</span>
-                  <span class="talks">Talks</span>
-                </span>
-              </p>
-              <p class="overview-text">
-                An experience-based insights among several senior technology
-                executives on essential topics. At HCL, we believe sharing
-                experiences and knowledge is the key to building a better world
-                today, which can thrive and sustain tomorrow. The discussion
-                will focus on topics relevant to the industry and technology
-                landscape. Insights will be shared to tackle current challenges,
-                assess the pros & cons of different strategies, and gain
-                actionable advice – all while raising your thought leadership
-                profile. MEGA Talks in collaboration with HCL, looks forward to
-                sharing the experiences to inspire the world that no matter how
-                hard yesterday hit us or how rough today is, the zest to build
-                better tomorrow always prevails. Together, we will have an
-                <span class="inspireTomhash">#InspireTomorrow</span>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section id="feature">
-      <div class="container">
-        <div class="feature-head-wrapper">
-          <div><h2 class="title">Features</h2></div>
-          <div class="onlyForMobile">
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle season-dropdown"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Season 1
-              </button>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="dropdownMenuButton1"
-                style="display: none"
-              >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <div class="onlyForWeb">
-              <img
-                class="closemodalFeature"
-                onclick="closeDialog();"
-                src="./assets/images/feature/close.svg"
-                alt="Close-Feature-Modal"
-              />
-              <div class="feature-modal-vedio-wrapper">
-                <div id="feature-overview-vedio1" style="flex: 1">
-                  <iframe
-                    src="https://www.youtube.com/embed/SMM60nxM_zA"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    style="height: 100%; width: 100%"
-                  >
-                  </iframe>
-                </div>
-                <div id="feature-overview-vedio2" style="flex: 1">
-                  <iframe
-                    src="https://www.youtube.com/embed/4K_WGSuuWcw"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    style="height: 100%; width: 100%"
-                  >
-                  </iframe>
-                </div>
-              </div>
-            </div>
-            <div class="onlyForMobile">
-              <div style="display: flex; flex-direction: column; gap: 20px">
-                <div id="feature-overlay-video1">
-                  <div class="episode-vedio-wrapper">
-                    <iframe
-                      class="single-episode-iframe"
-                      src="https://www.youtube.com/embed/SMM60nxM_zA"
-                      title="YouTube video player"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                      style="width: 100%; height: 100%; display: none"
-                    >
-                    </iframe>
-
-                    <div
-                      id="feature-overlay-image1"
-                      onclick="playFeatureoverlayvideo1()"
-                      style="
-                        background-image: url(./assets/images/episode/screenshot-2022-07-28-at-10-30-36-am.png);
-                      "
-                    >
-                      <img
-                        src="./assets/images/episode/play-button-episode.png"
-                        style="width: 42px"
-                      />
+                  <div class="feature-modal-vedio-wrapper">
+                    <div id="feature-overview-vedio1" style="flex: 1">
+                      <iframe
+                        src="https://www.youtube.com/embed/SMM60nxM_zA"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="height: 100%; width: 100%"
+                      >
+                      </iframe>
                     </div>
-                  </div>
-
-                  <div
-                    class="card-body"
-                    style="
-                      padding: 20px;
-                      border-radius: 4px;
-                      background-color: #f2f7fb;
-                    "
-                  >
-                    <div
-                      class="single-episode-details"
-                      style="font-size: 10px; font-family: 'Gotham-Medium'"
-                    >
-                      MEGA TALKS with Gary Cantrell
-                    </div>
-                    <div
-                      class="single-episode-title"
-                      style="font-family: Gotham; font-size: 15px"
-                    >
-                      #InspireTomorrow I Episode 1 I Part 1
+                    <div id="feature-overview-vedio2" style="flex: 1">
+                      <iframe
+                        src="https://www.youtube.com/embed/4K_WGSuuWcw"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="height: 100%; width: 100%"
+                      >
+                      </iframe>
                     </div>
                   </div>
                 </div>
-                <div id="feature-overlay-video2">
-                  <div class="episode-vedio-wrapper">
-                    <iframe
-                      class="single-episode-iframe"
-                      src="https://www.youtube.com/embed/SMM60nxM_zA"
-                      title="YouTube video player"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                      style="width: 100%; height: 100%; display: none"
-                    >
-                    </iframe>
+                <div class="onlyForMobile">
+                  <div style="display: flex; flex-direction: column; gap: 20px">
+                    <div id="feature-overlay-video1">
+                      <div class="episode-vedio-wrapper">
+                        <iframe
+                          class="single-episode-iframe"
+                          src="https://www.youtube.com/embed/SMM60nxM_zA"
+                          title="YouTube video player"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                          style="width: 100%; height: 100%; display: none"
+                        >
+                        </iframe>
 
-                    <div
-                      id="feature-overlay-image2"
-                      onclick="playFeatureoverlayvideo2()"
-                      style="
-                        background-image: url(./assets/images/episode/1.2.jpg);
-                      "
-                    >
-                      <img
-                        src="./assets/images/episode/play-button-episode.png"
-                        style="width: 42px"
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="card-body"
-                    style="
-                      padding: 20px;
-                      border-radius: 4px;
-                      background-color: #f2f7fb;
-                    "
-                  >
-                    <div
-                      class="single-episode-details"
-                      style="font-size: 10px; font-family: 'Gotham-Medium'"
-                    >
-                      MEGA TALKS with Gary Cantrell
-                    </div>
-                    <div
-                      class="single-episode-title"
-                      style="font-family: Gotham; font-size: 15px"
-                    >
-                      #InspireTomorrow I Episode 1 I Part 1
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div style="text-align: center">
-                <img
-                  class="closemodalFeature"
-                  onclick="closeDialog();"
-                  src="./assets/images/feature/close.svg"
-                  alt="Close-Feature-Modal"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"> -->
-      <div class="onlyForWeb">
-        <div
-          class="container"
-          style="display: flex; justify-content: space-between"
-        >
-          <div>
-            <!-- <button class="btn btn-secondary season-dropdown" type="button"> -->
-            <div class="season-dropdown">Season 1</div>
-          </div>
-          <div>
-            <button
-              class="feature-control-icons"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="feature-control-icons"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="onlyForMobile">
-        <div id="owl-feature" class="owl-carousel owl-theme">
-          <div class="item">
-            <div class="card">
-              <div class="image-holder-feature">
-                <img
-                  src="./assets/images/feature/ajay-bahl.png"
-                  class="card-img-top-featured-speaker"
-                  alt="..."
-                />
-              </div>
-              <div class="overlay">
-                <div class="overlay-description">
-                  Ajay heads MEGA^LT (Manufacturing, Energy Utilities, Oil &
-                  Gas, Government, Aero and Defense, Logistics & Transportation,
-                  Travel and Hospitality) verticals for North America. He is
-                  also a part of the Customer Advisory Board of HCL and has
-                  helped many F500 clients create Business Value.
-                </div>
-                <div class="overlay-icons">
-                  <a
-                    href="https://www.linkedin.com/in/ajaybahl"
-                    target="_blank"
-                  >
-                    <img src="./assets/images/feature/linkedin-1.png" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="card-body host-speaker">
-              <div class="speaker-type">SEASON HOST</div>
-              <div class="speaker-name">Ajay Bahl</div>
-              <div class="speaker-role">
-                Corp. VP & Head of Mega Vertical in HCL America
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="card">
-              <div class="image-holder-feature">
-                <img
-                  src="./assets/images/feature/gary.png"
-                  class="card-img-top-featured-speaker"
-                  alt="..."
-                />
-              </div>
-
-              <div class="overlay">
-                <div class="overlay-description">
-                  Gary Cantrell has been honored with CIO Of The Year, 2020.
-                  With a history of delivering value, he has been recognized for
-                  being a highly collaborative and trusted hands on leader who
-                  systematically transforms organizations to customer centric.
-                </div>
-                <div class="overlay-icons">
-                  <a
-                    href="https://www.linkedin.com/in/gary-cantrell-2020"
-                    target="_blank"
-                    style="color: transparent; padding-right: 12px"
-                  >
-                    <img src="./assets/images/feature/linkedin-1.png" />
-                  </a>
-                  <a
-                    href="#"
-                    onclick="showDialog('https://www.youtube.com/embed/SMM60nxM_zA?version=3&enablejsapi=1','https://www.youtube.com/embed/4K_WGSuuWcw?version=3&enablejsapi=1','MEGA TALKS with Gary Cantrell','#InspireTomorrow I Episode 1 I Part 1','./assets/images/episode/episodebg01.png','MEGA TALKS with Gary Cantrell','#InspireTomorrow I Episode 1 I Part 2','./assets/images/episode/episodebg02.png');"
-                  >
-                    <img src="./assets/images/feature/play-button.png"
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <div class="card-body guest-speaker">
-              <div class="speaker-type">GUEST</div>
-              <div class="speaker-name">Gary Cantrell</div>
-              <div class="speaker-role">
-                Ex- Chief Information Officer & SVP Information Tech
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="card">
-              <div class="image-holder-feature">
-                <img
-                  src="./assets/images/feature/rhenda.png"
-                  class="card-img-top-featured-speaker"
-                  alt="..."
-                />
-              </div>
-
-              <div class="overlay">
-                <div class="overlay-description">
-                  Rhonda Gass is VP and Chief Information Officer for Stanley
-                  Black & Decker. She drives a strategic agenda that equips the
-                  company’s business and also leads cybersecurity and digital
-                  risk management for all technologies.
-                </div>
-                <div class="overlay-icons">
-                  <a
-                    href="https://www.linkedin.com/in/rhonda-gass-4ba1861/"
-                    target="_blank"
-                    style="color: transparent; padding-right: 12px"
-                  >
-                    <img src="./assets/images/feature/linkedin-1.png" />
-                  </a>
-                  <a
-                    href="#"
-                    onclick="showDialog('https://www.youtube.com/embed/SMM60nxM_zA?version=3&enablejsapi=1','https://www.youtube.com/embed/4K_WGSuuWcw?version=3&enablejsapi=1','MEGA TALKS with Rhonda Gass','#InspireTomorrow I Episode 1 I Part 1','./assets/images/episode/episodebg02.png','MEGA TALKS with Rhonda Gass','#InspireTomorrow I Episode 1 I Part 2','./assets/images/episode/episodebg03.jpg');"
-                  >
-                    <img src="./assets/images/feature/play-button.png" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="card-body guest-speaker">
-              <div class="speaker-type">GUEST</div>
-              <div class="speaker-name">Rhonda O. Gass</div>
-              <div class="speaker-role">
-                Vice President & COO at Stanley Black & Decker
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="card">
-              <div class="image-holder-feature">
-                <img
-                  src="./assets/images/feature/bask.png"
-                  class="card-img-top-featured-speaker"
-                  alt="..."
-                />
-              </div>
-
-              <div class="overlay">
-                <div class="overlay-description">
-                  He is the CEO of BaskMind.com, creating products to redefine
-                  the future of Enterprise software. He also serves as a
-                  Chairman of boards and an advisor to the fastest growing tech
-                  and Fintech companies.
-                </div>
-                <div class="overlay-icons">
-                  <a
-                    href=" https://www.linkedin.com/in/baskiyer/"
-                    target="_blank"
-                    style="color: transparent; padding-right: 12px"
-                  >
-                    <img src="./assets/images/feature/linkedin-1.png" />
-                  </a>
-                  <a
-                    href="#"
-                    onclick="showDialog('https://www.youtube.com/embed/SMM60nxM_zA?version=3&enablejsapi=1','https://www.youtube.com/embed/4K_WGSuuWcw?version=3&enablejsapi=1','MEGA TALKS with Bask Iyer','#InspireTomorrow I Episode 1 I Part 1','./assets/images/episode/episodebg02.png','MEGA TALKS with Bask Iyer','#InspireTomorrow I Episode 1 I Part 2','./assets/images/episode/episodebg03.jpg');"
-                  >
-                    <img src="./assets/images/feature/play-button.png" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="card-body guest-speaker">
-              <div class="speaker-type">GUEST</div>
-              <div class="speaker-name">Rhonda O. Gass</div>
-              <div class="speaker-role">
-                Vice President & COO at Stanley Black & Decker
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-inner onlyForWeb">
-        <!-- Feature Season 1-->
-        <div class="carousel-item active">
-          <div class="season-card-container">
-            <div class="container">
-              <div class="row g-4" style="padding: 30px 0">
-                <div class="col-3">
-                  <div class="card">
-                    <div class="image-holder-feature">
-                      <img
-                        src="./assets/images/feature/ajay-bahl.png"
-                        class="card-img-top-featured-speaker"
-                        alt="Ajay-bahl"
-                      />
-                    </div>
-                    <div class="overlay">
-                      <div class="overlay-description">
-                        Ajay heads MEGA^LT (Manufacturing, Energy Utilities, Oil
-                        & Gas, Government, Aero and Defense, Logistics &
-                        Transportation, Travel and Hospitality) verticals for
-                        North America. He is also a part of the Customer
-                        Advisory Board of HCL and has helped many F500 clients
-                        create Business Value.
-                      </div>
-                      <div class="overlay-icons">
-                        <a
-                          href="https://www.linkedin.com/in/ajaybahl"
-                          target="_blank"
+                        <div
+                          id="feature-overlay-image1"
+                          onclick="playFeatureoverlayvideo1()"
+                          style="
+                            background-image: url(./assets/images/episode/screenshot-2022-07-28-at-10-30-36-am.png);
+                          "
                         >
                           <img
-                            src="./assets/images/feature/linkedin-1.png"
-                            alt="linkedin-icon"
+                            src="./assets/images/episode/play-button-episode.png"
+                            style="width: 42px"
                           />
-                        </a>
+                        </div>
+                      </div>
+
+                      <div
+                        class="card-body"
+                        style="
+                          padding: 20px;
+                          border-radius: 4px;
+                          background-color: #f2f7fb;
+                        "
+                      >
+                        <div
+                          class="single-episode-details"
+                          style="font-size: 10px; font-family: 'Gotham-Medium'"
+                        >
+                          MEGA TALKS with Gary Cantrell
+                        </div>
+                        <div
+                          class="single-episode-title"
+                          style="font-family: Gotham; font-size: 15px"
+                        >
+                          #InspireTomorrow I Episode 1 I Part 1
+                        </div>
                       </div>
                     </div>
+                    <div id="feature-overlay-video2">
+                      <div class="episode-vedio-wrapper">
+                        <iframe
+                          class="single-episode-iframe"
+                          src="https://www.youtube.com/embed/SMM60nxM_zA"
+                          title="YouTube video player"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                          style="width: 100%; height: 100%; display: none"
+                        >
+                        </iframe>
 
-                    <div class="card-body host-speaker">
-                      <div class="speaker-type">SEASON HOST</div>
-                      <div class="speaker-name">Ajay Bahl</div>
-                      <div class="speaker-role">
-                        Corp. VP & Head of Mega Vertical in HCL America
+                        <div
+                          id="feature-overlay-image2"
+                          onclick="playFeatureoverlayvideo2()"
+                          style="
+                            background-image: url(./assets/images/episode/1.2.jpg);
+                          "
+                        >
+                          <img
+                            src="./assets/images/episode/play-button-episode.png"
+                            style="width: 42px"
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="card-body"
+                        style="
+                          padding: 20px;
+                          border-radius: 4px;
+                          background-color: #f2f7fb;
+                        "
+                      >
+                        <div
+                          class="single-episode-details"
+                          style="font-size: 10px; font-family: 'Gotham-Medium'"
+                        >
+                          MEGA TALKS with Gary Cantrell
+                        </div>
+                        <div
+                          class="single-episode-title"
+                          style="font-family: Gotham; font-size: 15px"
+                        >
+                          #InspireTomorrow I Episode 1 I Part 1
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="col-3">
-                  <div class="card">
-                    <div class="image-holder-feature">
-                      <img
-                        src="./assets/images/feature/gary.png"
-                        class="card-img-top-featured-speaker"
-                        alt="gary"
-                      />
-                    </div>
-
-                    <div class="overlay">
-                      <div class="overlay-description">
-                        Gary Cantrell has been honored with CIO Of The Year,
-                        2020. With a history of delivering value, he has been
-                        recognized for being a highly collaborative and trusted
-                        hands on leader who systematically transforms
-                        organizations to customer centric.
-                      </div>
-                      <div class="overlay-icons">
-                        <a
-                          href="https://www.linkedin.com/in/gary-cantrell-2020"
-                          target="_blank"
-                          style="color: transparent; padding-right: 12px"
-                        >
-                          <img
-                            src="./assets/images/feature/linkedin-1.png"
-                            alt="linkedin-icon"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          onclick="showDialog('https://www.youtube.com/embed/SMM60nxM_zA','https://www.youtube.com/embed/4K_WGSuuWcw');"
-                          ><img
-                            src="./assets/images/feature/play-button.png"
-                            alt="play-icon"
-                        /></a>
-                      </div>
-                    </div>
-
-                    <div class="card-body guest-speaker">
-                      <div class="speaker-type">GUEST</div>
-                      <div class="speaker-name">Gary Cantrell</div>
-                      <div class="speaker-role">
-                        Ex- Chief Information Officer & SVP Information Tech
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-3">
-                  <div class="card">
-                    <div class="image-holder-feature">
-                      <img
-                        src="./assets/images/feature/rhenda.png"
-                        class="card-img-top-featured-speaker"
-                        alt="rhonda"
-                      />
-                    </div>
-
-                    <div class="overlay">
-                      <div class="overlay-description">
-                        Rhonda Gass is VP and Chief Information Officer for
-                        Stanley Black & Decker. She drives a strategic agenda
-                        that equips the company’s business and also leads
-                        cybersecurity and digital risk management for all
-                        technologies.
-                      </div>
-                      <div class="overlay-icons">
-                        <a
-                          href="https://www.linkedin.com/in/rhonda-gass-4ba1861/"
-                          target="_blank"
-                          style="color: transparent; padding-right: 12px"
-                        >
-                          <img
-                            src="./assets/images/feature/linkedin-1.png"
-                            alt="linkedin-icon"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          onclick="showDialog('https://www.youtube.com/embed/4K_WGSuuWcw','https://www.youtube.com/embed/SMM60nxM_zA');"
-                        >
-                          <img
-                            src="./assets/images/feature/play-button.png"
-                            alt="play-icon"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="card-body guest-speaker">
-                      <div class="speaker-type">GUEST</div>
-                      <div class="speaker-name">Rhonda O. Gass</div>
-                      <div class="speaker-role">
-                        Vice President & COO at Stanley Black & Decker
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-3">
-                  <div class="card">
-                    <div class="image-holder-feature">
-                      <img
-                        src="./assets/images/feature/bask.png"
-                        class="card-img-top-featured-speaker"
-                        alt="bask"
-                      />
-                    </div>
-
-                    <div class="overlay">
-                      <div class="overlay-description">
-                        He is the CEO of BaskMind.com, creating products to
-                        redefine the future of Enterprise software. He also
-                        serves as a Chairman of boards and an advisor to the
-                        fastest growing tech and Fintech companies.
-                      </div>
-                      <div class="overlay-icons">
-                        <a
-                          href=" https://www.linkedin.com/in/baskiyer/"
-                          target="_blank"
-                          style="color: transparent; padding-right: 12px"
-                        >
-                          <img
-                            src="./assets/images/feature/linkedin-1.png"
-                            alt="linkedin-icon"
-                          />
-                        </a>
-                        <a
-                          href="#"
-                          onclick="showDialog('https://www.youtube.com/embed/4K_WGSuuWcw','https://www.youtube.com/embed/SMM60nxM_zA');"
-                        >
-                          <img
-                            src="./assets/images/feature/play-button.png"
-                            alt="play-icon"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="card-body guest-speaker">
-                      <div class="speaker-type">GUEST</div>
-                      <div class="speaker-name">Rhonda O. Gass</div>
-                      <div class="speaker-role">
-                        Vice President & COO at Stanley Black & Decker
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Feature Season 2-->
-        <div class="carousel-item">
-          <div>Soon to be Updated</div>
-        </div>
-
-        <!-- Feature Season 3-->
-        <div class="carousel-item">
-          <div>Soon to be Updated</div>
-        </div>
-      </div>
-    </section>
-
-    <!--  Episodes Section -->
-    <section id="episodes">
-      <div class="container">
-        <h2 class="title">Episodes</h2>
-        <div class="container-fluid">
-          <div class="row g-4">
-            <div class="col-lg-8 p-0">
-              <div class="card single-episode-wrapper">
-                <div class="episode-vedio-wrapper">
-                  <iframe
-                    class="single-episode-iframe"
-                    src="https://www.youtube.com/embed/SMM60nxM_zA"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    style="width: 100%; height: 100%; display: none"
-                  >
-                  </iframe>
-                  <div
-                    id="episode-overlay-wrapper"
-                    style="
-                      background-image: url(./assets/images/episode/episodebg01.png);
-                    "
-                  >
+                  <div style="text-align: center">
                     <img
-                      src="./assets/images/episode/play-button-episode.png"
+                      class="closemodalFeature"
+                      onclick="closeDialog();"
+                      src="./assets/images/feature/close.svg"
+                      alt="Close-Feature-Modal"
                     />
                   </div>
-                  <!-- <div class="single-video-overlay-wrapper">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"> -->
+          <div class="onlyForWeb">
+            <div
+              class="container"
+              style="display: flex; justify-content: space-between"
+            >
+              <div>
+                <!-- <button class="btn btn-secondary season-dropdown" type="button"> -->
+                <div class="season-dropdown">Season 1</div>
+              </div>
+              <div>
+                <button
+                  class="feature-control-icons"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="feature-control-icons"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="onlyForMobile">
+            <div id="owl-feature" class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="card">
+                  <div class="image-holder-feature">
+                    <img
+                      src="./assets/images/feature/ajay-bahl.png"
+                      class="card-img-top-featured-speaker"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="overlay">
+                    <div class="overlay-description">
+                      Ajay heads MEGA^LT (Manufacturing, Energy Utilities, Oil &
+                      Gas, Government, Aero and Defense, Logistics &
+                      Transportation, Travel and Hospitality) verticals for
+                      North America. He is also a part of the Customer Advisory
+                      Board of HCL and has helped many F500 clients create
+                      Business Value.
+                    </div>
+                    <div class="overlay-icons">
+                      <a
+                        href="https://www.linkedin.com/in/ajaybahl"
+                        target="_blank"
+                      >
+                        <img src="./assets/images/feature/linkedin-1.png" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body host-speaker">
+                  <div class="speaker-type">SEASON HOST</div>
+                  <div class="speaker-name">Ajay Bahl</div>
+                  <div class="speaker-role">
+                    Corp. VP & Head of Mega Vertical in HCL America
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <div class="image-holder-feature">
+                    <img
+                      src="./assets/images/feature/gary.png"
+                      class="card-img-top-featured-speaker"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div class="overlay">
+                    <div class="overlay-description">
+                      Gary Cantrell has been honored with CIO Of The Year, 2020.
+                      With a history of delivering value, he has been recognized
+                      for being a highly collaborative and trusted hands on
+                      leader who systematically transforms organizations to
+                      customer centric.
+                    </div>
+                    <div class="overlay-icons">
+                      <a
+                        href="https://www.linkedin.com/in/gary-cantrell-2020"
+                        target="_blank"
+                        style="color: transparent; padding-right: 12px"
+                      >
+                        <img src="./assets/images/feature/linkedin-1.png" />
+                      </a>
+                      <a
+                        href="#"
+                        onclick="showDialog('https://www.youtube.com/embed/SMM60nxM_zA?version=3&enablejsapi=1','https://www.youtube.com/embed/4K_WGSuuWcw?version=3&enablejsapi=1','MEGA TALKS with Gary Cantrell','#InspireTomorrow I Episode 1 I Part 1','./assets/images/episode/episodebg01.png','MEGA TALKS with Gary Cantrell','#InspireTomorrow I Episode 1 I Part 2','./assets/images/episode/episodebg02.png');"
+                      >
+                        <img src="./assets/images/feature/play-button.png"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body guest-speaker">
+                  <div class="speaker-type">GUEST</div>
+                  <div class="speaker-name">Gary Cantrell</div>
+                  <div class="speaker-role">
+                    Ex- Chief Information Officer & SVP Information Tech
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <div class="image-holder-feature">
+                    <img
+                      src="./assets/images/feature/rhenda.png"
+                      class="card-img-top-featured-speaker"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div class="overlay">
+                    <div class="overlay-description">
+                      Rhonda Gass is VP and Chief Information Officer for
+                      Stanley Black & Decker. She drives a strategic agenda that
+                      equips the company’s business and also leads cybersecurity
+                      and digital risk management for all technologies.
+                    </div>
+                    <div class="overlay-icons">
+                      <a
+                        href="https://www.linkedin.com/in/rhonda-gass-4ba1861/"
+                        target="_blank"
+                        style="color: transparent; padding-right: 12px"
+                      >
+                        <img src="./assets/images/feature/linkedin-1.png" />
+                      </a>
+                      <a
+                        href="#"
+                        onclick="showDialog('https://www.youtube.com/embed/SMM60nxM_zA?version=3&enablejsapi=1','https://www.youtube.com/embed/4K_WGSuuWcw?version=3&enablejsapi=1','MEGA TALKS with Rhonda Gass','#InspireTomorrow I Episode 1 I Part 1','./assets/images/episode/episodebg02.png','MEGA TALKS with Rhonda Gass','#InspireTomorrow I Episode 1 I Part 2','./assets/images/episode/episodebg03.jpg');"
+                      >
+                        <img src="./assets/images/feature/play-button.png" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body guest-speaker">
+                  <div class="speaker-type">GUEST</div>
+                  <div class="speaker-name">Rhonda O. Gass</div>
+                  <div class="speaker-role">
+                    Vice President & COO at Stanley Black & Decker
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <div class="image-holder-feature">
+                    <img
+                      src="./assets/images/feature/bask.png"
+                      class="card-img-top-featured-speaker"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div class="overlay">
+                    <div class="overlay-description">
+                      He is the CEO of BaskMind.com, creating products to
+                      redefine the future of Enterprise software. He also serves
+                      as a Chairman of boards and an advisor to the fastest
+                      growing tech and Fintech companies.
+                    </div>
+                    <div class="overlay-icons">
+                      <a
+                        href=" https://www.linkedin.com/in/baskiyer/"
+                        target="_blank"
+                        style="color: transparent; padding-right: 12px"
+                      >
+                        <img src="./assets/images/feature/linkedin-1.png" />
+                      </a>
+                      <a
+                        href="#"
+                        onclick="showDialog('https://www.youtube.com/embed/SMM60nxM_zA?version=3&enablejsapi=1','https://www.youtube.com/embed/4K_WGSuuWcw?version=3&enablejsapi=1','MEGA TALKS with Bask Iyer','#InspireTomorrow I Episode 1 I Part 1','./assets/images/episode/episodebg02.png','MEGA TALKS with Bask Iyer','#InspireTomorrow I Episode 1 I Part 2','./assets/images/episode/episodebg03.jpg');"
+                      >
+                        <img src="./assets/images/feature/play-button.png" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body guest-speaker">
+                  <div class="speaker-type">GUEST</div>
+                  <div class="speaker-name">Rhonda O. Gass</div>
+                  <div class="speaker-role">
+                    Vice President & COO at Stanley Black & Decker
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-inner onlyForWeb">
+            <!-- Feature Season 1-->
+            <div class="carousel-item active">
+              <div class="season-card-container">
+                <div class="container">
+                  <div class="row g-4" style="padding: 30px 0">
+                    <div class="col-3">
+                      <div class="card">
+                        <div class="image-holder-feature">
+                          <img
+                            src="./assets/images/feature/ajay-bahl.png"
+                            class="card-img-top-featured-speaker"
+                            alt="Ajay-bahl"
+                          />
+                        </div>
+                        <div class="overlay">
+                          <div class="overlay-description">
+                            Ajay heads MEGA^LT (Manufacturing, Energy Utilities,
+                            Oil & Gas, Government, Aero and Defense, Logistics &
+                            Transportation, Travel and Hospitality) verticals
+                            for North America. He is also a part of the Customer
+                            Advisory Board of HCL and has helped many F500
+                            clients create Business Value.
+                          </div>
+                          <div class="overlay-icons">
+                            <a
+                              href="https://www.linkedin.com/in/ajaybahl"
+                              target="_blank"
+                            >
+                              <img
+                                src="./assets/images/feature/linkedin-1.png"
+                                alt="linkedin-icon"
+                              />
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="card-body host-speaker">
+                          <div class="speaker-type">SEASON HOST</div>
+                          <div class="speaker-name">Ajay Bahl</div>
+                          <div class="speaker-role">
+                            Corp. VP & Head of Mega Vertical in HCL America
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-3">
+                      <div class="card">
+                        <div class="image-holder-feature">
+                          <img
+                            src="./assets/images/feature/gary.png"
+                            class="card-img-top-featured-speaker"
+                            alt="gary"
+                          />
+                        </div>
+
+                        <div class="overlay">
+                          <div class="overlay-description">
+                            Gary Cantrell has been honored with CIO Of The Year,
+                            2020. With a history of delivering value, he has
+                            been recognized for being a highly collaborative and
+                            trusted hands on leader who systematically
+                            transforms organizations to customer centric.
+                          </div>
+                          <div class="overlay-icons">
+                            <a
+                              href="https://www.linkedin.com/in/gary-cantrell-2020"
+                              target="_blank"
+                              style="color: transparent; padding-right: 12px"
+                            >
+                              <img
+                                src="./assets/images/feature/linkedin-1.png"
+                                alt="linkedin-icon"
+                              />
+                            </a>
+                            <a
+                              href="#"
+                              onclick="showDialog('https://www.youtube.com/embed/SMM60nxM_zA','https://www.youtube.com/embed/4K_WGSuuWcw');"
+                              ><img
+                                src="./assets/images/feature/play-button.png"
+                                alt="play-icon"
+                            /></a>
+                          </div>
+                        </div>
+
+                        <div class="card-body guest-speaker">
+                          <div class="speaker-type">GUEST</div>
+                          <div class="speaker-name">Gary Cantrell</div>
+                          <div class="speaker-role">
+                            Ex- Chief Information Officer & SVP Information Tech
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-3">
+                      <div class="card">
+                        <div class="image-holder-feature">
+                          <img
+                            src="./assets/images/feature/rhenda.png"
+                            class="card-img-top-featured-speaker"
+                            alt="rhonda"
+                          />
+                        </div>
+
+                        <div class="overlay">
+                          <div class="overlay-description">
+                            Rhonda Gass is VP and Chief Information Officer for
+                            Stanley Black & Decker. She drives a strategic
+                            agenda that equips the company’s business and also
+                            leads cybersecurity and digital risk management for
+                            all technologies.
+                          </div>
+                          <div class="overlay-icons">
+                            <a
+                              href="https://www.linkedin.com/in/rhonda-gass-4ba1861/"
+                              target="_blank"
+                              style="color: transparent; padding-right: 12px"
+                            >
+                              <img
+                                src="./assets/images/feature/linkedin-1.png"
+                                alt="linkedin-icon"
+                              />
+                            </a>
+                            <a
+                              href="#"
+                              onclick="showDialog('https://www.youtube.com/embed/4K_WGSuuWcw','https://www.youtube.com/embed/SMM60nxM_zA');"
+                            >
+                              <img
+                                src="./assets/images/feature/play-button.png"
+                                alt="play-icon"
+                              />
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="card-body guest-speaker">
+                          <div class="speaker-type">GUEST</div>
+                          <div class="speaker-name">Rhonda O. Gass</div>
+                          <div class="speaker-role">
+                            Vice President & COO at Stanley Black & Decker
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-3">
+                      <div class="card">
+                        <div class="image-holder-feature">
+                          <img
+                            src="./assets/images/feature/bask.png"
+                            class="card-img-top-featured-speaker"
+                            alt="bask"
+                          />
+                        </div>
+
+                        <div class="overlay">
+                          <div class="overlay-description">
+                            He is the CEO of BaskMind.com, creating products to
+                            redefine the future of Enterprise software. He also
+                            serves as a Chairman of boards and an advisor to the
+                            fastest growing tech and Fintech companies.
+                          </div>
+                          <div class="overlay-icons">
+                            <a
+                              href=" https://www.linkedin.com/in/baskiyer/"
+                              target="_blank"
+                              style="color: transparent; padding-right: 12px"
+                            >
+                              <img
+                                src="./assets/images/feature/linkedin-1.png"
+                                alt="linkedin-icon"
+                              />
+                            </a>
+                            <a
+                              href="#"
+                              onclick="showDialog('https://www.youtube.com/embed/4K_WGSuuWcw','https://www.youtube.com/embed/SMM60nxM_zA');"
+                            >
+                              <img
+                                src="./assets/images/feature/play-button.png"
+                                alt="play-icon"
+                              />
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="card-body guest-speaker">
+                          <div class="speaker-type">GUEST</div>
+                          <div class="speaker-name">Rhonda O. Gass</div>
+                          <div class="speaker-role">
+                            Vice President & COO at Stanley Black & Decker
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Feature Season 2-->
+            <div class="carousel-item">
+              <div>Soon to be Updated</div>
+            </div>
+
+            <!-- Feature Season 3-->
+            <div class="carousel-item">
+              <div>Soon to be Updated</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--  Episodes Section -->
+      <div class="section fp-auto-height">
+        <section id="episodes">
+          <div class="container">
+            <h2 class="title">Episodes</h2>
+            <div class="container-fluid">
+              <div class="row g-4">
+                <div class="col-lg-8 p-0">
+                  <div class="card single-episode-wrapper">
+                    <div class="episode-vedio-wrapper">
+                      <iframe
+                        class="single-episode-iframe"
+                        src="https://www.youtube.com/embed/SMM60nxM_zA"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="width: 100%; height: 100%; display: none"
+                      >
+                      </iframe>
+                      <div
+                        id="episode-overlay-wrapper"
+                        style="
+                          background-image: url(./assets/images/episode/episodebg01.png);
+                        "
+                      >
+                        <img
+                          src="./assets/images/episode/play-button-episode.png"
+                        />
+                      </div>
+                      <!-- <div class="single-video-overlay-wrapper">
                 <div class="single-video-image-wrapper">
                   <img src="./assets/images/episode/screenshot-2022-07-28-at-10-30-36-am.png" />
                 </div>
                 <div class="single-video-button-wrapper"> <img src="./assets/images/episode/play-button-episode.png"/> </div>
                 </div> -->
-                </div>
+                    </div>
 
-                <div
-                  class="card-body"
-                  style="
-                    padding: 20px;
-                    border-radius: 4px;
-                    background-color: #f2f7fb;
-                  "
-                >
-                  <div class="single-episode-details">
-                    MEGA TALKS with Gary Cantrell
-                  </div>
-                  <div class="single-episode-title">
-                    #InspireTomorrow I Episode 1 I Part 1
-                  </div>
-                  <div class="single-audiopdf-wrapper">
-                    <div class="single-episode-audio">
-                      <div
-                        id="play-pause-audio"
-                        style="flex: 1"
-                        onclick="toggleClass()"
-                      >
-                        <img
-                          src="./assets/images/episode/play-button.png"
-                          alt="play-icon"
-                          style="width: 28px; height: 28px"
-                        />
+                    <div
+                      class="card-body"
+                      style="
+                        padding: 20px;
+                        border-radius: 4px;
+                        background-color: #f2f7fb;
+                      "
+                    >
+                      <div class="single-episode-details">
+                        MEGA TALKS with Gary Cantrell
                       </div>
-                      <div style="flex: 25">
-                        <audio
-                          id="speaker-audio"
-                          src="./assets/audio/Ajay-Gary/HCL-Ajay-Gary-Section-1-Audio.mp3"
-                          controls
-                          style="display: none"
-                        ></audio>
-                        <div class="progress_bar">
-                          <div id="progressed"></div>
+                      <div class="single-episode-title">
+                        #InspireTomorrow I Episode 1 I Part 1
+                      </div>
+                      <div class="single-audiopdf-wrapper">
+                        <div class="single-episode-audio">
                           <div
+                            id="play-pause-audio"
+                            style="flex: 1"
+                            onclick="toggleClass()"
+                          >
+                            <img
+                              src="./assets/images/episode/play-button.png"
+                              alt="play-icon"
+                              style="width: 28px; height: 28px"
+                            />
+                          </div>
+                          <div style="flex: 25">
+                            <audio
+                              id="speaker-audio"
+                              src="./assets/audio/Ajay-Gary/HCL-Ajay-Gary-Section-1-Audio.mp3"
+                              controls
+                              style="display: none"
+                            ></audio>
+                            <div class="progress_bar">
+                              <div id="progressed"></div>
+                              <div
+                                style="
+                                  display: flex;
+                                  justify-content: space-between;
+                                  padding-top: 2px;
+                                  margin-top: 5px;
+                                "
+                              >
+                                <div id="audio-time-passed">0:00</div>
+                                <div id="audio-time-total"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="volume-wrapper"
                             style="
+                              flex: 7;
+                              flex-direction: row;
                               display: flex;
-                              justify-content: space-between;
-                              padding-top: 2px;
-                              margin-top: 5px;
+                              align-items: center;
                             "
                           >
-                            <div id="audio-time-passed">0:00</div>
-                            <div id="audio-time-total"></div>
+                            <div
+                              id="mute-audio"
+                              style="flex: 1"
+                              onclick="muteClass()"
+                            >
+                              <img
+                                src="./assets/images/episode/speaker-filled-audio-tool.png"
+                                alt="speaker-icon"
+                              />
+                            </div>
+
+                            <div class="volume-slider">
+                              <div class="volume-percentage"></div>
+                              <div class="volume-point"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="single-episode-pdf">
+                          <div class="ShowonTabNAboveTrue">
+                            <img
+                              src="./assets/images/episode/logotype.png"
+                              alt="pdf-icon"
+                              style="width: 20px; height: 20px"
+                            />
+                            <a
+                              href="./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part1.pdf"
+                              download
+                              >Download PDF</a
+                            >
+                          </div>
+                          <div class="ShowonTabNAboveFalse">
+                            <a
+                              href="./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part1.pdf"
+                              download
+                            >
+                              <img src="./assets/images/episode/download.png" />
+                            </a>
                           </div>
                         </div>
                       </div>
-                      <div
-                        class="volume-wrapper"
-                        style="
-                          flex: 7;
-                          flex-direction: row;
-                          display: flex;
-                          align-items: center;
-                        "
-                      >
-                        <div
-                          id="mute-audio"
-                          style="flex: 1"
-                          onclick="muteClass()"
-                        >
-                          <img
-                            src="./assets/images/episode/speaker-filled-audio-tool.png"
-                            alt="speaker-icon"
-                          />
-                        </div>
-
-                        <div class="volume-slider">
-                          <div class="volume-percentage"></div>
-                          <div class="volume-point"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-episode-pdf">
-                      <div class="ShowonTabNAboveTrue">
-                        <img
-                          src="./assets/images/episode/logotype.png"
-                          alt="pdf-icon"
-                          style="width: 20px; height: 20px"
-                        />
-                        <a
-                          href="./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part1.pdf"
-                          download
-                          >Download PDF</a
-                        >
-                      </div>
-                      <div class="ShowonTabNAboveFalse">
-                        <a
-                          href="./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part1.pdf"
-                          download
-                        >
-                          <img src="./assets/images/episode/download.png" />
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-4 episode-right-section">
-              <div class="row onlyForWeb">
-                <div class="card p-0 multi-card active">
-                  <span class="episode-link" style="display: none"
-                    >https://www.youtube.com/embed/SMM60nxM_zA</span
-                  >
-                  <span class="audio-link" style="display: none"
-                    >./assets/audio/Ajay-Gary/HCL-Ajay-Gary-Section-1-Audio.mp3</span
-                  >
-                  <span class="pdf-link" style="display: none"
-                    >./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part1.pdf</span
-                  >
-                  <span class="image-link" style="display: none"
-                    >./assets/images/episode/episodebg01.png</span
-                  >
-                  <div class="row g-0">
-                    <div class="col-md-5">
-                      <img
-                        src="./assets/images/episode/gary001.png"
-                        alt="episode-thumb-part1"
-                      />
-                    </div>
-                    <div class="col-md-7">
-                      <div class="card-body">
-                        <div class="multi-episode-details">
-                          MEGA TALKS with Gary Cantrell
-                        </div>
-                        <div class="multi-episode-title">
-                          #InspireTomorrow I Episode 1 I Part 1
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card p-0 multi-card">
-                  <span class="episode-link" style="display: none"
-                    >https://www.youtube.com/embed/4K_WGSuuWcw</span
-                  >
-                  <span class="audio-link" style="display: none"
-                    >./assets/audio/Ajay-Gary/HCL-Ajay-Gary-Section-2-Audio.mp3</span
-                  >
-                  <span class="pdf-link" style="display: none"
-                    >./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part2.pdf</span
-                  >
-                  <span class="image-link" style="display: none"
-                    >./assets/images/episode/episodebg02.png</span
-                  >
-                  <div class="row g-0">
-                    <div class="col-md-5">
-                      <img
-                        src="./assets/images/episode/1.2.jpg"
-                        alt="episode-thumb-part2"
-                      />
-                    </div>
-                    <div class="col-md-7">
-                      <div class="card-body">
-                        <div class="multi-episode-details">
-                          MEGA TALKS with Gary Cantrell
-                        </div>
-                        <div class="multi-episode-title">
-                          #InspireTomorrow I Episode 1 I Part 2
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card p-0 multi-card" style="border: 0px">
-                  <span class="episode-link" style="display: none">#</span>
-                  <span class="audio-link" style="display: none">#</span>
-                  <span class="pdf-link" style="display: none">#</span>
-                  <span class="image-link" style="display: none"
-                    >./assets/images/episode/episodebg03.jpg</span
-                  >
-                  <div class="row g-0">
-                    <div class="col-md-5">
-                      <img
-                        src="./assets/images/episode/1.3.jpg"
-                        alt="episode-thumb-part1"
-                      />
-                    </div>
-                    <div class="col-md-7">
-                      <div class="card-body">
-                        <div class="multi-episode-details">
-                          MEGA TALKS with Bask Iyer
-                        </div>
-                        <div class="multi-episode-title">
-                          #InspireTomorrow I Episode 1 I Part 1
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card p-0 multi-card" style="border: 0px">
-                  <span class="episode-link" style="display: none">#</span>
-                  <span class="audio-link" style="display: none">#</span>
-                  <span class="pdf-link" style="display: none">#</span>
-                  <span class="image-link" style="display: none"
-                    >./assets/images/episode/episodebg02.png</span
-                  >
-
-                  <div class="row g-0">
-                    <div class="col-md-5">
-                      <img
-                        src="./assets/images/episode/1.2.jpg"
-                        alt="episode-thumb-part2"
-                      />
-                    </div>
-                    <div class="col-md-7">
-                      <div class="card-body">
-                        <div class="multi-episode-details">
-                          MEGA TALKS with Bask Iyer
-                        </div>
-                        <div class="multi-episode-title">
-                          #InspireTomorrow I Episode 1 I Part 2
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card p-0 multi-card" style="border: 0px">
-                  <span class="episode-link" style="display: none">#</span>
-                  <span class="audio-link" style="display: none">#</span>
-                  <span class="pdf-link" style="display: none">#</span>
-                  <span class="image-link" style="display: none"
-                    >./assets/images/episode/episodebg03.jpg</span
-                  >
-
-                  <div class="row g-0">
-                    <div class="col-md-5">
-                      <img
-                        src="./assets/images/episode/1.3.jpg"
-                        alt="episode-thumb-part1"
-                      />
-                    </div>
-                    <div class="col-md-7">
-                      <div class="card-body">
-                        <div class="multi-episode-details">
-                          MEGA TALKS with Rhonda Gass
-                        </div>
-                        <div class="multi-episode-title">
-                          #InspireTomorrow I Episode 1 I Part 1
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card p-0 multi-card" style="margin-bottom: 0px">
-                  <span class="episode-link" style="display: none">#</span>
-                  <span class="audio-link" style="display: none">#</span>
-                  <span class="pdf-link" style="display: none">#</span>
-                  <span class="image-link" style="display: none"
-                    >./assets/images/episode/episodebg02.png</span
-                  >
-                  <div class="row g-0">
-                    <div class="col-md-5">
-                      <img
-                        src="./assets/images/episode/1.2.jpg"
-                        alt="episode-thumb-part1"
-                      />
-                    </div>
-                    <div class="col-md-7">
-                      <div class="card-body">
-                        <div class="multi-episode-details">
-                          MEGA TALKS with Rhonda Gass
-                        </div>
-                        <div class="multi-episode-title">
-                          #InspireTomorrow I Episode 1 I Part 2
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--  For Mobile -->
-
-              <div class="onlyForMobile">
-                <div class="otherepisodes"
-                >
-                  Other Episodes
-                </div>
-                <div id="owl-episodes" class="owl-carousel owl-theme">
-                  <div class="item">
-                    <div class="card p-0 multi-card active" >
+                <div class="col-lg-4 episode-right-section">
+                  <div class="row onlyForWeb">
+                    <div class="card p-0 multi-card active">
                       <span class="episode-link" style="display: none"
                         >https://www.youtube.com/embed/SMM60nxM_zA</span
                       >
@@ -1134,7 +957,6 @@
                       <span class="image-link" style="display: none"
                         >./assets/images/episode/episodebg01.png</span
                       >
-
                       <div class="row g-0">
                         <div class="col-md-5">
                           <img
@@ -1154,10 +976,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="card p-0 multi-card" style="">
+                    <div class="card p-0 multi-card">
                       <span class="episode-link" style="display: none"
                         >https://www.youtube.com/embed/4K_WGSuuWcw</span
                       >
@@ -1189,9 +1008,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="item">
                     <div class="card p-0 multi-card" style="border: 0px">
                       <span class="episode-link" style="display: none">#</span>
                       <span class="audio-link" style="display: none">#</span>
@@ -1218,9 +1035,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="item">
                     <div class="card p-0 multi-card" style="border: 0px">
                       <span class="episode-link" style="display: none">#</span>
                       <span class="audio-link" style="display: none">#</span>
@@ -1248,9 +1063,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="item">
                     <div class="card p-0 multi-card" style="border: 0px">
                       <span class="episode-link" style="display: none">#</span>
                       <span class="audio-link" style="display: none">#</span>
@@ -1272,16 +1085,14 @@
                               MEGA TALKS with Rhonda Gass
                             </div>
                             <div class="multi-episode-title">
-                              #InspireTomorrow I Episode 1 I Part 2
+                              #InspireTomorrow I Episode 1 I Part 1
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="item">
-                    <div class="card p-0 multi-card">
+                    <div class="card p-0 multi-card" style="margin-bottom: 0px">
                       <span class="episode-link" style="display: none">#</span>
                       <span class="audio-link" style="display: none">#</span>
                       <span class="pdf-link" style="display: none">#</span>
@@ -1308,234 +1119,347 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                  <!--  For Mobile -->
 
-    <!-- quotes -->
-    <!-- https://codepen.io/shamim539/details/GZPZBp -->
-    <div id="quotes" class="quotes">
-      <div class="container g-0">
-        <div class="quote-wrapper">
-          <div class="q-l"></div>
-          <div class="q-r"></div>
-          <div class="row g-0">
-            <div class="col-lg-1 col-md-0">
-              <div class="flex-container-l">
-                <div class="left-arrow"></div>
-              </div>
-            </div>
-            <div class="col-lg-10 col-md-12">
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="quotes-section-heading">Quotes by the speakers</p>
-                  <div id="customers-testimonials" class="owl-carousel">
-                    <!--TESTIMONIAL 1 -->
+                  <div class="onlyForMobile">
+                    <div class="otherepisodes">Other Episodes</div>
+                    <div id="owl-episodes" class="owl-carousel owl-theme">
+                      <div class="item">
+                        <div class="card p-0 multi-card active">
+                          <span class="episode-link" style="display: none"
+                            >https://www.youtube.com/embed/SMM60nxM_zA</span
+                          >
+                          <span class="audio-link" style="display: none"
+                            >./assets/audio/Ajay-Gary/HCL-Ajay-Gary-Section-1-Audio.mp3</span
+                          >
+                          <span class="pdf-link" style="display: none"
+                            >./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part1.pdf</span
+                          >
+                          <span class="image-link" style="display: none"
+                            >./assets/images/episode/episodebg01.png</span
+                          >
 
-                    <div class="item">
-                      <div class="rp">
-                        <img
-                          class="img-circle"
-                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
-                          alt=""
-                        />
-                        <p class="name">Grant Cardone</p>
-                        <p class="designation">AVP - Marketing</p>
-                        <p class="desc">
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Completely synergize
-                          resource taxing relationships via premier niche
-                          markets. Professionally cultivate.
-                        </p>
+                          <div class="row g-0">
+                            <div class="col-md-5">
+                              <img
+                                src="./assets/images/episode/gary001.png"
+                                alt="episode-thumb-part1"
+                              />
+                            </div>
+                            <div class="col-md-7">
+                              <div class="card-body">
+                                <div class="multi-episode-details">
+                                  MEGA TALKS with Gary Cantrell
+                                </div>
+                                <div class="multi-episode-title">
+                                  #InspireTomorrow I Episode 1 I Part 1
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="item">
-                      <div class="rp">
-                        <img
-                          class="img-circle"
-                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
-                          alt=""
-                        />
-                        <p class="name">Grant Cardone</p>
-                        <p class="designation">AVP - Marketing</p>
-                        <p class="desc">
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Completely synergize
-                          resource taxing relationships via premier niche
-                          markets. Professionally cultivate.
-                        </p>
+
+                      <div class="item">
+                        <div class="card p-0 multi-card" style="">
+                          <span class="episode-link" style="display: none"
+                            >https://www.youtube.com/embed/4K_WGSuuWcw</span
+                          >
+                          <span class="audio-link" style="display: none"
+                            >./assets/audio/Ajay-Gary/HCL-Ajay-Gary-Section-2-Audio.mp3</span
+                          >
+                          <span class="pdf-link" style="display: none"
+                            >./assets/pdf/Ajay-Gary/Mega-Talks-with-Gary-Part2.pdf</span
+                          >
+                          <span class="image-link" style="display: none"
+                            >./assets/images/episode/episodebg02.png</span
+                          >
+                          <div class="row g-0">
+                            <div class="col-md-5">
+                              <img
+                                src="./assets/images/episode/1.2.jpg"
+                                alt="episode-thumb-part2"
+                              />
+                            </div>
+                            <div class="col-md-7">
+                              <div class="card-body">
+                                <div class="multi-episode-details">
+                                  MEGA TALKS with Gary Cantrell
+                                </div>
+                                <div class="multi-episode-title">
+                                  #InspireTomorrow I Episode 1 I Part 2
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="item">
-                      <div class="rp">
-                        <img
-                          class="img-circle"
-                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
-                          alt=""
-                        />
-                        <p class="name">Grant Cardone</p>
-                        <p class="designation">AVP - Marketing</p>
-                        <p class="desc">
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Completely synergize
-                          resource taxing relationships via premier niche
-                          markets. Professionally cultivate.
-                        </p>
+
+                      <div class="item">
+                        <div class="card p-0 multi-card" style="border: 0px">
+                          <span class="episode-link" style="display: none"
+                            >#</span
+                          >
+                          <span class="audio-link" style="display: none"
+                            >#</span
+                          >
+                          <span class="pdf-link" style="display: none">#</span>
+                          <span class="image-link" style="display: none"
+                            >./assets/images/episode/episodebg03.jpg</span
+                          >
+                          <div class="row g-0">
+                            <div class="col-md-5">
+                              <img
+                                src="./assets/images/episode/1.3.jpg"
+                                alt="episode-thumb-part1"
+                              />
+                            </div>
+                            <div class="col-md-7">
+                              <div class="card-body">
+                                <div class="multi-episode-details">
+                                  MEGA TALKS with Bask Iyer
+                                </div>
+                                <div class="multi-episode-title">
+                                  #InspireTomorrow I Episode 1 I Part 1
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="item">
-                      <div class="rp">
-                        <img
-                          class="img-circle"
-                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
-                          alt=""
-                        />
-                        <p class="name">Grant Cardone</p>
-                        <p class="designation">AVP - Marketing</p>
-                        <p class="desc">
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Completely synergize
-                          resource taxing relationships via premier niche
-                          markets. Professionally cultivate.
-                        </p>
+
+                      <div class="item">
+                        <div class="card p-0 multi-card" style="border: 0px">
+                          <span class="episode-link" style="display: none"
+                            >#</span
+                          >
+                          <span class="audio-link" style="display: none"
+                            >#</span
+                          >
+                          <span class="pdf-link" style="display: none">#</span>
+                          <span class="image-link" style="display: none"
+                            >./assets/images/episode/episodebg02.png</span
+                          >
+
+                          <div class="row g-0">
+                            <div class="col-md-5">
+                              <img
+                                src="./assets/images/episode/1.2.jpg"
+                                alt="episode-thumb-part2"
+                              />
+                            </div>
+                            <div class="col-md-7">
+                              <div class="card-body">
+                                <div class="multi-episode-details">
+                                  MEGA TALKS with Bask Iyer
+                                </div>
+                                <div class="multi-episode-title">
+                                  #InspireTomorrow I Episode 1 I Part 2
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="item">
-                      <div class="rp">
-                        <img
-                          class="img-circle"
-                          src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
-                          alt=""
-                        />
-                        <p class="name">Grant Cardone</p>
-                        <p class="designation">AVP - Marketing</p>
-                        <p class="desc">
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Completely synergize
-                          resource taxing relationships via premier niche
-                          markets. Professionally cultivate.
-                        </p>
+
+                      <div class="item">
+                        <div class="card p-0 multi-card" style="border: 0px">
+                          <span class="episode-link" style="display: none"
+                            >#</span
+                          >
+                          <span class="audio-link" style="display: none"
+                            >#</span
+                          >
+                          <span class="pdf-link" style="display: none">#</span>
+                          <span class="image-link" style="display: none"
+                            >./assets/images/episode/episodebg03.jpg</span
+                          >
+
+                          <div class="row g-0">
+                            <div class="col-md-5">
+                              <img
+                                src="./assets/images/episode/1.3.jpg"
+                                alt="episode-thumb-part1"
+                              />
+                            </div>
+                            <div class="col-md-7">
+                              <div class="card-body">
+                                <div class="multi-episode-details">
+                                  MEGA TALKS with Rhonda Gass
+                                </div>
+                                <div class="multi-episode-title">
+                                  #InspireTomorrow I Episode 1 I Part 2
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="card p-0 multi-card">
+                          <span class="episode-link" style="display: none"
+                            >#</span
+                          >
+                          <span class="audio-link" style="display: none"
+                            >#</span
+                          >
+                          <span class="pdf-link" style="display: none">#</span>
+                          <span class="image-link" style="display: none"
+                            >./assets/images/episode/episodebg02.png</span
+                          >
+                          <div class="row g-0">
+                            <div class="col-md-5">
+                              <img
+                                src="./assets/images/episode/1.2.jpg"
+                                alt="episode-thumb-part1"
+                              />
+                            </div>
+                            <div class="col-md-7">
+                              <div class="card-body">
+                                <div class="multi-episode-details">
+                                  MEGA TALKS with Rhonda Gass
+                                </div>
+                                <div class="multi-episode-title">
+                                  #InspireTomorrow I Episode 1 I Part 2
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-1 col-md-0">
-              <div class="flex-container-r">
-                <div class="right-arrow"></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- quotes -->
+      <!-- https://codepen.io/shamim539/details/GZPZBp -->
+      <div class="section fp-auto-height">
+        <div id="quotes" class="quotes">
+          <div class="container g-0">
+            <div class="quote-wrapper">
+              <div class="q-l"></div>
+              <div class="q-r"></div>
+              <div class="row g-0">
+                <div class="col-lg-1 col-md-0">
+                  <div class="flex-container-l">
+                    <div class="left-arrow"></div>
+                  </div>
+                </div>
+                <div class="col-lg-10 col-md-12">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <p class="quotes-section-heading">
+                        Quotes by the speakers
+                      </p>
+                      <div id="customers-testimonials" class="owl-carousel">
+                        <!--TESTIMONIAL 1 -->
+
+                        <div class="item">
+                          <div class="rp">
+                            <img
+                              class="img-circle"
+                              src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                              alt=""
+                            />
+                            <p class="name">Grant Cardone</p>
+                            <p class="designation">AVP - Marketing</p>
+                            <p class="desc">
+                              Dramatically maintain clicks-and-mortar solutions
+                              without functional solutions. Completely synergize
+                              resource taxing relationships via premier niche
+                              markets. Professionally cultivate.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="rp">
+                            <img
+                              class="img-circle"
+                              src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                              alt=""
+                            />
+                            <p class="name">Grant Cardone</p>
+                            <p class="designation">AVP - Marketing</p>
+                            <p class="desc">
+                              Dramatically maintain clicks-and-mortar solutions
+                              without functional solutions. Completely synergize
+                              resource taxing relationships via premier niche
+                              markets. Professionally cultivate.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="rp">
+                            <img
+                              class="img-circle"
+                              src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                              alt=""
+                            />
+                            <p class="name">Grant Cardone</p>
+                            <p class="designation">AVP - Marketing</p>
+                            <p class="desc">
+                              Dramatically maintain clicks-and-mortar solutions
+                              without functional solutions. Completely synergize
+                              resource taxing relationships via premier niche
+                              markets. Professionally cultivate.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="rp">
+                            <img
+                              class="img-circle"
+                              src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                              alt=""
+                            />
+                            <p class="name">Grant Cardone</p>
+                            <p class="designation">AVP - Marketing</p>
+                            <p class="desc">
+                              Dramatically maintain clicks-and-mortar solutions
+                              without functional solutions. Completely synergize
+                              resource taxing relationships via premier niche
+                              markets. Professionally cultivate.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="rp">
+                            <img
+                              class="img-circle"
+                              src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                              alt=""
+                            />
+                            <p class="name">Grant Cardone</p>
+                            <p class="designation">AVP - Marketing</p>
+                            <p class="desc">
+                              Dramatically maintain clicks-and-mortar solutions
+                              without functional solutions. Completely synergize
+                              resource taxing relationships via premier niche
+                              markets. Professionally cultivate.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-1 col-md-0">
+                  <div class="flex-container-r">
+                    <div class="right-arrow"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--
-    <section id="contactus" class="contact">
-      <div class="container-fluid g-0">
-        <div class="contact-section-heading">Contact us</div>
-        <div class="row g-0">
-          <div class="col-md-1 col-sm-0"></div>
-          <div class="col-md-10 col-sm-12">
-            <form>
-              <div class="row form-row">
-                <div class="col-md-6 col-sm-12">
-                  <input
-                    type="text"
-                    name="firstName"
-                    id="firstName"
-                    placeholder="First Name*"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-sm-12">
-                  <input
-                    type="text"
-                    name="lastName"
-                    id="lastName"
-                    placeholder="Last Name*"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="row form-row">
-                <div class="col-md-6 col-sm-12">
-                  <input
-                    type="text"
-                    name="organization"
-                    placeholder="Organization"
-                  />
-                </div>
-                <div class="col-md-6 col-sm-12">
-                  <input
-                    type="email"
-                    name="email"
-                    email="EmailZ"
-                    placeholder="Email ID*"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="row form-row">
-                <div class="col-md-6 col-sm-12">
-                  <input
-                    type="text"
-                    name="jobtitle"
-                    placeholder="Job Title"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-sm-12">
-                  <input
-                    type="text"
-                    name="country"
-                    placeholder="Country"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-12">
-                  <div class="checkBoxRow">
-                    <label for="gdpr" class="checkBoxContainer"
-                      >I have read HCL Technologies’ Privacy Policy and agree to
-                      the terms and conditions*
-                      <input
-                        type="checkbox"
-                        name="gdpr"
-                        value="adventure"
-                        id="gdpr"
-                        onClick="{this.handleCheckbox}"
-                      />
-                      <span class="checkmark">
-                        <div class="indicator"></div>
-                      </span>
-                    </label>
-                  </div>
-                  <p class="form-info">
-                    By providing your contact information and clicking 'submit',
-                    you authorize HCL Technologies to store your contact details
-                    and contact you with information on case studies,
-                    whitepapers, events, webinars, newsletters, announcements
-                    and other relevant updates.
-                  </p>
-                  <div style="text-align: center">
-                    <button class="frm-button">Submit</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-md-1 col-sm-0"></div>
-        </div>
-      </div>
-    </section> -->
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script>
@@ -1594,13 +1518,13 @@
           "#episodes .episode-vedio-wrapper iframe"
         );
 
-        var newString = srcValue.getAttribute("src") + "?rel=0&enablejsapi=1&autoplay=1";
+        var newString =
+          srcValue.getAttribute("src") + "?rel=0&enablejsapi=1&autoplay=1";
 
         srcValue.setAttribute(
           "src",
           srcValue.getAttribute("src") + "?rel=0&enablejsapi=1&autoplay=1"
         );
-
 
         document.querySelector(
           "#episodes #episode-overlay-wrapper"
@@ -1874,7 +1798,8 @@
           music.volume = newVolume;
           document.querySelector(".volume-percentage").style.width =
             newVolume * 100 + "%";
-          document.querySelector(".volume-point").style.marginLeft = newVolume * 10 + "%";
+          document.querySelector(".volume-point").style.marginLeft =
+            newVolume * 10 + "%";
         },
         false
       );
@@ -1907,7 +1832,7 @@
           music.muted = true;
           music.volume = 0;
           document.querySelector(".volume-percentage").style.width = 0 + "%";
-          document.querySelector(".volume-point").style.marginLeft =  "0%";
+          document.querySelector(".volume-point").style.marginLeft = "0%";
           getmuteImg.setAttribute("src", "./assets/images/episode/Mute.svg");
         } else {
           music.muted = false;
@@ -1941,6 +1866,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
+      integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script>
       $(".dot").click((e) => {
@@ -1971,17 +1902,17 @@
 
       $(document).ready(function () {
         window.setInterval(nextSlide, 2000);
-        $(".nav-item").on("click", function (e) {
-          e.preventDefault();
-          var scroll_id = $(this).attr("href");
-          if (scroll_id) {
-            var target_element_offset = $(scroll_id).offset();
-            window.scrollTo({
-              top: target_element_offset.top - 100,
-              behavior: "smooth",
-            });
-          }
-        });
+        // $(".nav-item").on("click", function (e) {
+        //   e.preventDefault();
+        //   var scroll_id = $(this).attr("href");
+        //   if (scroll_id) {
+        //     var target_element_offset = $(scroll_id).offset();
+        //     window.scrollTo({
+        //       top: target_element_offset.top - 100,
+        //       behavior: "smooth",
+        //     });
+        //   }
+        // });
       });
       let slideIndex = 0;
       // showSlides();
@@ -2045,7 +1976,7 @@
         owl.trigger("prev.owl.carousel", [300]);
       });
 
-      $("#home").owlCarousel({
+      $("#banner").owlCarousel({
         loop: true,
         items: 1,
         margin: 0,
@@ -2057,6 +1988,88 @@
 
       $(".nav-item").on("click", function () {
         $(".navbar-collapse").removeClass("show");
+      });
+
+      $("#fullpage").fullpage({
+        navigation: true,
+        anchors: ["section1", "section2", "section3", "section4", "section5"],
+        // showActiveTooltip: false,
+        // slidesNavigation: false,
+        // slidesNavPosition: "bottom",
+
+        // // Scrolling
+        // css3: true,
+        // scrollingSpeed: 700,
+        // autoScrolling: true,
+        // fitToSection: true,
+        // scrollBar: false,
+        // easing: "easeInOutCubic",
+        // easingcss3: "ease",
+        // loopBottom: false,
+        // loopTop: false,
+        // loopHorizontal: true,
+        // continuousVertical: false,
+        // continuousHorizontal: false,
+        // scrollHorizontally: false,
+        // interlockedSlides: false,
+        // dragAndMove: false,
+        // offsetSections: false,
+        // resetSliders: false,
+        // fadingEffect: false,
+        // normalScrollElements: "#element1, .element2",
+        // scrollOverflow: true,
+        // scrollOverflowMacStyle: false,
+        // scrollOverflowReset: false,
+        // touchSensitivity: 15,
+        // bigSectionsDestination: null,
+
+        // // Accessibility
+        // keyboardScrolling: true,
+        // animateAnchor: true,
+        // recordHistory: true,
+
+        // // Design
+        // controlArrows: true,
+        // controlArrowsHTML: [
+        //   '<div class="fp-arrow"></div>',
+        //   '<div class="fp-arrow"></div>',
+        // ],
+        // verticalCentered: true,
+        // sectionsColor: ["#ccc", "#fff"],
+        // paddingTop: "3em",
+        // paddingBottom: "10px",
+        // fixedElements: "#header, .footer",
+        // responsiveWidth: 0,
+        // responsiveHeight: 0,
+        // responsiveSlides: false,
+        // parallax: false,
+        // parallaxOptions: {
+        //   type: "reveal",
+        //   percentage: 62,
+        //   property: "translate",
+        // },
+        // dropEffect: false,
+        // dropEffectOptions: { speed: 2300, color: "#F82F4D", zIndex: 9999 },
+        // waterEffect: false,
+        // waterEffectOptions: { animateContent: true, animateOnMouseMove: true },
+        // cards: false,
+        // cardsOptions: {
+        //   perspective: 100,
+        //   fadeContent: true,
+        //   fadeBackground: true,
+        // },
+
+        // // Custom selectors
+        // sectionSelector: ".section",
+        // slideSelector: ".slide",
+
+        // lazyLoading: true,
+        // observer: true,
+        // credits: {
+        //   enabled: true,
+        //   label: "Made with fullPage.js",
+        //   position: "right",
+        // },
       });
     </script>
   </body>
