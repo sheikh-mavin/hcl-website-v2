@@ -2053,9 +2053,9 @@
         center: true,
         items: 3,
         margin: 0,
-        autoplay: true,
+        // autoplay: true,
         autoplayTimeout: 5000,
-        smartSpeed: 2000,
+        smartSpeed: 1000,
 
         dots: true,
 
@@ -2128,8 +2128,12 @@
         bigSectionsDestination: "top",
         autoScrolling: true,
         normalScrollElements: ".episode-right-section",
+        recordHistory: false,
         credits: {
           enabled: false,
+        },
+        afterLoad: function (anchorLink, index) {
+          history.pushState(null, null, "/");
         },
         onLeave: function (org, dest, direction) {
           if (dest.index == 1) {
@@ -2186,9 +2190,9 @@
             $rightArrow
               .addClass("animate__animated animate__fadeInRight")
               .css("animation-delay", ".6s");
-            $customerTestimonials.addClass(
-              "animate__animated animate__fadeInUp"
-            );
+            // $customerTestimonials.addClass(
+            //   "animate__animated animate__fadeInUp"
+            // );
             if (count == 0) {
               setTimeout(function () {
                 owl.trigger("next.owl.carousel", [1000]);

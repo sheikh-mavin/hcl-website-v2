@@ -411,7 +411,8 @@
 
 #customers-testimonials .owl-item.active.center .item {
   opacity: 1;
-  animation: flip-scale-down-diag-2 0.5s ease-in .5s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
   transition-delay: 1s;
   background-color: white;
   box-shadow: 0 2px 24px 0 rgba(204, 204, 204, 0.5);
@@ -429,10 +430,13 @@
 #customers-testimonials .owl-item .item .rp {
   height: 270px;
   overflow: hidden;
+  filter: blur(2px);
 }
 
 #customers-testimonials .owl-item.active.center .item .rp {
   height: 100%;
+  transition-delay: 1s;
+  filter: blur(0px);
 }
 
 #customers-testimonials.owl-carousel .owl-dots {
@@ -1608,6 +1612,18 @@ input[type="checkbox"] {
   #customers-testimonials .item {
     opacity: 1;
     background-color: white;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    height: auto;
+    padding: 22px;
+  }
+
+  #customers-testimonials .owl-item .item .rp {
+    height: 100%;
+    overflow: none;
   }
   #overview-slider {
     height: 100% !important;
