@@ -411,7 +411,8 @@
 
 #customers-testimonials .owl-item.active.center .item {
   opacity: 1;
-  animation: flip-scale-down-diag-2 0.7s linear both;
+  animation: flip-scale-down-diag-2 0.5s ease-in 1s;
+  transition-delay: 1s;
   background-color: white;
   box-shadow: 0 2px 24px 0 rgba(204, 204, 204, 0.5);
 }

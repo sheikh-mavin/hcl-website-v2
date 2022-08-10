@@ -1810,7 +1810,7 @@
                               src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
                               alt=""
                             />
-                            <p class="name">Grant Cardone</p>
+                            <p class="name">Grant Cardone 2</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
                               Dramatically maintain clicks-and-mortar solutions
@@ -1827,7 +1827,7 @@
                               src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
                               alt=""
                             />
-                            <p class="name">Grant Cardone</p>
+                            <p class="name">Grant Cardone 3</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
                               Dramatically maintain clicks-and-mortar solutions
@@ -1844,7 +1844,7 @@
                               src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
                               alt=""
                             />
-                            <p class="name">Grant Cardone</p>
+                            <p class="name">Grant Cardone 4</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
                               Dramatically maintain clicks-and-mortar solutions
@@ -1861,7 +1861,7 @@
                               src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
                               alt=""
                             />
-                            <p class="name">Grant Cardone</p>
+                            <p class="name">Grant Cardone 5</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
                               Dramatically maintain clicks-and-mortar solutions
@@ -1878,7 +1878,7 @@
                               src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
                               alt=""
                             />
-                            <p class="name">Grant Cardone</p>
+                            <p class="name">Grant Cardone 1</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
                               Dramatically maintain clicks-and-mortar solutions
@@ -2055,6 +2055,7 @@
         margin: 0,
         autoplay: true,
         autoplayTimeout: 5000,
+        smartSpeed: 2000,
 
         dots: true,
 
@@ -2068,15 +2069,14 @@
           },
         },
       });
+
       // Go to the next item
       $(".left-arrow").click(function () {
-        owl.trigger("next.owl.carousel");
+        owl.trigger("prev.owl.carousel");
       });
       // Go to the previous item
       $(".right-arrow").click(function () {
-        // With optional speed parameter
-        // Parameters has to be in square bracket '[]'
-        owl.trigger("prev.owl.carousel", [300]);
+        owl.trigger("next.owl.carousel");
       });
 
       $("#banner").owlCarousel({
@@ -2096,6 +2096,7 @@
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: false,
+        smartSpeed: 5000,
       });
 
       $(".nav-item").on("click", function () {
@@ -2105,7 +2106,6 @@
       var $fh = $("#f-h");
       var $eh = $("#e-h");
       var $qh = $("#q-h");
-
 
       var $leftArrow = $(".left-arrow");
       var $rightArrow = $(".right-arrow");
@@ -2122,108 +2122,23 @@
       var $episodeRightCardTwo = $("#episode-card-right-two");
       var $episodeRightCardThree = $("#episode-card-right-three");
       var $episodeRightCardFour = $("#episode-card-right-four");
-
+      let count = 0;
       $("#fullpage").fullpage({
         navigation: true,
         anchors: ["section1", "section2", "section3", "section4", "section5"],
-        // showActiveTooltip: false,
-        // slidesNavigation: false,
-        // slidesNavPosition: "bottom",
         bigSectionsDestination: "top",
         autoScrolling: true,
-
-        // // Scrolling
-        // css3: true,
-        // scrollingSpeed: 700,
-        // autoScrolling: true,
-        // fitToSection: true,
-        // scrollBar: false,
-        // easing: "easeInOutCubic",
-        // easingcss3: "ease",
-        // loopBottom: false,
-        // loopTop: false,
-        // loopHorizontal: true,
-        // continuousVertical: false,
-        // continuousHorizontal: false,
-        // scrollHorizontally: false,
-        // interlockedSlides: false,
-        // dragAndMove: false,
-        // offsetSections: false,
-        // resetSliders: false,
-        // fadingEffect: false,
         normalScrollElements: ".episode-right-section",
-        // scrollOverflow: true,
-        // scrollOverflowMacStyle: false,
-        // scrollOverflowReset: false,
-        // touchSensitivity: 15,
-        // bigSectionsDestination: null,
-
-        // // Accessibility
-        // keyboardScrolling: true,
-        // animateAnchor: true,
-        // recordHistory: true,
-
-        // // Design
-        // controlArrows: true,
-        // controlArrowsHTML: [
-        //   '<div class="fp-arrow"></div>',
-        //   '<div class="fp-arrow"></div>',
-        // ],
-        // verticalCentered: true,
-        // sectionsColor: ["#ccc", "#fff"],
-        // paddingTop: "3em",
-        // paddingBottom: "10px",
-        // fixedElements: "#header, .footer",
-        // responsiveWidth: 0,
-        // responsiveHeight: 0,
-        // responsiveSlides: false,
-        // parallax: false,
-        // parallaxOptions: {
-        //   type: "reveal",
-        //   percentage: 62,
-        //   property: "translate",
-        // },
-        // dropEffect: false,
-        // dropEffectOptions: { speed: 2300, color: "#F82F4D", zIndex: 9999 },
-        // waterEffect: false,
-        // waterEffectOptions: { animateContent: true, animateOnMouseMove: true },
-        // cards: false,
-        // cardsOptions: {
-        //   perspective: 100,
-        //   fadeContent: true,
-        //   fadeBackground: true,
-        // },
-
-        // // Custom selectors
-        // sectionSelector: ".section",
-        // slideSelector: ".slide",
-
-        // lazyLoading: true,
-        // observer: true,
         credits: {
           enabled: false,
         },
         onLeave: function (org, dest, direction) {
-          /**
-           * use the following condition:
-           *
-           *   if( index == 1 && direction == 'down' ) {
-           *
-           * if you haven't enabled the dot navigation
-           * or you aren't interested in the animations that occur
-           * when you jump (using the dot navigation)
-           * from the first section to another sections
-           */
-
-          // first animation
-          console.log();
-
-          if (org.index == 0 && dest.index == 1) {
+          if (dest.index == 1) {
             $oh.addClass("animate__animated animate__fadeIn");
-            $overviewslider.addClass("animate__animated animate__fadeIn")
+            $overviewslider.addClass("animate__animated animate__fadeIn");
           }
 
-          if (org.index == 1 && dest.index == 2) {
+          if (dest.index == 2) {
             $fh.addClass(
               "animate__animated animate__bounceIn animate__delay-1s"
             );
@@ -2241,7 +2156,7 @@
               .css("animation-delay", "1.5s");
           }
 
-          if (org.index == 2 && dest.index == 3) {
+          if (dest.index == 3) {
             $eh.addClass(
               "animate__animated animate__fadeInDown animate__delay-1s"
             );
@@ -2262,51 +2177,29 @@
               .css("animation-delay", "0.8s");
           }
 
-          if (org.index == 3 && dest.index == 4) {
+          if (dest.index == 4) {
             $qh
               .addClass("animate__animated animate__fadeInDown")
               .css("animation-delay", ".6s");
-            // $leftArrow
-            //   .addClass("animate__animated animate__fadeInLeft")
-            //   .css("animation-delay", ".6s");
-            // $rightArrow
-            //   .addClass("animate__animated animate__fadeInRight")
-            //   .css("animation-delay", ".6s");
-            // $customerTestimonials.addClass(
-            //   "animate__animated animate__jackInTheBox animate__delay-1s"
-            // );
+            $leftArrow
+              .addClass("animate__animated animate__fadeInLeft")
+              .css("animation-delay", ".6s");
+            $rightArrow
+              .addClass("animate__animated animate__fadeInRight")
+              .css("animation-delay", ".6s");
+            $customerTestimonials.addClass(
+              "animate__animated animate__fadeInUp"
+            );
+            if (count == 0) {
+              setTimeout(function () {
+                owl.trigger("next.owl.carousel", [1000]);
+                owl.trigger("next.owl.carousel", [2000]);
+                owl.trigger("next.owl.carousel", [3000]);
+                owl.trigger("next.owl.carousel", [3000]);
+              }, 500);
+              count = 1;
+            }
           }
-
-          /**
-           * use the following condition:
-           *
-           *   else if( index == 2 && direction == 'down' ) {
-           *
-           * if you haven't enabled the dot navigation
-           * or you aren't interested in the animations that occur
-           * when you jump (using the dot navigation) from the first section to the third one
-           */
-
-          // second animation
-          // else if ((index == 1 || index == 2) && nextIndex == 3) {
-
-          // }
-
-          // /**
-          //  * use the following condition:
-          //  *
-          //  *   else if( index == 3 && direction == 'down' ) {
-          //  *
-          //  * if you haven't enabled the dot navigation
-          //  * or you aren't interested in the animations that occur
-          //  * when you jump (using the dot navigation)
-          //  * from the first or second section to the fourth one
-          //  */
-
-          // // third animation
-          // else if ((index == 1 || index == 2 || index == 3) && nextIndex == 4) {
-
-          // }
         },
       });
     </script>
