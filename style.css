@@ -175,6 +175,10 @@
 #overview-slider div {
   height: 100%;
 }
+
+#overview-slider .owl-stage-outer {
+  border: 10px;
+}
 .overview {
   padding: 100px 10px !important;
   display: flex;
