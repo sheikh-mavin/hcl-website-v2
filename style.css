@@ -651,7 +651,7 @@ input[type="checkbox"] {
   line-height: 45px;
 
   color: #242833;
-  padding: 60px 0 100px;
+  padding: 60px 10% 100px;
 }
 
 #feature .card-body {
@@ -670,7 +670,7 @@ input[type="checkbox"] {
 }
 
 #feature .image-holder-feature {
-  height: 340px;
+  height: 300px;
   text-align: center;
 }
 .feature-modal-vedio-wrapper {
@@ -687,7 +687,7 @@ input[type="checkbox"] {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 340px;
+  height: 300px;
   width: 100%;
   opacity: 0;
   transition: all 2s;
@@ -696,7 +696,7 @@ input[type="checkbox"] {
 
 .overlay .overlay-description {
   font-family: "Gotham-Medium";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 
   line-height: 1.25;
@@ -707,14 +707,13 @@ input[type="checkbox"] {
 .overlay-icons {
   padding: 0px 20px;
   margin-top: -5px;
-  text-align: center;
 }
 .overlay-icons img{
   width: 22px;
 }
 
 .card-img-top-featured-speaker {
-  height: 340px;
+  height: 300px;
   width: 100%;
 }
 
@@ -836,6 +835,7 @@ input[type="checkbox"] {
 }
 .single-episode-wrapper {
   padding-right: 10px;
+  border: 0px !important;
 }
 .other-episodes {
   font-family: "Gotham-Bold";
@@ -2230,86 +2230,6 @@ padding: 4px;
 .showvolumeslider{
   display: block;
 }
-
-.cardAnimation1{
-  animation: moveFromLeft01 1s ease-in-out;
-  animation-delay: 4ms;
-}
-.cardAnimation2{
-  animation: moveFromLeft02 1s ease-in-out;
-  animation-delay: 4ms;
-}
-.cardAnimation3{
-  animation: moveFromRight01 1s ease-in-out;
-  animation-delay: 4ms;
-}
-.cardAnimation4{
-  animation: moveFromRight02 1s ease-in-out;
-  animation-delay: 4ms;
-}
-.episodecardAnimation1{
-  animation: moveFromRight02 1s ease-in-out;
-  animation-delay: 6ms;
-}
-.episodecardAnimation2{
-  animation: moveFromRight02 1s ease-in-out;
-  animation-delay: 8ms;
-}
-.episodecardAnimation3{
-  animation: moveFromRight02 1s ease-in-out;
-  animation-delay: 10ms;
-}
-.episodecardAnimation4{
-  animation: moveFromRight02 1s ease-in-out;
-  animation-delay: 12ms;
-}
-
-
-@keyframes moveFromLeft01 {
-  0% {
-      transform: translateX(-100px);
-  }
-  100% {
-      transform: translateX(0px);
-  }
-}
-
- @keyframes moveFromLeft02 {
-  0% {
-      transform: translateX(-50px);
-  }
-  100% {
-      transform: translateX(0px);
-  }
-}
-
-@keyframes moveFromRight01 {
-  0% {
-      transform: translateX(50px);
-  }
-  100% {
-      transform: translateX(0px);
-  }
-}
-
- @keyframes moveFromRight02 {
-  0% {
-      transform: translateX(100px);
-  }
-  100% {
-      transform: translateX(0px);
-  }
-}
-
-@keyframes testAnim {
-  0% {
-      transform: translateY(-150px);
-  }
-  100% {
-      transform: translateY(0px);
-  }
-}
-
 
 #episodes .card-body{
   padding: 10px 0px;

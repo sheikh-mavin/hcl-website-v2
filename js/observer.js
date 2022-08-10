@@ -2,11 +2,11 @@ const observerfeatuteone = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     const getCardId = entry.target ;
     if (entry.isIntersecting ) {
-        getCardId.classList.add('cardAnimation1');
+        getCardId.classList.add('animate__fadeIn');
         return;
     }
 
-    getCardId.classList.remove('cardAnimation1');
+    getCardId.classList.remove('animate__fadeIn');
   });
 });
 
@@ -16,11 +16,11 @@ const observerfeatutetwo = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const getCardId = entry.target ;
       if (entry.isIntersecting ) {
-          getCardId.classList.add('cardAnimation2');
+          getCardId.classList.add('animate__fadeIn');
           return;
       }
 
-      getCardId.classList.remove('cardAnimation2');
+      getCardId.classList.remove('animate__fadeIn');
     });
   });
 
@@ -31,11 +31,11 @@ const observerfeatutethree = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const getCardId = entry.target ;
       if (entry.isIntersecting ) {
-          getCardId.classList.add('cardAnimation3');
+          getCardId.classList.add('animate__fadeIn');
           return;
       }
 
-      getCardId.classList.remove('cardAnimation3');
+      getCardId.classList.remove('animate__fadeIn');
     });
   });
 
@@ -46,11 +46,11 @@ const observerfeatutefour = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const getCardId = entry.target ;
       if (entry.isIntersecting ) {
-          getCardId.classList.add('cardAnimation4');
+          getCardId.classList.add('animate__fadeIn');
           return;
       }
 
-      getCardId.classList.remove('cardAnimation4');
+      getCardId.classList.remove('animate__fadeIn');
     });
   });
 
@@ -61,11 +61,11 @@ const observerepisodeleft = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const getCardId = entry.target ;
       if (entry.isIntersecting ) {
-          getCardId.classList.add('cardAnimation1');
+          getCardId.classList.add('animate__zoomIn');
           return;
       }
 
-      getCardId.classList.remove('cardAnimation1');
+      getCardId.classList.remove('animate__zoomIn');
     });
   });
 
@@ -76,11 +76,11 @@ const observerepisodeleft = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const getCardId = entry.target ;
       if (entry.isIntersecting ) {
-          getCardId.classList.add('episodecardAnimation1');
+          getCardId.classList.add('animate__slideInRight');
           return;
       }
 
-      getCardId.classList.remove('episodecardAnimation1');
+      getCardId.classList.remove('animate__slideInRight');
     });
   });
 
@@ -91,11 +91,11 @@ const observerepisodeleft = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const getCardId = entry.target ;
       if (entry.isIntersecting ) {
-          getCardId.classList.add('episodecardAnimation2');
+          getCardId.classList.add('animate__slideInRight');
           return;
       }
 
-      getCardId.classList.remove('episodecardAnimation2');
+      getCardId.classList.remove('animate__slideInRight');
     });
   });
 
@@ -106,11 +106,11 @@ const observerepisodeleft = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const getCardId = entry.target ;
       if (entry.isIntersecting ) {
-          getCardId.classList.add('episodecardAnimation3');
+          getCardId.classList.add('animate__slideInRight');
           return;
       }
 
-      getCardId.classList.remove('episodecardAnimation3');
+      getCardId.classList.remove('animate__slideInRight');
     });
   });
 
@@ -121,11 +121,11 @@ const observerepisodeleft = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const getCardId = entry.target ;
       if (entry.isIntersecting ) {
-          getCardId.classList.add('episodecardAnimation4');
+          getCardId.classList.add('animate__slideInRight');
           return;
       }
 
-      getCardId.classList.remove('episodecardAnimation4');
+      getCardId.classList.remove('animate__slideInRight');
     });
   });
 

@@ -30,6 +30,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
   </head>
   <body>
     <nav
@@ -688,10 +693,7 @@
                     </div>
 
                     <div class="col-3">
-                      <div
-                        class="card feature-card-three"
-                        id="feature-card-three"
-                      >
+                      <div class="card feature-card-three" id="feature-card-three" >
                         <div class="image-holder-feature">
                           <img
                             src="./assets/images/feature/rhenda.png"
@@ -742,10 +744,7 @@
                     </div>
 
                     <div class="col-3">
-                      <div
-                        class="card feature-card-four"
-                        id="feature-card-four"
-                      >
+                      <div class="card feature-card-four" id="feature-card-four" >
                         <div class="image-holder-feature">
                           <img
                             src="./assets/images/feature/bask.png"
@@ -1210,8 +1209,7 @@
               <div class="row g-4">
                 <div class="col-lg-8 p-0">
                   <div
-                    class="card single-episode-wrapper episode-card-left"
-                    id="episode-card-left"
+                    class="card single-episode-wrapper"
                   >
                     <div class="episode-vedio-wrapper">
                       <iframe
@@ -1225,6 +1223,7 @@
                       </iframe>
                       <div
                         id="episode-overlay-wrapper"
+                        class="episode-card-left"
                         style="
                           background-image: url(./assets/images/episode/episodebg01.png);
                         "
@@ -1393,7 +1392,7 @@
                       </div>
                     </div>
                     <div
-                      class="card p-0 multi-card episode-card-right-two"
+                      class="card p-0 multi-card episode-card-right-two episode-card-right-one"
                       id="episode-card-right-two"
                     >
                       <span class="episode-link" style="display: none"
@@ -1428,7 +1427,7 @@
                       </div>
                     </div>
                     <div
-                      class="card p-0 multi-card episode-card-right-three"
+                      class="card p-0 multi-card episode-card-right-three episode-card-right-one"
                       id="episode-card-right-three"
                       style="border: 0px"
                     >
@@ -1458,7 +1457,7 @@
                       </div>
                     </div>
                     <div
-                      class="card p-0 multi-card episode-card-right-four"
+                      class="card p-0 multi-card episode-card-right-four episode-card-right-one"
                       id="episode-card-right-four"
                       style="border: 0px"
                     >
@@ -1997,9 +1996,12 @@
       </div>
     </section> -->
 
+    </section>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
-    <script src="./js/observer.js"></script>
+
+    <!-- <script src="./js/observer.js"></script> -->
     <script src="./js/episode.js"></script>
     <script src="./js/feature.js"></script>
 
@@ -2010,7 +2012,6 @@
     ></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
-
     <script>
       $(".dot").click((e) => {
         let slides = document.getElementsByClassName("sl");
@@ -2139,7 +2140,15 @@
       var $featureCardTwo = $("#feature-card-two");
       var $featureCardThree = $("#feature-card-three");
       var $featureCardFour = $("#feature-card-four");
+
       var $overviewslider = $(".ovr-slider");
+      var $episodeCardLeft = $(".episode-card-left");
+
+      var $episodeRightCardOne = $("#episode-card-right-one");
+      var $episodeRightCardTwo = $("#episode-card-right-two");
+      var $episodeRightCardThree = $("#episode-card-right-three");
+      var $episodeRightCardFour = $("#episode-card-right-four");
+
 
       $("#fullpage").fullpage({
         navigation: true,
@@ -2242,25 +2251,40 @@
           }
 
           if (org.index == 1 && dest.index == 2) {
-            $fh.addClass("animate__animated animate__fadeInDown");
-            // $featureCardOne
-            //   .addClass("animate__animated animate__fadeIn")
-            //   .css("animation-delay", ".6s");
-            // $featureCardTwo
-            //   .addClass("animate__animated animate__fadeIn")
-            //   .css("animation-delay", "1s");
-            // $featureCardThree
-            //   .addClass("animate__animated animate__fadeIn")
-            //   .css("animation-delay", "1.4s");
-            // $featureCardFour
-            //   .addClass("animate__animated animate__fadeIn")
-            //   .css("animation-delay", "1.8s");
+            $fh.addClass("animate__animated animate__fadeInDown animate__delay-1s");
+            $featureCardOne
+              .addClass("animate__animated animate__fadeIn")
+              .css("animation-delay", "0s");
+            $featureCardTwo
+              .addClass("animate__animated animate__fadeIn")
+              .css("animation-delay", ".5s");
+            $featureCardThree
+              .addClass("animate__animated animate__fadeIn")
+              .css("animation-delay", "1s");
+            $featureCardFour
+              .addClass("animate__animated animate__fadeIn")
+              .css("animation-delay", "1.5s");
           }
 
           if (org.index == 2 && dest.index == 3) {
             $eh.addClass(
               "animate__animated animate__fadeInDown animate__delay-1s"
             );
+            $episodeCardLeft
+              .addClass("animate__animated animate__zoomIn")
+              .css("animation-delay", "0.5s");
+            $episodeRightCardOne
+              .addClass("animate__animated animate__slideInRight")
+              .css("animation-delay", "0.5s");
+            $episodeRightCardTwo
+              .addClass("animate__animated animate__slideInRight")
+              .css("animation-delay", "0.6s");
+            $episodeRightCardThree
+              .addClass("animate__animated animate__slideInRight")
+              .css("animation-delay", "0.7s");
+            $episodeRightCardFour
+              .addClass("animate__animated animate__slideInRight")
+              .css("animation-delay", "0.8s");
           }
 
           if (org.index == 3 && dest.index == 4) {
