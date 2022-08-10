@@ -430,13 +430,10 @@
 #customers-testimonials .owl-item .item .rp {
   height: 270px;
   overflow: hidden;
-  filter: blur(2px);
 }
 
 #customers-testimonials .owl-item.active.center .item .rp {
   height: 100%;
-  transition-delay: 1s;
-  filter: blur(0px);
 }
 
 #customers-testimonials.owl-carousel .owl-dots {
@@ -1451,7 +1448,7 @@ input[type="checkbox"] {
   }
 
   .overview {
-    padding: 22px 6px !important;
+    padding: 22px 20px !important;
   }
 }
 
@@ -1626,7 +1623,7 @@ input[type="checkbox"] {
     overflow: none;
   }
   #overview-slider {
-    height: 100% !important;
+    height: 260px !important;
   }
   .onlyForWeb {
     display: none !important;
