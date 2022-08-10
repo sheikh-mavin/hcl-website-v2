@@ -1605,6 +1605,10 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 991px) {
+  #customers-testimonials .item {
+    opacity: 1;
+    background-color: white;
+  }
   #overview-slider {
     height: 100% !important;
   }
