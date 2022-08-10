@@ -92,7 +92,7 @@
 
 .banner-text {
   position: absolute;
-  top: 15%;
+  top: 40px;
   margin-left: 8%;
   font-family: Gotham;
   height: 80%;
@@ -1561,22 +1561,22 @@ input[type="checkbox"] {
   }
 
   .sl-image {
-    height: 650px;
+    height: 600px;
   }
 
   .insp {
-    font-size: 66px;
+    font-size: 70px;
     line-height: 80px;
   }
 
   .colb {
-    margin-top: 24px;
-    font-size: 32px;
-    line-height: 34px;
+    margin-top: 30px;
+    font-size: 38px;
+    line-height: 38px;
   }
   .hash {
-    margin-top: 24px;
-    font-size: 32px;
+    margin-top: 30px;
+    font-size: 38px;
   }
 }
 
