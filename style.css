@@ -8,15 +8,6 @@
   src: url("./assets/fonts/GothamBold.otf");
 }
 
-@font-face {
-  font-family: "Rubik";
-  src: url("./assets/fonts/Rubik-Regular.ttf");
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("./assets/fonts/Rubik-Regular.ttf");
-}
 
 #fp-nav ul li a.active span{
   background: #006bb6 !important;
