@@ -169,16 +169,12 @@
   height: 112%;
   width: 100%;
   margin-top: -25px;
-  border-radius: 10px;
 }
 
 #overview-slider div {
   height: 100%;
 }
 
-#overview-slider .owl-stage-outer {
-  border: 10px;
-}
 .overview {
   padding: 100px 10px !important;
   display: flex;
@@ -207,9 +203,7 @@
 
 .overview-image {
   width: 100%;
-  border-radius: 10px;
   position: absolute;
-  border-radius: 10px;
   height: 100%;
 }
 
@@ -1453,7 +1447,7 @@ input[type="checkbox"] {
   }
 
   .overview {
-    padding: 22px 12px !important;
+    padding: 22px 6px !important;
   }
 }
 
