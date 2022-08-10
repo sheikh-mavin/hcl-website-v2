@@ -178,12 +178,12 @@
               </div>
               <div class="col-md-12 col-lg-7">
                 <div class="overview-text-wrapper">
-                   <div id="o-h">
+                  <div id="o-h">
                     <p class="overview-heading">
-                    <span>
-                      The <span class="mega">MEGA</span>
-                      <span class="talks">Talks</span>
-                    </span>
+                      <span>
+                        The <span class="mega">MEGA</span>
+                        <span class="talks">Talks</span>
+                      </span>
                     </p>
                   </div>
                   <p class="overview-text">
@@ -213,7 +213,7 @@
         <section id="feature">
           <div class="container">
             <div class="feature-head-wrapper">
-              <div id="e-h"><h2 class="title">Leaders</h2></div>
+              <div id="f-h"><h2 class="title">Leaders</h2></div>
               <div class="onlyForMobile">
                 <!-- <div class="dropdown">
                   <button
@@ -1205,7 +1205,7 @@
       <div class="section fp-auto-height">
         <section id="episodes">
           <div class="container">
-            <div id="s-h"><h2 class="title">Episodes</h2></div>
+            <div id="e-h"><h2 class="title">Episodes</h2></div>
             <div class="container-fluid">
               <div class="row g-4">
                 <div class="col-lg-8 p-0">
@@ -1786,9 +1786,9 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div id="q-h">
-                      <p class="quotes-section-heading">
-                        Quotes by the speakers
-                      </p>
+                        <p class="quotes-section-heading">
+                          Quotes by the speakers
+                        </p>
                       </div>
                       <div id="customers-testimonials" class="owl-carousel">
                         <!--TESTIMONIAL 1 -->
@@ -2127,7 +2127,19 @@
       $(".nav-item").on("click", function () {
         $(".navbar-collapse").removeClass("show");
       });
-      var $oh = $('#oh')
+      var $oh = $("#o-h");
+      var $fh = $("#f-h");
+      var $eh = $("#e-h");
+      var $qh = $("#q-h");
+
+      var $leftArrow = $(".left-arrow");
+      var $rightArrow = $(".right-arrow");
+      var $customerTestimonials = $("#customers-testimonials");
+      var $featureCardOne = $("#feature-card-one");
+      var $featureCardTwo = $("#feature-card-two");
+      var $featureCardThree = $("#feature-card-three");
+      var $featureCardFour = $("#feature-card-four");
+      var $overviewslider = $(".ovr-slider");
 
       $("#fullpage").fullpage({
         navigation: true,
@@ -2208,6 +2220,94 @@
         // observer: true,
         credits: {
           enabled: false,
+        },
+        onLeave: function (org, dest, direction) {
+          /**
+           * use the following condition:
+           *
+           *   if( index == 1 && direction == 'down' ) {
+           *
+           * if you haven't enabled the dot navigation
+           * or you aren't interested in the animations that occur
+           * when you jump (using the dot navigation)
+           * from the first section to another sections
+           */
+
+          // first animation
+          console.log();
+
+          if (org.index == 0 && dest.index == 1) {
+            $oh.addClass("animate__animated animate__fadeInDown");
+            $overviewslider.addClass("animate__animated animate__flipInX");
+          }
+
+          if (org.index == 1 && dest.index == 2) {
+            $fh.addClass("animate__animated animate__fadeInDown");
+            // $featureCardOne
+            //   .addClass("animate__animated animate__fadeIn")
+            //   .css("animation-delay", ".6s");
+            // $featureCardTwo
+            //   .addClass("animate__animated animate__fadeIn")
+            //   .css("animation-delay", "1s");
+            // $featureCardThree
+            //   .addClass("animate__animated animate__fadeIn")
+            //   .css("animation-delay", "1.4s");
+            // $featureCardFour
+            //   .addClass("animate__animated animate__fadeIn")
+            //   .css("animation-delay", "1.8s");
+          }
+
+          if (org.index == 2 && dest.index == 3) {
+            $eh.addClass(
+              "animate__animated animate__fadeInDown animate__delay-1s"
+            );
+          }
+
+          if (org.index == 3 && dest.index == 4) {
+            $qh
+              .addClass("animate__animated animate__fadeInDown")
+              .css("animation-delay", ".6s");
+            $leftArrow
+              .addClass("animate__animated animate__fadeInLeft")
+              .css("animation-delay", ".6s");
+            $rightArrow
+              .addClass("animate__animated animate__fadeInRight")
+              .css("animation-delay", ".6s");
+            $customerTestimonials.addClass(
+              "animate__animated animate__jackInTheBox animate__delay-1s"
+            );
+          }
+
+          /**
+           * use the following condition:
+           *
+           *   else if( index == 2 && direction == 'down' ) {
+           *
+           * if you haven't enabled the dot navigation
+           * or you aren't interested in the animations that occur
+           * when you jump (using the dot navigation) from the first section to the third one
+           */
+
+          // second animation
+          // else if ((index == 1 || index == 2) && nextIndex == 3) {
+
+          // }
+
+          // /**
+          //  * use the following condition:
+          //  *
+          //  *   else if( index == 3 && direction == 'down' ) {
+          //  *
+          //  * if you haven't enabled the dot navigation
+          //  * or you aren't interested in the animations that occur
+          //  * when you jump (using the dot navigation)
+          //  * from the first or second section to the fourth one
+          //  */
+
+          // // third animation
+          // else if ((index == 1 || index == 2 || index == 3) && nextIndex == 4) {
+
+          // }
         },
       });
     </script>
