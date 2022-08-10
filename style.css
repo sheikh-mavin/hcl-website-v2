@@ -99,8 +99,8 @@
   height: 80%;
 }
 .insp{
-  animation-name: moveInleft;
-  animation-duration: 2s;
+  /* animation-name: moveInleft;
+  animation-duration: 2s; */
 }
 .inspire {
   font-family: Gotham-Bold;
@@ -113,14 +113,14 @@
 
 .colb {
   color: rgb(91 91 91);
-  animation-name: moveInRight;
-    animation-duration: 2s;
+  /* animation-name: moveInRight;
+  animation-duration: 2s; */
 }
 
 .hash {
   color: rgb(91 91 91);
-  animation-name: moveInleft;
-  animation-duration: 2s;
+  /* animation-name: moveInleft;
+  animation-duration: 2s; */
 }
 
 @keyframes moveInleft {
@@ -419,7 +419,8 @@
 
 #customers-testimonials .owl-item.active.center .item {
   opacity: 1;
-  animation: flip-scale-down-diag-2 0.7s linear both;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
   background-color: white;
   box-shadow: 0 2px 24px 0 rgba(204, 204, 204, 0.5);
 }

@@ -44,7 +44,7 @@
         box-shadow: 0 2px 15px 0 rgba(148, 141, 141, 0.5);
       "
     >
-      <div class="container-fluid g-0">
+      <div style="animation-duration: 1s;" class="container-fluid g-0 animate__animated animate__fadeInDown">
         <a href="#" class="navbar-brand">
           <img
             src="./assets/images/logo.png"
@@ -106,22 +106,22 @@
             <img style="width: 100%" alt="" src="#" class="sl-image banner-1" />
 
             <div class="banner-text">
-              <p class="insp">
+              <p style="animation-duration: 1s; display: inline-block;" class="insp animate__animated animate__fadeInUp">
                 <span class="inspire">Inspired</span> to overcome <br />
                 and achieve the<br />
                 impossible
               </p>
-              <p class="colb">
+              <p style="animation-duration: 1s" class="colb animate__animated animate__fadeIn animate__delay-1s">
                 A look into how collaboration leads<br />to a better tomorrow
               </p>
 
-              <p class="hash">#InspireTomorrow</p>
+              <p style="animation-duration: 1s" class="hash animate__animated animate__fadeIn animate__delay-1s">#InspireTomorrow</p>
             </div>
           </div>
           <div class="item">
             <img style="width: 100%" alt="" src="#" class="sl-image banner-2" />
 
-            <div class="banner-text">
+            <div class="banner-text"> 
               <p class="insp">
                 <span class="inspire">Inspired</span> to overcome <br />
                 and achieve the<br />
@@ -2091,7 +2091,9 @@
         center: true,
         items: 3,
         margin: 0,
-
+        autoplay:true,
+        autoplayTimeout:5000,
+       
         dots: true,
 
         responsive: {
@@ -2251,7 +2253,7 @@
           }
 
           if (org.index == 1 && dest.index == 2) {
-            $fh.addClass("animate__animated animate__fadeInDown animate__delay-1s");
+            $fh.addClass("animate__animated animate__bounceIn animate__delay-1s");
             $featureCardOne
               .addClass("animate__animated animate__fadeIn")
               .css("animation-delay", "0s");
@@ -2291,15 +2293,15 @@
             $qh
               .addClass("animate__animated animate__fadeInDown")
               .css("animation-delay", ".6s");
-            $leftArrow
-              .addClass("animate__animated animate__fadeInLeft")
-              .css("animation-delay", ".6s");
-            $rightArrow
-              .addClass("animate__animated animate__fadeInRight")
-              .css("animation-delay", ".6s");
-            $customerTestimonials.addClass(
-              "animate__animated animate__jackInTheBox animate__delay-1s"
-            );
+            // $leftArrow
+            //   .addClass("animate__animated animate__fadeInLeft")
+            //   .css("animation-delay", ".6s");
+            // $rightArrow
+            //   .addClass("animate__animated animate__fadeInRight")
+            //   .css("animation-delay", ".6s");
+            // $customerTestimonials.addClass(
+            //   "animate__animated animate__jackInTheBox animate__delay-1s"
+            // );
           }
 
           /**
