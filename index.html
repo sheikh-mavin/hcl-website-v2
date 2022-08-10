@@ -2106,6 +2106,7 @@
       var $eh = $("#e-h");
       var $qh = $("#q-h");
 
+
       var $leftArrow = $(".left-arrow");
       var $rightArrow = $(".right-arrow");
       var $customerTestimonials = $("#customers-testimonials");
@@ -2114,7 +2115,7 @@
       var $featureCardThree = $("#feature-card-three");
       var $featureCardFour = $("#feature-card-four");
 
-      var $overviewslider = $(".ovr-slider");
+      var $overviewslider = $("#overview-slider");
       var $episodeCardLeft = $(".episode-card-left");
 
       var $episodeRightCardOne = $("#episode-card-right-one");
@@ -2218,8 +2219,8 @@
           console.log();
 
           if (org.index == 0 && dest.index == 1) {
-            $oh.addClass("animate__animated animate__fadeInDown");
-            $overviewslider.addClass("animate__animated animate__flipInX");
+            $oh.addClass("animate__animated animate__fadeIn");
+            $overviewslider.addClass("animate__animated animate__fadeIn")
           }
 
           if (org.index == 1 && dest.index == 2) {
