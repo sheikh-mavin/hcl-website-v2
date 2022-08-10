@@ -31,10 +31,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <nav
@@ -44,7 +43,10 @@
         box-shadow: 0 2px 15px 0 rgba(148, 141, 141, 0.5);
       "
     >
-      <div style="animation-duration: 1s;" class="container-fluid g-0 animate__animated animate__fadeInDown">
+      <div
+        style="animation-duration: 1s"
+        class="container-fluid g-0 animate__animated animate__fadeInDown"
+      >
         <a href="#" class="navbar-brand">
           <img
             src="./assets/images/logo.png"
@@ -106,22 +108,33 @@
             <img style="width: 100%" alt="" src="#" class="sl-image banner-1" />
 
             <div class="banner-text">
-              <p style="animation-duration: 1s; display: inline-block;" class="insp animate__animated animate__fadeInUp">
+              <p
+                style="animation-duration: 1s; display: inline-block"
+                class="insp animate__animated animate__fadeInUp"
+              >
                 <span class="inspire">Inspired</span> to overcome <br />
                 and achieve the<br />
                 impossible
               </p>
-              <p style="animation-duration: 1s" class="colb animate__animated animate__fadeIn animate__delay-1s">
+              <p
+                style="animation-duration: 1s"
+                class="colb animate__animated animate__fadeIn animate__delay-1s"
+              >
                 A look into how collaboration leads<br />to a better tomorrow
               </p>
 
-              <p style="animation-duration: 1s" class="hash animate__animated animate__fadeIn animate__delay-1s">#InspireTomorrow</p>
+              <p
+                style="animation-duration: 1s"
+                class="hash animate__animated animate__fadeIn animate__delay-1s"
+              >
+                #InspireTomorrow
+              </p>
             </div>
           </div>
           <div class="item">
             <img style="width: 100%" alt="" src="#" class="sl-image banner-2" />
 
-            <div class="banner-text"> 
+            <div class="banner-text">
               <p class="insp">
                 <span class="inspire">Inspired</span> to overcome <br />
                 and achieve the<br />
@@ -155,29 +168,23 @@
       <!-- Overview -->
       <div class="section fp-auto-height">
         <div id="overview" class="overview">
-          <div class="overview-wrapper">
+          <div class="container overview-wrapper">
             <div class="row">
               <div class="col-md-12 col-lg-5">
-                <div
-                  class="ovr-slider"
-                  style="position: relative"
-                  id="mySlider"
-                >
-                  <div class="slide-group">
-                    <div class="ovr-slide active">
-                      <img
-                        class="overview-image overview-image-1"
-                        src="./assets/images/overview/overview-1.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="ovr-slide" overview-image-1>
-                      <img
-                        class="overview-image overview-image-2"
-                        src="#"
-                        alt=""
-                      />
-                    </div>
+                <div id="overview-slider" class="owl-carousel owl-theme">
+                  <div class="item">
+                    <img
+                      class="overview-image overview-image-1"
+                      src="#"
+                      alt=""
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      class="overview-image overview-image-2"
+                      src="#"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -693,7 +700,10 @@
                     </div>
 
                     <div class="col-3">
-                      <div class="card feature-card-three" id="feature-card-three" >
+                      <div
+                        class="card feature-card-three"
+                        id="feature-card-three"
+                      >
                         <div class="image-holder-feature">
                           <img
                             src="./assets/images/feature/rhenda.png"
@@ -744,7 +754,10 @@
                     </div>
 
                     <div class="col-3">
-                      <div class="card feature-card-four" id="feature-card-four" >
+                      <div
+                        class="card feature-card-four"
+                        id="feature-card-four"
+                      >
                         <div class="image-holder-feature">
                           <img
                             src="./assets/images/feature/bask.png"
@@ -1208,9 +1221,7 @@
             <div class="container-fluid">
               <div class="row g-4">
                 <div class="col-lg-8 p-0">
-                  <div
-                    class="card single-episode-wrapper"
-                  >
+                  <div class="card single-episode-wrapper">
                     <div class="episode-vedio-wrapper">
                       <iframe
                         class="single-episode-iframe"
@@ -1996,10 +2007,7 @@
       </div>
     </section> -->
 
-    </section>
-
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
 
     <!-- <script src="./js/observer.js"></script> -->
     <script src="./js/episode.js"></script>
@@ -2039,61 +2047,15 @@
         $(this).addClass("active");
       });
 
-      $(document).ready(function () {
-        window.setInterval(nextSlide, 2000);
-        // $(".nav-item").on("click", function (e) {
-        //   e.preventDefault();
-        //   var scroll_id = $(this).attr("href");
-        //   if (scroll_id) {
-        //     var target_element_offset = $(scroll_id).offset();
-        //     window.scrollTo({
-        //       top: target_element_offset.top - 100,
-        //       behavior: "smooth",
-        //     });
-        //   }
-        // });
-      });
-      let slideIndex = 0;
-      // showSlides();
-
-      function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("sl");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" sl-active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " sl-active";
-        setTimeout(showSlides, 7000); // Change image every 2 seconds
-      }
-
-      function nextSlide() {
-        var $cur = $(".ovr-slide.active");
-
-        var $next = $cur.next().length
-          ? $cur.next()
-          : $(".slide-group .ovr-slide:first-child");
-        $cur.removeClass("active");
-        $next.addClass("active");
-      }
-
       var owl = $("#customers-testimonials");
       owl.owlCarousel({
         loop: true,
         center: true,
         items: 3,
         margin: 0,
-        autoplay:true,
-        autoplayTimeout:5000,
-       
+        autoplay: true,
+        autoplayTimeout: 5000,
+
         dots: true,
 
         responsive: {
@@ -2123,7 +2085,17 @@
         margin: 0,
         dots: true,
         autoplay: true,
-        autoplayTimeout: 10000,
+        autoplayTimeout: 7000,
+        autoplayHoverPause: false,
+      });
+
+      $("#overview-slider").owlCarousel({
+        loop: true,
+        items: 1,
+        dots: false,
+        margin: 1,
+        autoplay: true,
+        autoplayTimeout: 3000,
         autoplayHoverPause: false,
       });
 
@@ -2150,7 +2122,6 @@
       var $episodeRightCardTwo = $("#episode-card-right-two");
       var $episodeRightCardThree = $("#episode-card-right-three");
       var $episodeRightCardFour = $("#episode-card-right-four");
-
 
       $("#fullpage").fullpage({
         navigation: true,
@@ -2253,7 +2224,9 @@
           }
 
           if (org.index == 1 && dest.index == 2) {
-            $fh.addClass("animate__animated animate__bounceIn animate__delay-1s");
+            $fh.addClass(
+              "animate__animated animate__bounceIn animate__delay-1s"
+            );
             $featureCardOne
               .addClass("animate__animated animate__fadeIn")
               .css("animation-delay", "0s");
