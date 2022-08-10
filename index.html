@@ -603,7 +603,7 @@
                 <div class="container">
                   <div class="row g-4" style="padding: 30px 0">
                     <div class="col-3">
-                      <div class="card feature-card-one animate__animated animate__delay-0s" id="feature-card-one">
+                      <div class="card feature-card-one" id="feature-card-one">
                         <div class="image-holder-feature">
                           <img
                             src="./assets/images/feature/ajay-bahl.png"
@@ -644,7 +644,7 @@
                     </div>
 
                     <div class="col-3">
-                      <div class="card feature-card-two animate__animated animate__delay-1s" id="feature-card-two">
+                      <div class="card feature-card-two" id="feature-card-two">
                         <div class="image-holder-feature">
                           <img
                             src="./assets/images/feature/gary.png"
@@ -693,7 +693,7 @@
                     </div>
 
                     <div class="col-3">
-                      <div class="card feature-card-three animate__animated animate__delay-2s" id="feature-card-three" >
+                      <div class="card feature-card-three" id="feature-card-three" >
                         <div class="image-holder-feature">
                           <img
                             src="./assets/images/feature/rhenda.png"
@@ -744,7 +744,7 @@
                     </div>
 
                     <div class="col-3">
-                      <div class="card feature-card-four animate__animated animate__delay-3s" id="feature-card-four" >
+                      <div class="card feature-card-four" id="feature-card-four" >
                         <div class="image-holder-feature">
                           <img
                             src="./assets/images/feature/bask.png"
@@ -1223,7 +1223,7 @@
                       </iframe>
                       <div
                         id="episode-overlay-wrapper"
-                        class="episode-card-left animate__animated animate__faster"
+                        class="episode-card-left"
                         style="
                           background-image: url(./assets/images/episode/episodebg01.png);
                         "
@@ -1357,7 +1357,7 @@
                 <div class="col-lg-4 episode-right-section">
                   <div class="row onlyForWeb">
                     <div
-                      class="card p-0 multi-card active episode-card-right-one animate__animated animate__fast"
+                      class="card p-0 multi-card active episode-card-right-one"
                       id="episode-card-right-one"
                     >
                       <span class="episode-link" style="display: none"
@@ -1392,7 +1392,7 @@
                       </div>
                     </div>
                     <div
-                      class="card p-0 multi-card episode-card-right-two episode-card-right-one animate__animated animate__fast"
+                      class="card p-0 multi-card episode-card-right-two episode-card-right-one"
                       id="episode-card-right-two"
                     >
                       <span class="episode-link" style="display: none"
@@ -1427,7 +1427,7 @@
                       </div>
                     </div>
                     <div
-                      class="card p-0 multi-card episode-card-right-three episode-card-right-one animate__animated animate__fast"
+                      class="card p-0 multi-card episode-card-right-three episode-card-right-one"
                       id="episode-card-right-three"
                       style="border: 0px"
                     >
@@ -1457,7 +1457,7 @@
                       </div>
                     </div>
                     <div
-                      class="card p-0 multi-card episode-card-right-four episode-card-right-one animate__animated animate__fast"
+                      class="card p-0 multi-card episode-card-right-four episode-card-right-one"
                       id="episode-card-right-four"
                       style="border: 0px"
                     >
@@ -2001,7 +2001,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
 
-    <script src="./js/observer.js"></script>
+    <!-- <script src="./js/observer.js"></script> -->
     <script src="./js/episode.js"></script>
     <script src="./js/feature.js"></script>
 
@@ -2140,7 +2140,15 @@
       var $featureCardTwo = $("#feature-card-two");
       var $featureCardThree = $("#feature-card-three");
       var $featureCardFour = $("#feature-card-four");
+
       var $overviewslider = $(".ovr-slider");
+      var $episodeCardLeft = $(".episode-card-left");
+
+      var $episodeRightCardOne = $("#episode-card-right-one");
+      var $episodeRightCardTwo = $("#episode-card-right-two");
+      var $episodeRightCardThree = $("#episode-card-right-three");
+      var $episodeRightCardFour = $("#episode-card-right-four");
+
 
       $("#fullpage").fullpage({
         navigation: true,
@@ -2243,25 +2251,40 @@
           }
 
           if (org.index == 1 && dest.index == 2) {
-            $fh.addClass("animate__animated animate__fadeInDown");
-            // $featureCardOne
-            //   .addClass("animate__animated animate__fadeIn")
-            //   .css("animation-delay", ".6s");
-            // $featureCardTwo
-            //   .addClass("animate__animated animate__fadeIn")
-            //   .css("animation-delay", "1s");
-            // $featureCardThree
-            //   .addClass("animate__animated animate__fadeIn")
-            //   .css("animation-delay", "1.4s");
-            // $featureCardFour
-            //   .addClass("animate__animated animate__fadeIn")
-            //   .css("animation-delay", "1.8s");
+            $fh.addClass("animate__animated animate__fadeInDown animate__delay-1s");
+            $featureCardOne
+              .addClass("animate__animated animate__fadeIn")
+              .css("animation-delay", "0s");
+            $featureCardTwo
+              .addClass("animate__animated animate__fadeIn")
+              .css("animation-delay", ".5s");
+            $featureCardThree
+              .addClass("animate__animated animate__fadeIn")
+              .css("animation-delay", "1s");
+            $featureCardFour
+              .addClass("animate__animated animate__fadeIn")
+              .css("animation-delay", "1.5s");
           }
 
           if (org.index == 2 && dest.index == 3) {
             $eh.addClass(
               "animate__animated animate__fadeInDown animate__delay-1s"
             );
+            $episodeCardLeft
+              .addClass("animate__animated animate__zoomIn")
+              .css("animation-delay", "0.5s");
+            $episodeRightCardOne
+              .addClass("animate__animated animate__slideInRight")
+              .css("animation-delay", "0.5s");
+            $episodeRightCardTwo
+              .addClass("animate__animated animate__slideInRight")
+              .css("animation-delay", "0.6s");
+            $episodeRightCardThree
+              .addClass("animate__animated animate__slideInRight")
+              .css("animation-delay", "0.7s");
+            $episodeRightCardFour
+              .addClass("animate__animated animate__slideInRight")
+              .css("animation-delay", "0.8s");
           }
 
           if (org.index == 3 && dest.index == 4) {

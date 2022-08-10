@@ -696,7 +696,7 @@ input[type="checkbox"] {
 
 .overlay .overlay-description {
   font-family: "Gotham-Medium";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 
   line-height: 1.25;
@@ -707,7 +707,6 @@ input[type="checkbox"] {
 .overlay-icons {
   padding: 0px 20px;
   margin-top: -5px;
-  text-align: center;
 }
 .overlay-icons img{
   width: 22px;
@@ -836,6 +835,7 @@ input[type="checkbox"] {
 }
 .single-episode-wrapper {
   padding-right: 10px;
+  border: 0px !important;
 }
 .other-episodes {
   font-family: "Gotham-Bold";
