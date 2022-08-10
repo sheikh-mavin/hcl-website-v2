@@ -2023,7 +2023,8 @@
       $("#fullpage").fullpage({
         navigation: true,
         anchors: ["section1", "section2", "section3", "section4", "section5"],
-        bigSectionsDestination: "top",
+        bigSectionsDestination: 'top',
+        fitToSection:false,
         autoScrolling: true,
         normalScrollElements: ".episode-right-section",
         recordHistory: false,
@@ -2093,11 +2094,12 @@
             // );
             if (count == 0) {
               setTimeout(function () {
-                owl.trigger("next.owl.carousel", [1000]);
+                owl.trigger("next.owl.carousel", [400]);
+                owl.trigger("next.owl.carousel", [800]);
+                owl.trigger("next.owl.carousel", [1600]);
                 owl.trigger("next.owl.carousel", [2000]);
-                owl.trigger("next.owl.carousel", [3000]);
-                owl.trigger("next.owl.carousel", [3000]);
               }, 500);
+             
               count = 1;
             }
           }
