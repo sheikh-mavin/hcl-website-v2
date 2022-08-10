@@ -2227,7 +2227,7 @@ padding: 4px;
   display: block;
 }
 
-.cardAnimation1{
+/* .cardAnimation1{
   animation: moveFromLeft01 1s ease-in-out;
   animation-delay: 4ms;
 }
@@ -2242,7 +2242,26 @@ padding: 4px;
 .cardAnimation4{
   animation: moveFromRight02 1s ease-in-out;
   animation-delay: 4ms;
+} */
+
+.cardAnimation1{
+  animation: moveFromLeft01 1s ease-in-out;
+  animation-delay: 1s;
 }
+.cardAnimation2{
+  animation: moveFromLeft02 1s ease-in-out;
+  animation-delay: 2s;
+}
+.cardAnimation3{
+  animation: moveFromRight01 1s ease-in-out;
+  animation-delay: 3s;
+}
+.cardAnimation4{
+  animation: moveFromRight02 1s ease-in-out;
+  animation-delay: 4s;
+}
+
+
 .episodecardAnimation1{
   animation: moveFromRight02 1s ease-in-out;
   animation-delay: 6ms;
@@ -2309,4 +2328,13 @@ padding: 4px;
 
 #episodes .card-body{
   padding: 10px 0px;
+}
+
+@keyframes featurecardfade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
