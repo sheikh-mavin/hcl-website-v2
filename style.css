@@ -1319,6 +1319,9 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 991px) {
+  #customers-testimonials .desc {
+    font-size: 14px;
+  }
   #customers-testimonials .owl-item.active.center .item {
     max-width: 600px !important;
     margin: auto;
@@ -1414,6 +1417,10 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 480px) {
+  #overview-slider {
+    height: 260px !important;
+  }
+
   .banner-text {
     margin-right: 10px;
   }
@@ -1622,9 +1629,7 @@ input[type="checkbox"] {
     height: 100%;
     overflow: none;
   }
-  #overview-slider {
-    height: 260px !important;
-  }
+
   .onlyForWeb {
     display: none !important;
   }
