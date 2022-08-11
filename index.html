@@ -2019,6 +2019,7 @@
       var $episodeRightCardTwo = $("#episode-card-right-two");
       var $episodeRightCardThree = $("#episode-card-right-three");
       var $episodeRightCardFour = $("#episode-card-right-four");
+      var $overviewWrapper = $(".overview-wrapper");
       let count = 0;
       $("#fullpage").fullpage({
         navigation: true,
@@ -2038,7 +2039,7 @@
         onLeave: function (org, dest, direction) {
           if (dest.index == 1) {
             $oh.addClass("animate__animated animate__fadeIn");
-            $overviewslider.addClass("animate__animated animate__fadeIn");
+            $overviewWrapper.addClass("animate__animated animate__fadeInUpBig");
           }
 
           if (dest.index == 2) {
