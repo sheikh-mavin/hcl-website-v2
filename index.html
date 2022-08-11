@@ -2032,7 +2032,8 @@
           enabled: false,
         },
         afterLoad: function (anchorLink, index) {
-          history.pushState(null, null, "/");
+          history.pushState("", document.title, window.location.pathname
+                                                       + window.location.search);
         },
         onLeave: function (org, dest, direction) {
           if (dest.index == 1) {
