@@ -1966,15 +1966,6 @@ input[type="checkbox"] {
   }
 }
 
-/* @media screen and (min-width: 991px) and (max-width: 992px) {
-  .onlyForWeb{
-    display: block;
-  }
-  .onlyForMobile{
-    display: none;
-  }
-} */
-
 @media screen and (min-width: 992px) {
   .onlyForWeb {
     display: block;
@@ -2229,6 +2220,7 @@ input[type="checkbox"] {
 .slideContainer {
   display: none;
   flex: 4;
+  margin-bottom: 4px !important;
 }
 .myRangeValueWrapper {
   position: absolute;

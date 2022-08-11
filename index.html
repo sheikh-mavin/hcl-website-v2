@@ -1312,11 +1312,12 @@
                             <div
                               id="mute-audio"
                               style="flex: 1"
-                              onclick="muteClass()"
+
                             >
                               <img
                                 src="./assets/images/episode/speaker-filled-audio-tool.png"
                                 alt="speaker-icon"
+                                onclick="muteClass()"
                               />
                             </div>
 
@@ -1334,7 +1335,7 @@
                                 id="myRange"
                               />
                               <span class="myRangeValueWrapper"
-                                ><span id="myrangevalue"></span>%</span
+                                ><span id="myrangevalue" style="display: none;"></span> </span
                               >
                             </div>
                           </div>
@@ -2047,17 +2048,17 @@
               "animate__animated animate__bounceIn animate__delay-1s"
             );
             $featureCardOne
-              .addClass("animate__animated animate__fadeIn")
-              .css("animation-delay", "0s");
+              .addClass("animate__animated animate__fadeIn animate__faster")
+              .css("animation-delay", "0.2s");
             $featureCardTwo
-              .addClass("animate__animated animate__fadeIn")
-              .css("animation-delay", ".5s");
+              .addClass("animate__animated animate__fadeIn animate__faster")
+              .css("animation-delay", "0.6s");
             $featureCardThree
-              .addClass("animate__animated animate__fadeIn")
+              .addClass("animate__animated animate__fadeIn animate__faster")
               .css("animation-delay", "1s");
             $featureCardFour
-              .addClass("animate__animated animate__fadeIn")
-              .css("animation-delay", "1.5s");
+              .addClass("animate__animated animate__fadeIn animate__faster")
+              .css("animation-delay", "1.4s");
           }
 
           if (dest.index == 3) {
@@ -2069,16 +2070,16 @@
               .css("animation-delay", "0.5s");
             $episodeRightCardOne
               .addClass("animate__animated animate__slideInRight")
-              .css("animation-delay", "0.5s");
+              .css("animation-delay", "0.8s");
             $episodeRightCardTwo
               .addClass("animate__animated animate__slideInRight")
-              .css("animation-delay", "0.6s");
+              .css("animation-delay", "0.9s");
             $episodeRightCardThree
               .addClass("animate__animated animate__slideInRight")
-              .css("animation-delay", "0.7s");
+              .css("animation-delay", "1s");
             $episodeRightCardFour
               .addClass("animate__animated animate__slideInRight")
-              .css("animation-delay", "0.8s");
+              .css("animation-delay", "1.1s");
           }
 
           if (dest.index == 4) {
