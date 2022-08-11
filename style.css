@@ -1848,6 +1848,7 @@ input[type="checkbox"] {
     height: 42px !important;
   }
 }
+
 @media screen and (max-width: 480px) {
   #feature-overlay-image1,
   #feature-overlay-image2,
@@ -1884,11 +1885,13 @@ input[type="checkbox"] {
     flex: 8;
   }
 }
+
 @media screen and (min-width: 992px) and (max-width: 1000px) {
   #feature .guest-speaker,
   #feature .host-speaker {
-    min-height: 142px;
+    min-height: 125px;
   }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 992px) {
@@ -1903,6 +1906,7 @@ input[type="checkbox"] {
     max-width: unset !important;
   }
 }
+
 @media screen and (min-width: 992px) and (max-width: 1023px) {
   #owl-episodes .owl-carousel .owl-item img {
     /* height: 100%; */
@@ -1947,11 +1951,26 @@ input[type="checkbox"] {
     font-size: 12px;
   }
   #episodes .multi-card img {
-    height: 95px;
+    height: 85px;
   }
   .multi-card {
     margin-bottom: 10px;
   }
+  #feature .speaker-type,#feature .speaker-role{
+    font-size: 10px;
+  }
+  #feature .speaker-name{
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0px 0px 5px;
+  }
+  .card-img-top-featured-speaker , .overlay,#feature .image-holder-feature {
+    height: 225px;
+  }
+  .overlay .overlay-description{
+    font-size: 10px;
+  }
+
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -1959,7 +1978,7 @@ input[type="checkbox"] {
     margin-bottom: 20px;
   }
   #episodes .multi-card img {
-    height: 115px;
+    height: 105px;
   }
   .multi-episode-title {
     font-size: 18px;
@@ -2002,9 +2021,9 @@ input[type="checkbox"] {
   .image-holder-feature {
     height: auto !important;
   }
-  #feature .card-body {
+  /* #feature .card-body {
     min-height: 142px;
-  }
+  } */
   .overlay {
     height: 242px !important;
   }

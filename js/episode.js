@@ -30,6 +30,7 @@ const showDialog = (
     content2,
     imageLink2
     ) => {
+        // console.log("GOING HERE")
     var getFeatureOverLink1 = document.querySelector(
         "#feature-overview-vedio1 iframe"
     );

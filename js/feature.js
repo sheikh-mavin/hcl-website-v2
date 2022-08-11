@@ -9,6 +9,8 @@ $(window).resize(function () {
   });
 
   $(document).ready(function () {
+    var getHight = $('.image-holder-feature').css('height');
+    console.log("HIEGHT----------",getHight)
     var owl = $("#owl-feature");
     owl.owlCarousel({
       loop: true,
