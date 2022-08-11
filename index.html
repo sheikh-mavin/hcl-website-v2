@@ -31,10 +31,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <nav
@@ -44,7 +43,10 @@
         box-shadow: 0 2px 15px 0 rgba(148, 141, 141, 0.5);
       "
     >
-      <div class="container-fluid g-0">
+      <div
+        style="animation-duration: 1s"
+        class="container-fluid g-0 animate__animated animate__fadeInDown"
+      >
         <a href="#" class="navbar-brand">
           <img
             src="./assets/images/logo.png"
@@ -106,16 +108,27 @@
             <img style="width: 100%" alt="" src="#" class="sl-image banner-1" />
 
             <div class="banner-text">
-              <p class="insp">
+              <p
+                style="animation-duration: 1s; display: inline-block"
+                class="insp animate__animated animate__fadeInUp"
+              >
                 <span class="inspire">Inspired</span> to overcome <br />
                 and achieve the<br />
                 impossible
               </p>
-              <p class="colb">
+              <p
+                style="animation-duration: 1s"
+                class="colb animate__animated animate__fadeIn animate__delay-1s"
+              >
                 A look into how collaboration leads<br />to a better tomorrow
               </p>
 
-              <p class="hash">#InspireTomorrow</p>
+              <p
+                style="animation-duration: 1s"
+                class="hash animate__animated animate__fadeIn animate__delay-1s"
+              >
+                #InspireTomorrow
+              </p>
             </div>
           </div>
           <div class="item">
@@ -155,29 +168,23 @@
       <!-- Overview -->
       <div class="section fp-auto-height">
         <div id="overview" class="overview">
-          <div class="overview-wrapper">
+          <div class="container g-0 overview-wrapper">
             <div class="row">
               <div class="col-md-12 col-lg-5">
-                <div
-                  class="ovr-slider"
-                  style="position: relative"
-                  id="mySlider"
-                >
-                  <div class="slide-group">
-                    <div class="ovr-slide active">
-                      <img
-                        class="overview-image overview-image-1"
-                        src="./assets/images/overview/overview-1.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="ovr-slide" overview-image-1>
-                      <img
-                        class="overview-image overview-image-2"
-                        src="#"
-                        alt=""
-                      />
-                    </div>
+                <div id="overview-slider" class="owl-carousel owl-theme">
+                  <div class="item">
+                    <img
+                      class="overview-image overview-image-1"
+                      src="#"
+                      alt=""
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      class="overview-image overview-image-2"
+                      src="#"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -693,7 +700,10 @@
                     </div>
 
                     <div class="col-3">
-                      <div class="card feature-card-three" id="feature-card-three" >
+                      <div
+                        class="card feature-card-three"
+                        id="feature-card-three"
+                      >
                         <div class="image-holder-feature">
                           <img
                             src="./assets/images/feature/rhenda.png"
@@ -744,7 +754,10 @@
                     </div>
 
                     <div class="col-3">
-                      <div class="card feature-card-four" id="feature-card-four" >
+                      <div
+                        class="card feature-card-four"
+                        id="feature-card-four"
+                      >
                         <div class="image-holder-feature">
                           <img
                             src="./assets/images/feature/bask.png"
@@ -1208,9 +1221,7 @@
             <div class="container-fluid">
               <div class="row g-4">
                 <div class="col-lg-8 p-0">
-                  <div
-                    class="card single-episode-wrapper"
-                  >
+                  <div class="card single-episode-wrapper">
                     <div class="episode-vedio-wrapper">
                       <iframe
                         class="single-episode-iframe"
@@ -1800,7 +1811,7 @@
                               src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
                               alt=""
                             />
-                            <p class="name">Grant Cardone</p>
+                            <p class="name">Grant Cardone 2</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
                               Dramatically maintain clicks-and-mortar solutions
@@ -1817,7 +1828,7 @@
                               src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
                               alt=""
                             />
-                            <p class="name">Grant Cardone</p>
+                            <p class="name">Grant Cardone 3</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
                               Dramatically maintain clicks-and-mortar solutions
@@ -1834,7 +1845,7 @@
                               src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
                               alt=""
                             />
-                            <p class="name">Grant Cardone</p>
+                            <p class="name">Grant Cardone 4</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
                               Dramatically maintain clicks-and-mortar solutions
@@ -1851,7 +1862,7 @@
                               src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
                               alt=""
                             />
-                            <p class="name">Grant Cardone</p>
+                            <p class="name">Grant Cardone 5</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
                               Dramatically maintain clicks-and-mortar solutions
@@ -1868,7 +1879,7 @@
                               src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
                               alt=""
                             />
-                            <p class="name">Grant Cardone</p>
+                            <p class="name">Grant Cardone 1</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
                               Dramatically maintain clicks-and-mortar solutions
@@ -1894,113 +1905,8 @@
       </div>
     </div>
 
-    <!--
-    <section id="contactus" class="contact">
-      <div class="container-fluid g-0">
-        <div class="contact-section-heading">Contact us</div>
-        <div class="row g-0">
-          <div class="col-md-1 col-sm-0"></div>
-          <div class="col-md-10 col-sm-12">
-            <form>
-              <div class="row form-row">
-                <div class="col-md-6 col-sm-12">
-                  <input
-                    type="text"
-                    name="firstName"
-                    id="firstName"
-                    placeholder="First Name*"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-sm-12">
-                  <input
-                    type="text"
-                    name="lastName"
-                    id="lastName"
-                    placeholder="Last Name*"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="row form-row">
-                <div class="col-md-6 col-sm-12">
-                  <input
-                    type="text"
-                    name="organization"
-                    placeholder="Organization"
-                  />
-                </div>
-                <div class="col-md-6 col-sm-12">
-                  <input
-                    type="email"
-                    name="email"
-                    email="EmailZ"
-                    placeholder="Email ID*"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="row form-row">
-                <div class="col-md-6 col-sm-12">
-                  <input
-                    type="text"
-                    name="jobtitle"
-                    placeholder="Job Title"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-sm-12">
-                  <input
-                    type="text"
-                    name="country"
-                    placeholder="Country"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-12">
-                  <div class="checkBoxRow">
-                    <label for="gdpr" class="checkBoxContainer"
-                      >I have read HCL Technologies’ Privacy Policy and agree to
-                      the terms and conditions*
-                      <input
-                        type="checkbox"
-                        name="gdpr"
-                        value="adventure"
-                        id="gdpr"
-                        onClick="{this.handleCheckbox}"
-                      />
-                      <span class="checkmark">
-                        <div class="indicator"></div>
-                      </span>
-                    </label>
-                  </div>
-                  <p class="form-info">
-                    By providing your contact information and clicking 'submit',
-                    you authorize HCL Technologies to store your contact details
-                    and contact you with information on case studies,
-                    whitepapers, events, webinars, newsletters, announcements
-                    and other relevant updates.
-                  </p>
-                  <div style="text-align: center">
-                    <button class="frm-button">Submit</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-md-1 col-sm-0"></div>
-        </div>
-      </div>
-    </section> -->
-
-    </section>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
 
     <!-- <script src="./js/observer.js"></script> -->
     <script src="./js/episode.js"></script>
@@ -2040,58 +1946,15 @@
         $(this).addClass("active");
       });
 
-      $(document).ready(function () {
-        window.setInterval(nextSlide, 2000);
-        // $(".nav-item").on("click", function (e) {
-        //   e.preventDefault();
-        //   var scroll_id = $(this).attr("href");
-        //   if (scroll_id) {
-        //     var target_element_offset = $(scroll_id).offset();
-        //     window.scrollTo({
-        //       top: target_element_offset.top - 100,
-        //       behavior: "smooth",
-        //     });
-        //   }
-        // });
-      });
-      let slideIndex = 0;
-      // showSlides();
-
-      function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("sl");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" sl-active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " sl-active";
-        setTimeout(showSlides, 7000); // Change image every 2 seconds
-      }
-
-      function nextSlide() {
-        var $cur = $(".ovr-slide.active");
-
-        var $next = $cur.next().length
-          ? $cur.next()
-          : $(".slide-group .ovr-slide:first-child");
-        $cur.removeClass("active");
-        $next.addClass("active");
-      }
-
       var owl = $("#customers-testimonials");
       owl.owlCarousel({
         loop: true,
         center: true,
         items: 3,
         margin: 0,
+        // autoplay: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 1000,
 
         dots: true,
 
@@ -2105,15 +1968,14 @@
           },
         },
       });
+
       // Go to the next item
       $(".left-arrow").click(function () {
-        owl.trigger("next.owl.carousel");
+        owl.trigger("prev.owl.carousel");
       });
       // Go to the previous item
       $(".right-arrow").click(function () {
-        // With optional speed parameter
-        // Parameters has to be in square bracket '[]'
-        owl.trigger("prev.owl.carousel", [300]);
+        owl.trigger("next.owl.carousel");
       });
 
       $("#banner").owlCarousel({
@@ -2122,7 +1984,16 @@
         margin: 0,
         dots: true,
         autoplay: true,
-        autoplayTimeout: 10000,
+        autoplayTimeout: 7000,
+        autoplayHoverPause: false,
+      });
+
+      $("#overview-slider").owlCarousel({
+        loop: true,
+        items: 1,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
         autoplayHoverPause: false,
       });
 
@@ -2142,117 +2013,40 @@
       var $featureCardThree = $("#feature-card-three");
       var $featureCardFour = $("#feature-card-four");
 
-      var $overviewslider = $(".ovr-slider");
+      var $overviewslider = $("#overview-slider");
       var $episodeCardLeft = $(".episode-card-left");
 
       var $episodeRightCardOne = $("#episode-card-right-one");
       var $episodeRightCardTwo = $("#episode-card-right-two");
       var $episodeRightCardThree = $("#episode-card-right-three");
       var $episodeRightCardFour = $("#episode-card-right-four");
-
-
+      var $overviewWrapper = $(".overview-wrapper");
+      let count = 0;
       $("#fullpage").fullpage({
         navigation: true,
         anchors: ["section1", "section2", "section3", "section4", "section5"],
-        // showActiveTooltip: false,
-        // slidesNavigation: false,
-        // slidesNavPosition: "bottom",
-        bigSectionsDestination: "top",
+        bigSectionsDestination: 'top',
+        fitToSection:false,
         autoScrolling: true,
-
-        // // Scrolling
-        // css3: true,
-        // scrollingSpeed: 700,
-        // autoScrolling: true,
-        // fitToSection: true,
-        // scrollBar: false,
-        // easing: "easeInOutCubic",
-        // easingcss3: "ease",
-        // loopBottom: false,
-        // loopTop: false,
-        // loopHorizontal: true,
-        // continuousVertical: false,
-        // continuousHorizontal: false,
-        // scrollHorizontally: false,
-        // interlockedSlides: false,
-        // dragAndMove: false,
-        // offsetSections: false,
-        // resetSliders: false,
-        // fadingEffect: false,
         normalScrollElements: ".episode-right-section",
-        // scrollOverflow: true,
-        // scrollOverflowMacStyle: false,
-        // scrollOverflowReset: false,
-        // touchSensitivity: 15,
-        // bigSectionsDestination: null,
-
-        // // Accessibility
-        // keyboardScrolling: true,
-        // animateAnchor: true,
-        // recordHistory: true,
-
-        // // Design
-        // controlArrows: true,
-        // controlArrowsHTML: [
-        //   '<div class="fp-arrow"></div>',
-        //   '<div class="fp-arrow"></div>',
-        // ],
-        // verticalCentered: true,
-        // sectionsColor: ["#ccc", "#fff"],
-        // paddingTop: "3em",
-        // paddingBottom: "10px",
-        // fixedElements: "#header, .footer",
-        // responsiveWidth: 0,
-        // responsiveHeight: 0,
-        // responsiveSlides: false,
-        // parallax: false,
-        // parallaxOptions: {
-        //   type: "reveal",
-        //   percentage: 62,
-        //   property: "translate",
-        // },
-        // dropEffect: false,
-        // dropEffectOptions: { speed: 2300, color: "#F82F4D", zIndex: 9999 },
-        // waterEffect: false,
-        // waterEffectOptions: { animateContent: true, animateOnMouseMove: true },
-        // cards: false,
-        // cardsOptions: {
-        //   perspective: 100,
-        //   fadeContent: true,
-        //   fadeBackground: true,
-        // },
-
-        // // Custom selectors
-        // sectionSelector: ".section",
-        // slideSelector: ".slide",
-
-        // lazyLoading: true,
-        // observer: true,
+        recordHistory: false,
         credits: {
           enabled: false,
         },
+        afterLoad: function (anchorLink, index) {
+          history.pushState("", document.title, window.location.pathname
+                                                       + window.location.search);
+        },
         onLeave: function (org, dest, direction) {
-          /**
-           * use the following condition:
-           *
-           *   if( index == 1 && direction == 'down' ) {
-           *
-           * if you haven't enabled the dot navigation
-           * or you aren't interested in the animations that occur
-           * when you jump (using the dot navigation)
-           * from the first section to another sections
-           */
-
-          // first animation
-          console.log();
-
-          if (org.index == 0 && dest.index == 1) {
-            $oh.addClass("animate__animated animate__fadeInDown");
-            $overviewslider.addClass("animate__animated animate__flipInX");
+          if (dest.index == 1) {
+            $oh.addClass("animate__animated animate__fadeIn");
+            $overviewWrapper.addClass("animate__animated animate__fadeInUpBig");
           }
 
-          if (org.index == 1 && dest.index == 2) {
-            $fh.addClass("animate__animated animate__fadeInDown animate__delay-1s");
+          if (dest.index == 2) {
+            $fh.addClass(
+              "animate__animated animate__bounceIn animate__delay-1s"
+            );
             $featureCardOne
               .addClass("animate__animated animate__fadeIn animate__faster")
               .css("animation-delay", "0.2s");
@@ -2267,7 +2061,7 @@
               .css("animation-delay", "1.4s");
           }
 
-          if (org.index == 2 && dest.index == 3) {
+          if (dest.index == 3) {
             $eh.addClass(
               "animate__animated animate__fadeInDown animate__delay-1s"
             );
@@ -2288,51 +2082,30 @@
               .css("animation-delay", "1.1s");
           }
 
-          if (org.index == 3 && dest.index == 4) {
+          if (dest.index == 4) {
             $qh
-              .addClass("animate__animated animate__fadeInDown")
-              .css("animation-delay", ".6s");
+              .addClass("animate__animated animate__fadeInRightBig ")
+              .css("animation-delay", "1s");
             $leftArrow
-              .addClass("animate__animated animate__fadeInLeft")
+              .addClass("animate__animated animate__fadeInLeftBig animate__delay-1s")
               .css("animation-delay", ".6s");
             $rightArrow
-              .addClass("animate__animated animate__fadeInRight")
+              .addClass("animate__animated animate__fadeInRightBig animate__delay-1s")
               .css("animation-delay", ".6s");
-            $customerTestimonials.addClass(
-              "animate__animated animate__jackInTheBox animate__delay-1s"
-            );
+            // $customerTestimonials.addClass(
+            //   "animate__animated animate__fadeInUp"
+            // );
+            if (count == 0) {
+              setTimeout(function () {
+                owl.trigger("next.owl.carousel", [400]);
+                owl.trigger("next.owl.carousel", [800]);
+                owl.trigger("next.owl.carousel", [1600]);
+                owl.trigger("next.owl.carousel", [2000]);
+              }, 500);
+             
+              count = 1;
+            }
           }
-
-          /**
-           * use the following condition:
-           *
-           *   else if( index == 2 && direction == 'down' ) {
-           *
-           * if you haven't enabled the dot navigation
-           * or you aren't interested in the animations that occur
-           * when you jump (using the dot navigation) from the first section to the third one
-           */
-
-          // second animation
-          // else if ((index == 1 || index == 2) && nextIndex == 3) {
-
-          // }
-
-          // /**
-          //  * use the following condition:
-          //  *
-          //  *   else if( index == 3 && direction == 'down' ) {
-          //  *
-          //  * if you haven't enabled the dot navigation
-          //  * or you aren't interested in the animations that occur
-          //  * when you jump (using the dot navigation)
-          //  * from the first or second section to the fourth one
-          //  */
-
-          // // third animation
-          // else if ((index == 1 || index == 2 || index == 3) && nextIndex == 4) {
-
-          // }
         },
       });
     </script>
