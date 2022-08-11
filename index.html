@@ -395,7 +395,6 @@
                 </div>  -->
               </div>
             </div>
-
           </div>
 
           <!-- <div class="onlyForWeb">
@@ -1314,11 +1313,7 @@
                               align-items: center;
                             "
                           >
-                            <div
-                              id="mute-audio"
-                              style="flex: 1"
-
-                            >
+                            <div id="mute-audio" style="flex: 1">
                               <img
                                 src="./assets/images/episode/speaker-filled-audio-tool.png"
                                 alt="speaker-icon"
@@ -1327,19 +1322,6 @@
                             </div>
 
 
-                            <!-- <div class="slideContainer">
-                              <input
-                                type="range"
-                                min="0"
-                                max="100"
-                                value="42"
-                                class="slider-range"
-                                id="myRange"
-                              />
-                              <span class="myRangeValueWrapper"
-                                ><span id="myrangevalue" style="display: none;"></span> </span
-                              >
-                            </div> -->
                             <div class="slideContainer">
                               <input
                               type="range"
@@ -1828,7 +1810,9 @@
                             <p class="name">Grant Cardone 2</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
-                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua”
+                              “Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua”
                             </p>
                           </div>
                         </div>
@@ -1842,7 +1826,9 @@
                             <p class="name">Grant Cardone 3</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
-                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua”
+                              “Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua”
                             </p>
                           </div>
                         </div>
@@ -1856,7 +1842,9 @@
                             <p class="name">Grant Cardone 4</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
-                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua”
+                              “Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua”
                             </p>
                           </div>
                         </div>
@@ -1870,7 +1858,9 @@
                             <p class="name">Grant Cardone 5</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
-                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua”
+                              “Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua”
                             </p>
                           </div>
                         </div>
@@ -1884,7 +1874,9 @@
                             <p class="name">Grant Cardone 1</p>
                             <p class="designation">AVP - Marketing</p>
                             <p class="desc">
-                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua”
+                              “Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua”
                             </p>
                           </div>
                         </div>
@@ -1904,13 +1896,7 @@
       </div>
     </div>
 
-
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
-    <!-- <script src="./js/observer.js"></script> -->
-    <script src="./js/episode.js"></script>
-    <script src="./js/feature.js"></script>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -1918,195 +1904,13 @@
     ></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
-    <script>
-      $(".dot").click((e) => {
-        let slides = document.getElementsByClassName("sl");
-        let dots = document.getElementsByClassName("dot");
 
-        const ss = document.querySelector(`div[data-ref='${e.target.id}']`);
-        let sd = document.getElementById(event.target.id);
-
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" sl-active", "");
-        }
-        ss.style.display = "block";
-        sd.className += " sl-active";
-      });
-
-      $(".nav-link").click(function (e) {
-        $(".nav-link").removeClass("active");
-        $(this).addClass("active");
-      });
-
-      var owl = $("#customers-testimonials");
-      owl.owlCarousel({
-        loop: true,
-        center: true,
-        items: 2,
-        margin: 0,
-        // autoplay: true,
-        autoplayTimeout: 5000,
-        // smartSpeed: 1000,
-
-        dots: true,
-
-        responsive: {
-          0: {
-            items: 1,
-          },
-
-          992: {
-            items: 2,
-          },
-        },
-      });
-
-      // Go to the next item
-      $(".left-arrow").click(function () {
-        owl.trigger("prev.owl.carousel");
-      });
-      // Go to the previous item
-      $(".right-arrow").click(function () {
-        owl.trigger("next.owl.carousel");
-      });
-
-      $("#banner").owlCarousel({
-        loop: true,
-        items: 1,
-        margin: 0,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 7000,
-        autoplayHoverPause: false,
-      });
-
-      $("#overview-slider").owlCarousel({
-        loop: true,
-        items: 1,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: false,
-      });
-
-      $(".nav-item").on("click", function () {
-        $(".navbar-collapse").removeClass("show");
-      });
-      var $oh = $("#o-h");
-      var $fh = $("#f-h");
-      var $eh = $("#e-h");
-      var $qh = $("#q-h");
-
-      var $leftArrow = $(".left-arrow");
-      var $rightArrow = $(".right-arrow");
-      var $customerTestimonials = $("#customers-testimonials");
-      var $featureCardOne = $("#feature-card-one");
-      var $featureCardTwo = $("#feature-card-two");
-      var $featureCardThree = $("#feature-card-three");
-      var $featureCardFour = $("#feature-card-four");
-
-      var $overviewslider = $("#overview-slider");
-      var $episodeCardLeft = $(".episode-card-left");
-
-      var $episodeRightCardOne = $("#episode-card-right-one");
-      var $episodeRightCardTwo = $("#episode-card-right-two");
-      var $episodeRightCardThree = $("#episode-card-right-three");
-      var $episodeRightCardFour = $("#episode-card-right-four");
-      var $overviewWrapper = $(".overview-wrapper");
-      let count = 0;
-      $("#fullpage").fullpage({
-        navigation: true,
-        anchors: ["section1", "section2", "section3", "section4", "section5"],
-        bigSectionsDestination: 'top',
-        fitToSection:false,
-        autoScrolling: true,
-        normalScrollElements: ".episode-right-section",
-        recordHistory: false,
-        credits: {
-          enabled: false,
-        },
-        afterLoad: function (anchorLink, index) {
-          history.pushState("", document.title, window.location.pathname
-                                                       + window.location.search);
-        },
-        onLeave: function (org, dest, direction) {
-          if (dest.index == 1) {
-            $oh.addClass("animate__animated animate__fadeIn");
-            $overviewWrapper.addClass("animate__animated animate__fadeInUpBig");
-          }
-
-          if (dest.index == 2) {
-            $fh.addClass(
-              "animate__animated animate__bounceIn animate__delay-1s"
-            );
-            $featureCardOne
-              .addClass("animate__animated animate__fadeIn animate__faster")
-              .css("animation-delay", "0.2s");
-            $featureCardTwo
-              .addClass("animate__animated animate__fadeIn animate__faster")
-              .css("animation-delay", "0.6s");
-            $featureCardThree
-              .addClass("animate__animated animate__fadeIn animate__faster")
-              .css("animation-delay", "1s");
-            $featureCardFour
-              .addClass("animate__animated animate__fadeIn animate__faster")
-              .css("animation-delay", "1.4s");
-          }
-
-          if (dest.index == 3) {
-            $eh.addClass(
-              "animate__animated animate__fadeInDown animate__delay-1s"
-            );
-            $episodeCardLeft
-              .addClass("animate__animated animate__zoomIn")
-              .css("animation-delay", "0.5s");
-            $episodeRightCardOne
-              .addClass("animate__animated animate__slideInRight")
-              .css("animation-delay", "0.8s");
-            $episodeRightCardTwo
-              .addClass("animate__animated animate__slideInRight")
-              .css("animation-delay", "0.9s");
-            $episodeRightCardThree
-              .addClass("animate__animated animate__slideInRight")
-              .css("animation-delay", "1s");
-            $episodeRightCardFour
-              .addClass("animate__animated animate__slideInRight")
-              .css("animation-delay", "1.1s");
-          }
-
-          if (dest.index == 4) {
-            $qh
-              .addClass("animate__animated animate__fadeInRightBig ")
-              .css("animation-delay", "1s");
-            $leftArrow
-              .addClass("animate__animated animate__fadeInLeftBig animate__delay-1s")
-              .css("animation-delay", ".6s");
-            $rightArrow
-              .addClass("animate__animated animate__fadeInRightBig animate__delay-1s")
-              .css("animation-delay", ".6s");
-            // $customerTestimonials.addClass(
-            //   "animate__animated animate__fadeInUp"
-            // );
-            if (count == 0) {
-              setTimeout(function () {
-                owl.trigger("next.owl.carousel", [400]);
-                owl.trigger("next.owl.carousel", [800]);
-                owl.trigger("next.owl.carousel", [1600]);
-                owl.trigger("next.owl.carousel", [2000]);
-              }, 500);
-
-              count = 1;
-            }
-          }
-        },
-      });
-    </script>
+    <!-- <script src="./js/observer.js"></script> -->
+    <script src="./js/episode.js"></script>
+    <script src="./js/feature.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="./js/fullpage.js"></script>
+    <script src="./js/overview.js"></script>
+    <script src="./js/quotes.js"></script>
   </body>
 </html>
