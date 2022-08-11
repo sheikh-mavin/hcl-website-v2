@@ -358,12 +358,12 @@
 
 #customers-testimonials .item {
   text-align: center;
-  opacity: .5;
+  opacity: 0.5;
   -webkit-transform: scale3d(0.9, 0.9, 1);
   transform: scale3d(0.9, 0.9, 1);
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: #ffffff;
   height: 310px;
   padding: 22px;
@@ -414,7 +414,7 @@
   opacity: 1;
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
-  animation: flip-scale-down-diag-2 .3s ease-in-out;
+  animation: flip-scale-down-diag-2 0.3s ease-in-out;
   background-color: white;
   box-shadow: 0 2px 24px 0 rgba(204, 204, 204, 0.5);
 }
@@ -1303,122 +1303,10 @@ input[type="checkbox"] {
   background-color: transparent !important;
 }
 
-@media screen and (min-width: 992px) {
-  .nav-link {
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
-  }
-  #customers-testimonials .owl-item.active.center .item {
-    margin: 0px -80px !important;
-  }
-}
 
 @media screen and (max-width: 400px) {
   .navbar-meta {
     padding: 0px 16px 0px 16px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  #overview-slider div {
-    border-bottom-right-radius:  0px;
-    border-bottom-left-radius:  0px;
-  }
-  #customers-testimonials .desc {
-    font-size: 18px;
-  }
-  #customers-testimonials .owl-item.active.center .item {
-    max-width: 600px !important;
-    margin: auto;
-  }
-  .quote-wrapper {
-    /* border: 1px solid black; */
-    padding: 0px 0px 0px 0px;
-    width: 100%;
-  }
-  .right-arrow {
-    visibility: hidden;
-    display: none;
-  }
-  .left-arrow {
-    visibility: hidden;
-    display: none;
-  }
-  .owl-item.active.center {
-    left: 0px;
-  }
-  #customers-testimonials .owl-item.active.center .item {
-    width: 100%;
-    height: auto;
-  }
-
-  .quotes {
-    padding: 50px 16px 0px 16px;
-  }
-  .quotes-section-heading {
-    font-size: 24px;
-    margin-bottom: 20px !important;
-  }
-  .contact {
-    padding: 27px 16px 47px 16px;
-  }
-  .contact-section-heading {
-    margin-left: 0px;
-    font-size: 24px;
-  }
-  #customers-testimonials.owl-carousel .owl-dots {
-    margin-top: 16px;
-  }
-  .q-l {
-    background-size: 70px 50px;
-    left: -10px;
-    top: 32px;
-    width: 70px;
-    height: 50px;
-  }
-
-  .q-r {
-    background-size: 70px 50px;
-    right: -10px;
-    bottom: 16px;
-    width: 70px;
-    height: 50px;
-  }
-  .meta-talks {
-    height: 50px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  #overview-slider {
-    height: 100% !important;
-    width: 100%;
-    position: relative;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-  .overview-image {
-    width: 100%;
-    position: relative;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-  .overview > .overview-wrapper {
-    padding: 0px 0px 10px 0px;
-    border-radius: 20px;
-    max-width: 720px;
-  }
-  .overview-text-wrapper {
-    padding: 20px 16px;
-  }
-  .overview-heading {
-    font-size: 24px;
-    font-family: Gotham-Bold;
-    margin-bottom: 2px !important; 
-  }
-  #fp-nav {
-    display: none !important;
-    visibility: hidden !important;
   }
 }
 
@@ -1619,6 +1507,103 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 991px) {
+  #overview-slider div {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  #customers-testimonials .desc {
+    font-size: 18px;
+  }
+  #customers-testimonials .owl-item.active.center .item {
+    max-width: 600px !important;
+    margin: auto;
+  }
+  .quote-wrapper {
+    /* border: 1px solid black; */
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+  }
+  .right-arrow {
+    visibility: hidden;
+    display: none;
+  }
+  .left-arrow {
+    visibility: hidden;
+    display: none;
+  }
+  .owl-item.active.center {
+    left: 0px;
+  }
+  #customers-testimonials .owl-item.active.center .item {
+    width: 100%;
+    height: auto;
+  }
+
+  .quotes {
+    padding: 50px 16px 0px 16px;
+  }
+  .quotes-section-heading {
+    font-size: 24px;
+    margin-bottom: 20px !important;
+  }
+  .contact {
+    padding: 27px 16px 47px 16px;
+  }
+  .contact-section-heading {
+    margin-left: 0px;
+    font-size: 24px;
+  }
+  #customers-testimonials.owl-carousel .owl-dots {
+    margin-top: 16px;
+  }
+  .q-l {
+    background-size: 70px 50px;
+    left: -10px;
+    top: 32px;
+    width: 70px;
+    height: 50px;
+  }
+
+  .q-r {
+    background-size: 70px 50px;
+    right: -10px;
+    bottom: 16px;
+    width: 70px;
+    height: 50px;
+  }
+  .meta-talks {
+    height: 50px;
+  }
+  #overview-slider {
+    height: 100% !important;
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .overview-image {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .overview > .overview-wrapper {
+    padding: 0px 0px 10px 0px;
+    border-radius: 20px;
+    max-width: 720px;
+  }
+  .overview-text-wrapper {
+    padding: 20px 16px;
+  }
+  .overview-heading {
+    font-size: 24px;
+    font-family: Gotham-Bold;
+    margin-bottom: 2px !important;
+  }
+  #fp-nav {
+    display: none !important;
+    visibility: hidden !important;
+  }
   #customers-testimonials .item {
     opacity: 1;
     background-color: white;
@@ -1853,6 +1838,29 @@ input[type="checkbox"] {
     height: 42px !important;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  #customers-testimonials .owl-item.active.center .item {
+    margin: 0px -80px !important;
+  }
+  .quote-wrapper {
+    /* border: 1px solid black; */
+    padding: 0px 150px 0px 150px;
+    width: 100%;
+  }
+  .onlyForWeb {
+    display: block;
+  }
+  .onlyForMobile {
+    display: none;
+  }
+}
+
+
 @media screen and (max-width: 480px) {
   #feature-overlay-image1,
   #feature-overlay-image2,
@@ -1869,9 +1877,6 @@ input[type="checkbox"] {
   #feature .host-speaker {
     min-height: 94px;
   }
-}
-
-@media screen and (max-width: 480px) {
   .ShowonTabNAboveTrue {
     display: none;
   }
@@ -1879,6 +1884,8 @@ input[type="checkbox"] {
     display: block;
   }
 }
+
+
 
 @media screen and (min-width: 481px) and (max-width: 991px) {
   #feature .guest-speaker,
@@ -1971,22 +1978,8 @@ input[type="checkbox"] {
   }
 }
 
-@media screen and (min-width: 992px) {
-  .onlyForWeb {
-    display: block;
-  }
-  .onlyForMobile {
-    display: none;
-  }
-}
 
-@media only screen and (min-width: 991px) {
-  .quote-wrapper {
-    /* border: 1px solid black; */
-    padding: 0px 150px 0px 150px;
-    width: 100%;
-  }
-}
+
 
 @media only screen and (min-width: 2100) and (max-width: 3500px) {
   #audio-time-passed {
@@ -2018,6 +2011,13 @@ input[type="checkbox"] {
     font-size: 10px;
   }
 }
+
+@media (max-width: 576px) {
+  .overview > .overview-wrapper {
+    max-width: 540px;
+  }
+}
+
 
 .modal {
   display: none; /* Hidden by default */
@@ -2059,11 +2059,6 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-@media (max-width: 576px) {
-  .overview > .overview-wrapper {
-    max-width: 540px;
-  }
-}
 
 .otherepisodes {
   font-family: "Gotham-Bold";
