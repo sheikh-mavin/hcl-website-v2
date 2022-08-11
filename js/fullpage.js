@@ -19,6 +19,7 @@ var $episodeRightCardTwo = $("#episode-card-right-two");
 var $episodeRightCardThree = $("#episode-card-right-three");
 var $episodeRightCardFour = $("#episode-card-right-four");
 var $overviewWrapper = $(".overview-wrapper");
+var $seeMore = $(".see-more");
 let count = 0;
 $("#fullpage").fullpage({
   navigation: true,
@@ -37,8 +38,9 @@ $("#fullpage").fullpage({
   },
   onLeave: function (org, dest, direction) {
     if (dest.index == 1) {
-      $oh.addClass("animate__animated animate__fadeIn");
-      $overviewWrapper.addClass("animate__animated animate__fadeInUpBig");
+      // $oh.addClass("animate__animated animate__fadeIn");
+      // $overviewWrapper.addClass("animate__animated animate__fadeInUpBig");
+      // $seeMore.addClass("animate__animated animate__fadeIn animate__delay-1s");
     }
 
     if (dest.index == 2) {
