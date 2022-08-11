@@ -67,17 +67,17 @@ $("#fullpage").fullpage({
         .addClass("animate__animated animate__zoomIn")
         .css("animation-delay", "0.5s");
       $episodeRightCardOne
-        .addClass("animate__animated animate__slideInRight")
+        .addClass("animate__animated animate__fadeIn animate__faster")
         .css("animation-delay", "0.8s");
       $episodeRightCardTwo
-        .addClass("animate__animated animate__slideInRight")
-        .css("animation-delay", "0.9s");
+        .addClass("animate__animated animate__fadeIn animate__faster")
+        .css("animation-delay", "1.2s");
       $episodeRightCardThree
-        .addClass("animate__animated animate__slideInRight")
-        .css("animation-delay", "1s");
+        .addClass("animate__animated animate__fadeIn animate__faster")
+        .css("animation-delay", "1.6s");
       $episodeRightCardFour
-        .addClass("animate__animated animate__slideInRight")
-        .css("animation-delay", "1.1s");
+        .addClass("animate__animated animate__fadeIn animate__faster")
+        .css("animation-delay", "2s");
     }
 
     if (dest.index == 4) {
