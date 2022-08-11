@@ -358,11 +358,12 @@
 #customers-testimonials .item {
   text-align: center;
   opacity: .5;
-  -webkit-transform: scale3d(0.95, 0.95, 1);
-  transform: scale3d(0.95, 0.95, 1);
+  -webkit-transform: scale3d(0.9, 0.9, 1);
+  transform: scale3d(0.9, 0.9, 1);
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+ 
   background-color: #ffffff;
   height: 310px;
   padding: 22px;
@@ -413,6 +414,7 @@
   opacity: 1;
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
+  animation: flip-scale-down-diag-2 .3s ease-in-out;
   background-color: white;
   box-shadow: 0 2px 24px 0 rgba(204, 204, 204, 0.5);
 }
@@ -1403,11 +1405,12 @@ input[type="checkbox"] {
     max-width: 720px;
   }
   .overview-text-wrapper {
-    padding: 10px 16px;
+    padding: 20px 16px;
   }
   .overview-heading {
     font-size: 24px;
     font-family: Gotham-Bold;
+    margin-bottom: 2px !important; 
   }
   #fp-nav {
     display: none !important;
