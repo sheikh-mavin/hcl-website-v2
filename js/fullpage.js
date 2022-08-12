@@ -24,7 +24,7 @@ $("#fullpage").fullpage({
   navigation: true,
   anchors: ["section1", "section2", "section3", "section4", "section5"],
   bigSectionsDestination: 'top',
-  fitToSection:false,
+  fitToSection: false,
   autoScrolling: true,
   normalScrollElements: ".episode-right-section",
   recordHistory: false,
@@ -33,12 +33,12 @@ $("#fullpage").fullpage({
   },
   afterLoad: function (anchorLink, index) {
     history.pushState("", document.title, window.location.pathname
-                                                 + window.location.search);
+      + window.location.search);
   },
   onLeave: function (org, dest, direction) {
     if (dest.index == 1) {
       $oh.addClass("animate__animated animate__fadeIn");
-      $overviewWrapper.addClass("animate__animated animate__fadeInUpBig");
+      // $overviewWrapper.addClass("animate__animated animate__fadeInUpBig");
     }
 
     if (dest.index == 2) {
@@ -81,6 +81,7 @@ $("#fullpage").fullpage({
     }
 
     if (dest.index == 4) {
+
       $qh
         .addClass("animate__animated animate__fadeInRightBig ")
         .css("animation-delay", "1s");
@@ -100,8 +101,61 @@ $("#fullpage").fullpage({
           owl.trigger("next.owl.carousel", [1600]);
           owl.trigger("next.owl.carousel", [2000]);
         }, 500);
+
+        $('.swiper-slide:nth-child(1n)').addClass("transition-duration-1n");
+        $('.swiper-slide:nth-child(2n)').addClass("transition-duration-2n");
+        $('.swiper-slide:nth-child(3n)').addClass("transition-duration-3n");
+        $('.swiper-slide:nth-child(4n)').addClass("transition-duration-4n");
+        $('.swiper-slide:nth-child(5n)').addClass("transition-duration-5n");
+  
+        var swiper = new Swiper(".mySwiper", {
+          effect: "cards",
+          grabCursor: true,
+          // loop: true,
+          // loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '"></span>';
+            },
+          },
+          autoplay: {
+            delay: 2000,
+            disableOnInteraction: true,
+          },
+          navigation: {
+            nextEl: ".swiper-right-arrow",
+            prevEl: ".swiper-left-arrow",
+          },
+          keyboard: {
+            enabled: true,
+          },
+        });
+  
+        setTimeout(function () {
+          $('.swiper-slide:nth-child(1n)').removeClass("transition-duration-1n");
+          $('.swiper-slide:nth-child(2n)').removeClass("transition-duration-2n");
+          $('.swiper-slide:nth-child(3n)').removeClass("transition-duration-3n");
+          $('.swiper-slide:nth-child(4n)').removeClass("transition-duration-4n");
+          $('.swiper-slide:nth-child(5n)').removeClass("transition-duration-5n");
+  
+          // $('.swiper-slide:nth-child(1n)').addClass("transition-duration-0n");
+          // $('.swiper-slide:nth-child(2n)').addClass("transition-duration-0n");
+          // $('.swiper-slide:nth-child(3n)').addClass("transition-duration-0n");
+          // $('.swiper-slide:nth-child(4n)').addClass("transition-duration-0n");
+          // $('.swiper-slide:nth-child(5n)').addClass("transition-duration-0n");
+        }, 1500)
+
+        
         count = 1;
       }
+     
+
+
+
+
+
     }
   },
 });
