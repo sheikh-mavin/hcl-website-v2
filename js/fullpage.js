@@ -93,9 +93,7 @@ $("#fullpage").fullpage({
       // $customerTestimonials.addClass(
       //   "animate__animated animate__fadeInUp"
       // );
-      console.log($("#customers-testimonials .owl-item.active.center" ))
-
-     
+ 
       if (count == 0) {
         setTimeout(function () {
           owl.trigger("next.owl.carousel", [400]);
