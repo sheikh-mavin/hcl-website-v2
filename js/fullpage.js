@@ -102,7 +102,7 @@ $("#fullpage").fullpage({
           owl.trigger("next.owl.carousel", [800]);
           owl.trigger("next.owl.carousel", [1000]);
           owl.trigger("next.owl.carousel", [1200]);
-          owl.trigger("next.owl.carousel", [2400]);
+          // owl.trigger("next.owl.carousel", [2400]);
         }, 500);
         count = 1;
       }
