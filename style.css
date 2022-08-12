@@ -2357,4 +2357,11 @@ input[type="checkbox"] {
   background: #e2e8cf;
   }
 
-  
+  @media screen and (min-width: 480px) and (max-width: 991px) {
+    .overview-wrapper{
+      max-width: 600px !important;
+    }
+    .overview-image{
+      height: 350px !important;
+    }
+  }
