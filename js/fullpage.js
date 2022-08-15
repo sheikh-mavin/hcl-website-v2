@@ -97,12 +97,14 @@ $("#fullpage").fullpage({
       // $customerTestimonials.addClass(
       //   "animate__animated animate__fadeInUp"
       // );
+ 
       if (count == 0) {
         setTimeout(function () {
           owl.trigger("next.owl.carousel", [400]);
           owl.trigger("next.owl.carousel", [800]);
-          owl.trigger("next.owl.carousel", [1600]);
-          owl.trigger("next.owl.carousel", [2000]);
+          owl.trigger("next.owl.carousel", [1000]);
+          owl.trigger("next.owl.carousel", [1200]);
+          // owl.trigger("next.owl.carousel", [2400]);
         }, 500);
         count = 1;
       }
