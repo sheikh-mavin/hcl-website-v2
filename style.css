@@ -2316,6 +2316,12 @@ input[type="checkbox"] {
   }
 }
 
+@media all and (min-width: 1400px) and (max-width: 1550px) {
+  #feature .image-holder-feature,.overlay,.card-img-top-featured-speaker {
+    height: 275px;
+  }
+}
+
 
 
 .slider-range {
