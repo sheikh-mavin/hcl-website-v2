@@ -37,8 +37,8 @@ $("#fullpage").fullpage({
   },
   onLeave: function (org, dest, direction) {
     if (dest.index == 1) {
-      $oh.addClass("animate__animated animate__fadeIn");
-      $overviewWrapper.addClass("animate__animated animate__fadeInUpBig");
+      // $oh.addClass("animate__animated animate__fadeIn");
+      // $overviewWrapper.addClass("animate__animated animate__fadeInUpBig");
     }
 
     if (dest.index == 2) {
