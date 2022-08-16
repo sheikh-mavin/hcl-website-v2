@@ -196,7 +196,7 @@
 
 .overview-heading {
   font-size: 40px;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   font-family: Gotham-Bold;
   margin-bottom: 12px !important;
   line-height: 40px;
@@ -280,7 +280,7 @@
 .quotes-section-heading {
   font-family: Gotham-Bold;
   font-size: 40px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #242833;
   margin-bottom: 20px !important;
 }
@@ -375,7 +375,7 @@
   margin-top: 5px;
   margin-bottom: 0px;
   font-size: 24px;
-  font-weight: 600;
+  /* font-weight: 600; */
   color: #687d20;
 }
 
@@ -476,7 +476,7 @@
 
   font-family: Gotham-Bold;
   font-size: 40px;
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 1.07;
   color: #242833;
 }
@@ -728,7 +728,7 @@ input[type="checkbox"] {
 #feature .speaker-name {
   font-family: "Gotham-Bold";
   font-size: 24px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   line-height: 26px;
 
@@ -785,7 +785,7 @@ input[type="checkbox"] {
   padding-top: 0px;
   font-family: "Gotham-Bold";
   font-size: 40px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   line-height: 36px;
 
@@ -801,9 +801,9 @@ input[type="checkbox"] {
 
   /* height: 105vh; */
   /* width: 100%; */
-  font-family: "Gotham";
+  font-family: "Gotham-Bold";
   font-size: 36px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   line-height: 1.25;
 
@@ -842,7 +842,7 @@ input[type="checkbox"] {
 #episodes .title {
   font-family: "Gotham-Bold";
   font-size: 40px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   line-height: 36px;
 
@@ -873,7 +873,7 @@ input[type="checkbox"] {
 .single-episode-title {
   font-family: "Gotham-Bold";
   font-size: 24px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   line-height: 25px;
 
@@ -883,7 +883,7 @@ input[type="checkbox"] {
 .single-episode-audio {
   font-family: "Gotham-Bold";
   font-size: 14px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   color: #000;
   display: flex;
@@ -904,7 +904,7 @@ input[type="checkbox"] {
 .single-episode-pdf a {
   font-family: "Gotham-Bold";
   font-size: 14px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   color: #000;
   text-decoration: none;
@@ -982,7 +982,7 @@ input[type="checkbox"] {
 .multi-episode-title {
   font-family: "Gotham-Bold";
   font-size: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   line-height: 1.25;
 
@@ -1044,7 +1044,7 @@ input[type="checkbox"] {
   padding-top: 10vh;
   font-family: "Gotham-Bold";
   font-size: 40px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   line-height: 1.25;
 
@@ -1071,7 +1071,7 @@ input[type="checkbox"] {
 .single-episode-title {
   font-family: "Gotham-Bold";
   font-size: 24px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   line-height: 1.04;
 
@@ -1082,7 +1082,7 @@ input[type="checkbox"] {
 .single-episode-pdf {
   font-family: "Gotham-Bold";
   font-size: 14px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   color: #000;
 }
@@ -1090,7 +1090,7 @@ input[type="checkbox"] {
 .single-episode-pdf a {
   font-family: "Gotham-Bold";
   font-size: 14px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   color: #000;
   text-decoration: none;
@@ -1107,7 +1107,7 @@ input[type="checkbox"] {
 .multi-episode-title {
   font-family: "Gotham-Bold";
   font-size: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   line-height: 1.25;
 

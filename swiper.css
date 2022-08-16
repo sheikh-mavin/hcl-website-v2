@@ -27,7 +27,7 @@
   margin-top: 5px;
   margin-bottom: 0px;
   font-size: 24px;
-  font-weight: 600;
+  /* font-weight: 600; */
   color: #687d20;
 }
 
@@ -113,7 +113,7 @@
 .swiper-quotes-section-heading {
   font-family: Gotham-Bold;
   font-size: 40px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #242833;
   margin-bottom: 20px !important;
 }
