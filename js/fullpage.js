@@ -78,6 +78,10 @@ $("#fullpage").fullpage({
       $episodeRightCardFour
         .addClass("animate__animated animate__fadeIn animate__faster")
         .css("animation-delay", "2s");
+
+        setTimeout(function() {
+          $(".multi-card").removeClass("animate__animated animate__fadeIn animate__faster");
+        }, 3000);
     }
 
     if (dest.index == 4) {
