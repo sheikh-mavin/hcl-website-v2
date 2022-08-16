@@ -18,7 +18,6 @@ clickPlayEpisode.onclick = function () {
     "#episodes .episode-vedio-wrapper iframe"
     ).style.display = "block";
 };
-
 // Show Feature Overlay Modal
 const showDialog = (
     link1,
@@ -92,7 +91,6 @@ const showDialog = (
         }
     };
 };
-
 // Close Feature Overlay Modal
 const closeDialog = () => {
     const body = document.body;
@@ -142,32 +140,26 @@ const closeDialog = () => {
         "*"
         );
 };
-
 window.addEventListener("scroll", () => {
 document.documentElement.style.setProperty(
     "--scroll-y",
     `${window.scrollY}px`
 );
 });
-
 // Play Feature Modal Video
-
 const playFeatureoverlayvideo1 = () => {
     document.querySelector("#feature-overlay-image1").style.display =
         "none";
     document.querySelector("#feature-overlay-video1 iframe").style.display =
         "block";
 };
-
 const playFeatureoverlayvideo2 = () => {
     document.querySelector("#feature-overlay-image2").style.display =
         "none";
     document.querySelector("#feature-overlay-video2 iframe").style.display =
         "block";
 };
-
 // Episode Card Content Replace
-
 $(".multi-card").click(function () {
     var playPauseReset =
     document.getElementById("play-pause-audio").classList;
@@ -177,10 +169,8 @@ $(".multi-card").click(function () {
     "src",
     "./assets/images/episode/play-button.png"
     );
-
     var muteAudioReset = document.getElementById("mute-audio").classList;
     muteAudioReset.remove("muted");
-
     var getmuteImg = document.querySelector("#mute-audio img");
     getmuteImg.setAttribute(
     "src",
@@ -194,7 +184,7 @@ $(".multi-card").click(function () {
 
 $(".multi-card").hover(
     function () {
-    $(this).css("opacity", 1);
+        $(this).css("opacity", 1);
     },
     function () {
     if ($(this).hasClass("active")) {
