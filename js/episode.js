@@ -6,10 +6,10 @@ clickPlayEpisode.onclick = function () {
     var srcValue = document.querySelector(
     "#episodes .episode-vedio-wrapper iframe"
     );
-    var newString = srcValue.getAttribute("src") + "?rel=0&enablejsapi=1&autoplay=1";
+    // var newString = srcValue.getAttribute("src") + "?rel=0&enablejsapi=1&autoplay=1";
     srcValue.setAttribute(
     "src",
-    srcValue.getAttribute("src") + "?rel=0&enablejsapi=1&autoplay=1"
+    srcValue.getAttribute("src") + "&rel=0&autoplay=1"
     );
     document.querySelector(
     "#episodes #episode-overlay-wrapper"
@@ -305,6 +305,17 @@ var color = 'linear-gradient(90deg, rgb(130, 157, 40)' + x + '% , rgb(226, 232, 
     };
 var playPause = document.getElementById("play-pause-audio");
 var muteAudio = document.getElementById("mute-audio");
+const progress_bar = document.querySelector(".progress_bar");
+      progress_bar.addEventListener(
+        "click",
+        (e) => {
+          const progressbarWidth = window.getComputedStyle(progress_bar).width;
+          const timeToSeek =
+            (e.offsetX / parseInt(progressbarWidth)) * music.duration;
+          music.currentTime = timeToSeek;
+        },
+        false
+      );
 
 function toggleClass() {
     playPause.classList.toggle("playaudio");
