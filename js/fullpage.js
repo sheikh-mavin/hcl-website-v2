@@ -48,16 +48,16 @@ $("#fullpage").fullpage({
       );
       $featureCardOne
         .addClass("animate__animated animate__fadeIn animate__faster")
-        .css("animation-delay", "0.2s");
+        .css("animation-delay", "0.5s");
       $featureCardTwo
         .addClass("animate__animated animate__fadeIn animate__faster")
-        .css("animation-delay", "0.6s");
+        .css("animation-delay", "1s");
       $featureCardThree
         .addClass("animate__animated animate__fadeIn animate__faster")
-        .css("animation-delay", "1s");
+        .css("animation-delay", "1.5s");
       $featureCardFour
         .addClass("animate__animated animate__fadeIn animate__faster")
-        .css("animation-delay", "1.4s");
+        .css("animation-delay", "2s");
     }
 
     if (dest.index == 3) {
