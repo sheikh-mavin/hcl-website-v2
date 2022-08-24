@@ -24,7 +24,6 @@ $("#fullpage").fullpage({
   navigation: true,
   anchors: ["section1", "section2", "section3", "section4", "section5"],
   bigSectionsDestination: 'top',
-  fitToSection: false,
   autoScrolling: true,
   normalScrollElements: ".episode-right-section",
   recordHistory: false,
@@ -35,50 +34,56 @@ $("#fullpage").fullpage({
     history.pushState("", document.title, window.location.pathname
       + window.location.search);
   },
+
+  beforeLeave: function(origin, destination, direction, trigger){
+    console.log(origin, destination, direction, trigger)
+  },
   onLeave: function (org, dest, direction) {
+
+    
     if (dest.index == 1) {
 
-      // $oh.addClass("animate__animated animate__fadeIn");
-      // $overviewWrapper.addClass("animate__animated animate__fadeInUpBig");
+      $oh.addClass("animate__animated animate__fadeIn");
+      $overviewWrapper.addClass("animate__animated animate__fadeInUpBig");
     }
 
     if (dest.index == 2) {
       $fh.addClass(
-        "animate__animated animate__bounceIn animate__delay-1s"
-      );
+        "animate__animated animate__bounceIn"
+      ).css("animation-delay", "0.5s");;
       $featureCardOne
         .addClass("animate__animated animate__fadeIn animate__faster")
-        .css("animation-delay", "0.5s");
+        .css("animation-delay", "1s");
       $featureCardTwo
         .addClass("animate__animated animate__fadeIn animate__faster")
-        .css("animation-delay", "1s");
+        .css("animation-delay", "1.3s");
       $featureCardThree
         .addClass("animate__animated animate__fadeIn animate__faster")
-        .css("animation-delay", "1.5s");
+        .css("animation-delay", "1.6s");
       $featureCardFour
         .addClass("animate__animated animate__fadeIn animate__faster")
-        .css("animation-delay", "2s");
+        .css("animation-delay", "1.9s");
     }
 
     if (dest.index == 3) {
       $eh.addClass(
-        "animate__animated animate__fadeInDown animate__delay-1s"
-      );
+        "animate__animated animate__fadeInDown animate__delay-s"
+      ).css("animation-delay", "0.5s");;
       $episodeCardLeft
         .addClass("animate__animated animate__zoomIn")
-        .css("animation-delay", "0.5s");
+        .css("animation-delay", "1s");
       $episodeRightCardOne
         .addClass("animate__animated animate__fadeIn animate__faster")
-        .css("animation-delay", "0.8s");
+        .css("animation-delay", "1.2s");
       $episodeRightCardTwo
         .addClass("animate__animated animate__fadeIn animate__faster")
-        .css("animation-delay", "1.2s");
+        .css("animation-delay", "1.4s");
       $episodeRightCardThree
         .addClass("animate__animated animate__fadeIn animate__faster")
         .css("animation-delay", "1.6s");
       $episodeRightCardFour
         .addClass("animate__animated animate__fadeIn animate__faster")
-        .css("animation-delay", "2s");
+        .css("animation-delay", "1.8s");
 
       setTimeout(function () {
         $(".multi-card").removeClass("animate__animated animate__fadeIn animate__faster");
@@ -89,7 +94,7 @@ $("#fullpage").fullpage({
 
       $qh
         .addClass("animate__animated animate__fadeInRightBig ")
-        .css("animation-delay", "1s");
+        .css("animation-delay", "0.2s");
       $leftArrow
         .addClass("animate__animated animate__fadeInLeftBig animate__delay-2s")
         .css("animation-delay", ".6s");
@@ -101,13 +106,13 @@ $("#fullpage").fullpage({
       // );
 
       if (count == 0) {
-        // setTimeout(function () {
-        //   owl.trigger("next.owl.carousel", [400]);
-        //   owl.trigger("next.owl.carousel", [800]);
-        //   owl.trigger("next.owl.carousel", [1000]);
-        //   owl.trigger("next.owl.carousel", [1200]);
-        //   // owl.trigger("next.owl.carousel", [2400]);
-        // }, 500);
+        setTimeout(function () {
+          owl.trigger("next.owl.carousel", [400]);
+          owl.trigger("next.owl.carousel", [800]);
+          owl.trigger("next.owl.carousel", [1000]);
+          owl.trigger("next.owl.carousel", [1200]);
+          // owl.trigger("next.owl.carousel", [2400]);
+        }, 500);
 
         $('.swiper-slide:nth-child(1n)').addClass("transition-duration-1n");
         $('.swiper-slide:nth-child(2n)').addClass("transition-duration-2n");

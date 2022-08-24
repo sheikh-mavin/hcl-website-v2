@@ -7,7 +7,7 @@ $(".nav-item").on("click", function () {
     $(".navbar-collapse").removeClass("show");
 });
 $("#banner").owlCarousel({
-    loop: true,
+    loop: false,
     items: 1,
     margin: 0,
     dots: true,
