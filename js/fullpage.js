@@ -30,14 +30,11 @@ $("#fullpage").fullpage({
   credits: {
     enabled: false,
   },
-  afterLoad: function (anchorLink, index) {
-    history.pushState("", document.title, window.location.pathname
-      + window.location.search);
-  },
+  // afterLoad: function (anchorLink, index) {
+  //   history.pushState("", document.title, window.location.pathname
+  //     + window.location.search);
+  // },
 
-  beforeLeave: function(origin, destination, direction, trigger){
-    console.log(origin, destination, direction, trigger)
-  },
   onLeave: function (org, dest, direction) {
 
     
