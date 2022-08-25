@@ -189,7 +189,7 @@
 .overview > .overview-wrapper {
   border-radius: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 14px 0 rgba(196, 196, 196, 0.5);
+  box-shadow: rgb(196 196 196 / 50%) 3px 2px 11px 0px;
   background-color: #fff;
   max-width: 1200px;
 }
@@ -202,7 +202,7 @@
   font-size: 40px;
   /* font-weight: bolder; */
   font-family: Gotham-Bold;
-  margin-bottom: 12px !important;
+  margin-bottom: 20px !important;
   line-height: 40px;
 }
 
@@ -229,10 +229,9 @@
 .overview-text {
   font-family: Gotham;
   font-size: 16px;
-
   line-height: 1.5;
-
   color: #3d3d3d;
+  margin-bottom: 0px;
 }
 
 @keyframes fadein {
@@ -274,7 +273,7 @@
 /* Quotes */
 
 .quotes {
-  background-image: url(./assets/images/quotes/quotes-bg.png);
+  background-color: #ede9f2;
   background-size: 100% 100%;
   height: 600px;
   padding: 50px 0px 67px 0px;
@@ -1324,6 +1323,10 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 991px) {
+  .overview > .overview-wrapper {
+    box-shadow: 0 2px 14px 0 rgba(196, 196, 196, 0.5);
+  }
+  
   #overview-slider div {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;

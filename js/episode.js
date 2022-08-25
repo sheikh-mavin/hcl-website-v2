@@ -6,10 +6,10 @@ clickPlayEpisode.onclick = function () {
     var srcValue = document.querySelector(
     "#episodes .episode-vedio-wrapper iframe"
     );
-    // var newString = srcValue.getAttribute("src") + "?rel=0&enablejsapi=1&autoplay=1";
+    // var newString = srcValue.getAttribute("src") + "?rel=0&enablejsapi=1&autoplay=1&mute=1";
     srcValue.setAttribute(
     "src",
-    srcValue.getAttribute("src") + "&rel=0&autoplay=1"
+    srcValue.getAttribute("src") + "?rel=0&autoplay=1"
     );
     document.querySelector(
     "#episodes #episode-overlay-wrapper"
@@ -276,7 +276,7 @@ var outputRangeValue = document.getElementById("myrangevalue");
     }
 var start_value = sliderRange.getAttribute("value");
 var x = start_value;
-var color = 'linear-gradient(90deg, rgb(130, 157, 40)' + x + '% , rgb(226, 232, 207)' + x + '%)';
+var color = 'linear-gradient(90deg, rgb(91 75 175)' + x + '% , rgb(226, 232, 207)' + x + '%)';
     sliderRange.style.background = color;
     sliderRange.addEventListener("mousemove", function() {
         if(sliderRange.value == 0){
@@ -291,7 +291,7 @@ var color = 'linear-gradient(90deg, rgb(130, 157, 40)' + x + '% , rgb(226, 232, 
         x = sliderRange.value;
         music.volume = x/100;
         sliderRange.setAttribute("value",x)
-        color = 'linear-gradient(90deg, rgb(130, 157, 40)' + x + '% , rgb(226, 232, 207)' + x + '%)';
+        color = 'linear-gradient(90deg, rgb(91 75 175)' + x + '% , rgb(226, 232, 207)' + x + '%)';
         sliderRange.style.background = color;
     });
 
