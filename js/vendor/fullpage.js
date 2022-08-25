@@ -3427,7 +3427,7 @@
         //The bottom of the destination will be at the bottom of the viewport
         console.log(element.getAttribute("data-anchor"))
         if(element.getAttribute("data-anchor") != "section5"){
-            position = elementTop -150;
+            position = elementTop;
         }
         else{
             position = sectionBottom;
