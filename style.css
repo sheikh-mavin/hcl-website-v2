@@ -932,7 +932,7 @@ input[type="checkbox"] {
   width: 100%;
   border-radius: 5px;
 
-  background: #e2e8cf;
+  background: #cec2e2;
 }
 
 #progressed {
@@ -2379,7 +2379,7 @@ input[type="checkbox"] {
   height: 40px;
   cursor: pointer;
   border-radius: 50%;
-  background: #e2e8cf;
+  background: #cec2e2;
 }
 
 @media screen and (min-width: 480px) and (max-width: 991px) {

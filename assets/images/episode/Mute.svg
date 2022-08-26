@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="19px" height="18px" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Unmute</title>
     <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="MegaTalk_Landing-page_Final" transform="translate(-600.000000, -2749.000000)" fill="#9BBC30" fill-rule="nonzero">
-            <g id="Group-12-Copy-4" transform="translate(127.000000, 2186.000000)">
-                <g id="Unmute" transform="translate(473.716518, 563.000000)">
+        <g id="MegaTalk_Landing-page_Final_V3" transform="translate(-529.000000, -2642.000000)" fill="#541FAF" fill-rule="nonzero">
+            <g id="Group-12-Copy-4" transform="translate(127.000000, 2082.000000)">
+                <g id="Unmute" transform="translate(402.716518, 560.000000)">
                     <g id="Group-3" transform="translate(0.283482, 0.000000)">
                         <path d="M1.93303571,0.207589286 C1.65625,-0.0691964286 1.20089286,-0.0691964286 0.924107143,0.207589286 C0.647321429,0.484375 0.647321429,0.939732143 0.924107143,1.21651786 L16.6383929,16.9308036 C16.7767857,17.0691964 16.9598214,17.140625 17.1428571,17.140625 C17.3258929,17.140625 17.5089286,17.0691964 17.6473214,16.9308036 C17.9241071,16.6540179 17.9241071,16.1986607 17.6473214,15.921875 L1.93303571,0.207589286 Z" id="Path"></path>
                         <path d="M6.96428571,3.22991071 L9.38839286,5.65401786 C9.52678571,5.79241071 9.75446429,5.79241071 9.89285714,5.65401786 C9.95982143,5.58705357 9.99553571,5.49776786 9.99553571,5.39955357 L9.99553571,2.52008929 C10,2.11830357 9.78125,1.74330357 9.42857143,1.55133929 C9.06696429,1.35491071 8.62053571,1.38616071 8.29017857,1.63169643 L8.25892857,1.65401786 L6.98660714,2.69419643 C6.83482143,2.81919643 6.8125,3.04241071 6.9375,3.19866071 C6.94642857,3.21205357 6.95535714,3.22098214 6.96428571,3.22991071 L6.96428571,3.22991071 Z" id="Path"></path>

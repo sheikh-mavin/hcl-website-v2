@@ -276,7 +276,7 @@ var outputRangeValue = document.getElementById("myrangevalue");
     }
 var start_value = sliderRange.getAttribute("value");
 var x = start_value;
-var color = 'linear-gradient(90deg, rgb(91 75 175)' + x + '% , rgb(226, 232, 207)' + x + '%)';
+var color = 'linear-gradient(90deg, rgb(91 75 175)' + x + '% , rgb(206, 194, 226)' + x + '%)';
     sliderRange.style.background = color;
     sliderRange.addEventListener("mousemove", function() {
         if(sliderRange.value == 0){
@@ -291,7 +291,7 @@ var color = 'linear-gradient(90deg, rgb(91 75 175)' + x + '% , rgb(226, 232, 207
         x = sliderRange.value;
         music.volume = x/100;
         sliderRange.setAttribute("value",x)
-        color = 'linear-gradient(90deg, rgb(91 75 175)' + x + '% , rgb(226, 232, 207)' + x + '%)';
+        color = 'linear-gradient(90deg, rgb(91 75 175)' + x + '% , rgb(206, 194, 226)' + x + '%)';
         sliderRange.style.background = color;
     });
 
