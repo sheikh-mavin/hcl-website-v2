@@ -3,8 +3,8 @@ var $fh = $("#f-h");
 var $eh = $("#e-h");
 var $qh = $("#q-h");
 
-var $leftArrow = $(".swiper-left-arrow");
-var $rightArrow = $(".swiper-right-arrow");
+var $leftArrow = $(".left-arrow");
+var $rightArrow = $(".right-arrow");
 var $customerTestimonials = $("#customers-testimonials");
 var $featureCardOne = $("#feature-card-one");
 var $featureCardTwo = $("#feature-card-two");
@@ -93,23 +93,23 @@ $("#fullpage").fullpage({
         .addClass("animate__animated animate__fadeInRightBig ")
         .css("animation-delay", "0.2s");
       $leftArrow
-        .addClass("animate__animated animate__fadeInLeftBig animate__delay-2s")
-        .css("animation-delay", ".6s");
+        .addClass("animate__animated animate__fadeInLeftBig")
+        .css("animation-delay", ".8s");
       $rightArrow
-        .addClass("animate__animated animate__fadeInRightBig animate__delay-2s")
-        .css("animation-delay", ".6s");
-      // $customerTestimonials.addClass(
-      //   "animate__animated animate__fadeInUp"
-      // );
+        .addClass("animate__animated animate__fadeInRightBig")
+        .css("animation-delay", ".8s");
+      $customerTestimonials.addClass(
+        "animate__animated animate__fadeInUp"
+      ).css("animation-delay", ".8s");;
 
       if (count == 0) {
-        setTimeout(function () {
-          owl.trigger("next.owl.carousel", [400]);
-          owl.trigger("next.owl.carousel", [800]);
-          owl.trigger("next.owl.carousel", [1000]);
-          owl.trigger("next.owl.carousel", [1200]);
-          // owl.trigger("next.owl.carousel", [2400]);
-        }, 500);
+        // setTimeout(function () {
+        //   owl.trigger("next.owl.carousel", [400]);
+        //   owl.trigger("next.owl.carousel", [800]);
+        //   owl.trigger("next.owl.carousel", [1000]);
+        //   owl.trigger("next.owl.carousel", [1200]);
+        //   // owl.trigger("next.owl.carousel", [2400]);
+        // }, 500);
 
         $('.swiper-slide:nth-child(1n)').addClass("transition-duration-1n");
         $('.swiper-slide:nth-child(2n)').addClass("transition-duration-2n");
