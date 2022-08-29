@@ -1499,6 +1499,9 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .quotes {
+    height: 550px;
+  }
   #customers-testimonials .owl-item.active.center .item {
     height: 300px;
   }
@@ -1542,6 +1545,9 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .quotes {
+    height: 550px;
+  }
   #customers-testimonials .owl-item.active.center .item {
     height: 300px;
   }
@@ -1585,6 +1591,9 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 991px) and (max-width: 1024px) {
+  .quotes {
+    height: 550px;
+  }
   #customers-testimonials .owl-item.active.center .item {
     height: 300px;
   }
