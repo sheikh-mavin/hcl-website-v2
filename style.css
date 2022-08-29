@@ -8,12 +8,12 @@
   src: url("./assets/fonts/GothamBold.otf");
 }
 
-.meta-talks{
+.meta-talks {
   height: 30px;
 }
 
 #fp-nav ul li a.active span {
-  background: #4273E7 !important;
+  background: #4273e7 !important;
 }
 /* Navigation */
 .navbar-toggler {
@@ -107,7 +107,7 @@
 }
 .inspire {
   font-family: Gotham-Bold;
-  color: #4273E7;
+  color: #4273e7;
 }
 
 .inspireTomhash {
@@ -219,11 +219,11 @@
   content: url("./assets/images/overview/overview-2.png");
 }
 .mega {
-  color: #541FAF;
+  color: #541faf;
 }
 
 .talks {
-  color: #4273E7;
+  color: #4273e7;
 }
 
 .overview-text {
@@ -368,7 +368,7 @@
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #ffffff;
-  height: 310px;
+  height: 330px;
   padding: 22px;
   overflow: hidden;
 }
@@ -379,7 +379,7 @@
   margin-bottom: 0px;
   font-size: 24px;
   /* font-weight: 600; */
-  color: #541FAF;
+  color: #541faf;
 }
 
 #customers-testimonials .designation {
@@ -391,7 +391,7 @@
 
 #customers-testimonials .desc {
   font-family: Gotham;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   text-align: center;
   color: #242833;
@@ -708,13 +708,13 @@ input[type="checkbox"] {
 
 #feature .host-speaker {
   box-shadow: 0 5px 14px 0 rgba(217, 217, 217, 0.5);
-  background-color: #4273E7;
+  background-color: #4273e7;
   padding: 15px 20px;
 }
 
 #feature .guest-speaker {
   box-shadow: 0 5px 14px 0 rgba(217, 217, 217, 0.5);
-  background-color: #541FAF;
+  background-color: #541faf;
   padding: 15px 20px;
 }
 
@@ -871,7 +871,7 @@ input[type="checkbox"] {
 
   line-height: 15px;
 
-  color: #541FAF;
+  color: #541faf;
 }
 .single-episode-title {
   font-family: "Gotham-Bold";
@@ -941,7 +941,7 @@ input[type="checkbox"] {
   width: 0px;
   border-radius: 5px;
 
-  background-color: #541FAF;
+  background-color: #541faf;
 }
 
 #audio-time-passed,
@@ -980,7 +980,7 @@ input[type="checkbox"] {
 
   line-height: 1.21;
   letter-spacing: -0.2px;
-  color: #541FAF;
+  color: #541faf;
 }
 .multi-episode-title {
   font-family: "Gotham-Bold";
@@ -1069,7 +1069,7 @@ input[type="checkbox"] {
   font-size: 14px;
   font-weight: 500;
 
-  color: #541FAF;
+  color: #541faf;
 }
 .single-episode-title {
   font-family: "Gotham-Bold";
@@ -1105,7 +1105,7 @@ input[type="checkbox"] {
 
   line-height: 1.21;
   letter-spacing: -0.2px;
-  color: #541FAF;
+  color: #541faf;
 }
 .multi-episode-title {
   font-family: "Gotham-Bold";
@@ -1213,7 +1213,7 @@ input[type="checkbox"] {
 }
 
 .volume-slider .volume-percentage {
-  background: #541FAF;
+  background: #541faf;
   height: 4px;
   width: 50%;
 }
@@ -1326,14 +1326,23 @@ input[type="checkbox"] {
   .overview > .overview-wrapper {
     box-shadow: 0 2px 14px 0 rgba(196, 196, 196, 0.5);
   }
-  
+
   #overview-slider div {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
   }
   #customers-testimonials .desc {
-    font-size: 18px;
+    font-size: 14px;
   }
+
+  #customers-testimonials .designation {
+    font-size: 10px;
+  }
+
+  #customers-testimonials .name {
+    font-size: 20px;
+  }
+
   #customers-testimonials .owl-item.active.center .item {
     max-width: 600px !important;
     margin: auto;
@@ -1356,11 +1365,28 @@ input[type="checkbox"] {
   }
   #customers-testimonials .owl-item.active.center .item {
     width: 100%;
-    height: auto;
+    height: 400px;
+  }
+  #customers-testimonials .item {
+    opacity: 1;
+    background-color: white;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    height: 400px;
+    padding: 22px;
+  }
+
+  #customers-testimonials .owl-item .item .rp {
+    height: 100%;
+    overflow: none;
   }
 
   .quotes {
     padding: 50px 16px 0px 16px;
+    height: 650px;
   }
   .quotes-section-heading {
     font-size: 24px;
@@ -1473,6 +1499,13 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  #customers-testimonials .owl-item.active.center .item {
+    height: 300px;
+  }
+  #customers-testimonials .item {
+    height: 300px;
+  }
+
   .banner-text {
     margin-right: 10px;
   }
@@ -1509,6 +1542,12 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  #customers-testimonials .owl-item.active.center .item {
+    height: 300px;
+  }
+  #customers-testimonials .item {
+    height: 300px;
+  }
   .quotes-section-heading {
     margin-left: 58px;
   }
@@ -1546,6 +1585,12 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 991px) and (max-width: 1024px) {
+  #customers-testimonials .owl-item.active.center .item {
+    height: 300px;
+  }
+  #customers-testimonials .item {
+    height: 300px;
+  }
   .banner-text {
     margin-right: 10px;
   }
@@ -1626,23 +1671,6 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 991.5px) {
-  #customers-testimonials .item {
-    opacity: 1;
-    background-color: white;
-    -webkit-transform: none;
-    transform: none;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
-    height: auto;
-    padding: 22px;
-  }
-
-  #customers-testimonials .owl-item .item .rp {
-    height: 100%;
-    overflow: none;
-  }
-
   .onlyForWeb {
     display: none !important;
   }
@@ -2078,7 +2106,6 @@ input[type="checkbox"] {
   background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
 }
 
-
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
@@ -2277,7 +2304,7 @@ input[type="checkbox"] {
   position: absolute;
   font-size: 11px;
   padding: 4px;
-  color: #541FAF;
+  color: #541faf;
 }
 .showvolumeslider {
   display: block;
@@ -2333,21 +2360,18 @@ input[type="checkbox"] {
 }
 
 @media all and (min-width: 1400px) and (max-width: 1550px) {
-  #feature .image-holder-feature,.overlay,.card-img-top-featured-speaker {
+  #feature .image-holder-feature,
+  .overlay,
+  .card-img-top-featured-speaker {
     height: 275px;
   }
 }
-
 
 .slider-range {
   -webkit-appearance: none;
   width: 100%;
   height: 4px;
-  background: linear-gradient(
-    90deg,
-    #541FAF 42%,
-    rgb(214, 214, 214) 0%
-  );
+  background: linear-gradient(90deg, #541faf 42%, rgb(214, 214, 214) 0%);
   outline: none;
   opacity: 0.7;
   -webkit-transition: 0.2s;
@@ -2369,7 +2393,7 @@ input[type="checkbox"] {
   appearance: none;
   width: 12px;
   height: 12px;
-  background: #541FAF;
+  background: #541faf;
   cursor: pointer;
   border-radius: 50%;
 }
