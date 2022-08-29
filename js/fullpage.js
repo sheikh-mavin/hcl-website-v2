@@ -100,7 +100,7 @@ $("#fullpage").fullpage({
         .css("animation-delay", ".8s");
       $customerTestimonials.addClass(
         "animate__animated animate__fadeInUp"
-      ).css("animation-delay", ".8s");;
+      ).css("animation-delay", ".8s");
 
       if (count == 0) {
         // setTimeout(function () {
