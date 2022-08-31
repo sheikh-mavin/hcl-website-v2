@@ -5,7 +5,7 @@ owl.owlCarousel({
   items: 2,
   margin: 0,
   autoplay: true,
-  autoplayTimeout: 5000,
+  autoplayTimeout: 7000,
   // smartSpeed: 1000,
 
   dots: true,
